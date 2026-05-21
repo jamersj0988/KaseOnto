@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KaseOnto Ontology Checker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="main-column">
+        <header class="brand">
+          <div class="brand-main">
+            <div class="brand-mark">K</div>
+            <div>
+              <h1>KaseOnto Checker</h1>
+              <p>Ontology quality review workspace</p>
+            </div>
+          </div>
+
+          <div class="compact-review document-summary" aria-label="Ontology summary">
+            <div class="compact-review-title">
+              <span>Ontology Review</span>
+              <small><i></i>Ready</small>
+            </div>
+            <div class="document-file">
+              <span class="file-icon">OWL</span>
+              <span>
+                <strong>kaseonto-populated.owl</strong>
+                <small>Local draft ontology</small>
+              </span>
+            </div>
+            <div class="compact-stats">
+              <span>Classes <strong id="class-count">128</strong></span>
+              <span>Relations <strong id="relation-count">47</strong></span>
+              <span>Issues <strong id="issue-count">9</strong></span>
+            </div>
+          </div>
+
+          <div class="compact-review result-card" aria-label="Checker actions">
+            <div class="compact-review-title">
+              <span>Run</span>
+              <small>Draft</small>
+            </div>
+            <div class="result-actions">
+              <button id="run-check" class="secondary-action" type="button">Check</button>
+              <button id="export-report" class="secondary-action" type="button">Export</button>
+            </div>
+          </div>
+        </header>
+
+        <section class="panel issue-panel compact-issue-panel" aria-labelledby="issue-title">
+          <div class="panel-heading">
+            <div class="issue-tabs" role="tablist" aria-label="Issue list tabs">
+              <button
+                id="issue-title"
+                class="issue-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-filter="all"
+              >
+                All Issues
+              </button>
+              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="critical">
+                Critical
+              </button>
+              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="warning">
+                Warnings
+              </button>
+            </div>
+            <div class="issue-head-actions">
+              <small id="checker-status">Idle</small>
+              <input id="issue-search" type="search" placeholder="Search issues" aria-label="Search issues" />
+            </div>
+          </div>
+          <div id="issue-list" class="issue-list"></div>
+        </section>
+
+        <div class="review-grid">
+          <section class="reader-card" aria-labelledby="detail-title">
+            <div class="reader-toolbar">
+              <div>
+                <p class="eyebrow">Selected issue</p>
+                <h2 id="detail-title">Issue Detail</h2>
+              </div>
+              <div class="reader-actions">
+                <button id="decrease-font" class="icon-button" type="button" title="Decrease text size">A-</button>
+                <button id="increase-font" class="icon-button" type="button" title="Increase text size">A+</button>
+              </div>
+            </div>
+            <article id="issue-detail" class="issue-detail" tabindex="0"></article>
+          </section>
+
+          <section class="ontology-card" aria-labelledby="ontology-title">
+            <div class="ontology-toolbar">
+              <div>
+                <p class="eyebrow">Ontology</p>
+                <h2 id="ontology-title">Class Context</h2>
+              </div>
+              <div class="ontology-selection" aria-label="Selected ontology context">
+                <div class="mapping-item">
+                  <span>Class</span>
+                  <strong id="selected-class-label">None</strong>
+                </div>
+                <div class="mapping-item">
+                  <span>Severity</span>
+                  <strong id="selected-severity-label">None</strong>
+                </div>
+                <button id="mark-resolved" class="save-population" type="button">Resolve</button>
+              </div>
+              <input id="class-search" type="search" placeholder="Search classes" aria-label="Search classes" />
+            </div>
+            <div id="ontology-status" class="ontology-status is-loaded">Ontology graph loaded</div>
+            <div id="class-list" class="class-list" aria-label="Ontology classes"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

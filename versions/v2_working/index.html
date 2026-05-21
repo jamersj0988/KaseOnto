@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KaseOnto Corpus Viewer</title>
+    <link rel="stylesheet" href="./styles.css?v=radial-svg-2" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-main">
+            <div class="brand-mark">K</div>
+            <div>
+              <h1>KaseOnto</h1>
+              <p>Corpus annotation workspace</p>
+            </div>
+          </div>
+          <div class="compact-review document-summary" aria-label="Document summary">
+            <div class="compact-review-title">
+              <span>Text and Entity Review</span>
+              <small><i></i>Ready</small>
+            </div>
+            <div class="document-file">
+              <span class="file-icon">TXT</span>
+              <span>
+                <strong id="file-name">case53_merged.txt</strong>
+                <small id="file-meta">Preparing document</small>
+              </span>
+            </div>
+            <div class="compact-stats">
+              <span>Words <strong id="word-count">0</strong></span>
+              <span>Lines <strong id="line-count">0</strong></span>
+              <span>Entities <strong id="entity-count">0</strong></span>
+            </div>
+          </div>
+          <div class="compact-review result-card" aria-label="Result actions">
+            <div class="compact-review-title">
+              <span>Results</span>
+              <small>JSON</small>
+            </div>
+            <div class="result-actions">
+              <button id="export-results" class="secondary-action" type="button">Export</button>
+              <button id="load-results" class="secondary-action" type="button">Load</button>
+              <input id="results-file" type="file" accept="application/json,.json" hidden />
+            </div>
+          </div>
+        </div>
+
+        <section class="panel entity-panel compact-entity-panel" aria-labelledby="entity-title">
+          <div class="panel-heading">
+            <div class="entity-tabs" role="tablist" aria-label="Entity list tabs">
+              <button
+                id="entity-title"
+                class="entity-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-tab="extracted"
+              >
+                Extracted Terms
+              </button>
+              <button
+                class="entity-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-tab="populated"
+              >
+                Populated Terms
+              </button>
+            </div>
+            <div class="entity-head-actions">
+              <small id="corpus-status">Loading</small>
+              <input id="entity-search" type="search" placeholder="Search terms" aria-label="Search entities" />
+            </div>
+          </div>
+          <div id="entity-list" class="entity-list"></div>
+          <div id="empty-terms" class="empty-terms" hidden>Populated Terms is empty for now.</div>
+        </section>
+
+        <div class="review-grid">
+          <section class="reader-card" aria-labelledby="corpus-title">
+            <div class="reader-toolbar">
+              <div>
+                <p class="eyebrow">Document text</p>
+                <h2 id="corpus-title">Corpus Preview</h2>
+              </div>
+              <div class="reader-actions">
+                <button id="decrease-font" class="icon-button" type="button" title="縮小文字">A-</button>
+                <button id="increase-font" class="icon-button" type="button" title="放大文字">A+</button>
+              </div>
+            </div>
+            <article id="corpus-text" class="corpus-text" tabindex="0">正在載入 corpus 文字...</article>
+          </section>
+
+          <section class="ontology-card" aria-labelledby="ontology-title">
+            <div class="ontology-toolbar">
+              <div>
+                <p class="eyebrow">Ontology</p>
+                <h2 id="ontology-title">Ontology Browser</h2>
+              </div>
+              <div class="ontology-selection" aria-label="Term to ontology mapping">
+                <div class="mapping-item">
+                  <span>Selected Term</span>
+                  <strong id="selected-term-label">None</strong>
+                </div>
+                <div class="mapping-item">
+                  <span>Selected Class</span>
+                  <strong id="selected-class-label">None</strong>
+                </div>
+                <button id="save-population" class="save-population" type="button" disabled>Save</button>
+              </div>
+              <input
+                id="ontology-search"
+                type="search"
+                placeholder="Search classes"
+                aria-label="Search ontology classes"
+              />
+            </div>
+            <div id="ontology-status" class="ontology-status">Loading ontology...</div>
+            <div id="ontology-tree" class="ontology-tree" role="tree" aria-label="Ontology hierarchy"></div>
+          </section>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <section class="panel workspace-note" aria-label="Workspace note">
+          <p class="eyebrow">Review area</p>
+          <h2>Term lists beside the reader</h2>
+          <p>Use the left-side tabs to switch term lists while reading the corpus text below it.</p>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js?v=radial-svg-2"></script>
+  </body>
+</html>

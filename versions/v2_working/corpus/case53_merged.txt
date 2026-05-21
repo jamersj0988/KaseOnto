@@ -1,0 +1,66 @@
+92-Bed Nursing Home / Dominique Coulon & associés
+Retirement
+•
+Pont-sur-Yonne, France
+Architects: Dominique Coulon & associés
+Area: 
+5395 m²
+Year: 
+2014
+Photographs:David Romero-Uzeda
+Structural Engineer: Batiserf
+Electrical & Mechanical Plumbing Engineer: BET G.Jost
+Category: Retirement
+Cost Estimator: E3 Economie
+Landscaping: Bruno Kubler
+Kitchen Expert: Ecotral
+Client: Lamy-Delettrez nursing home
+Budget: 9 304 560€ H.T
+City: Pont-sur-Yonne
+Country: France
+Text description provided by the architects. The building blends into the sloping landscape of Pont-sur-Yonne. The dark blocks house the 96 rooms; the main entrance is arranged around a courtyard resembling a village square, facing the Yonne valley.
+The dark volumes appear hollowed out, with a tumble of geometric shapes folded into these starkly white hollows. There are views of the scenery on all sides; the terraces look towards the river.
+The common areas of the living spaces are arranged to benefit from the energy of light from the south, with wide openings looking out over the park.
+Two planted patios provide the building with depth. All traffic routes have natural light, making them ideal for strolling. They widen with changes of direction, accommodating sitting areas in warm shades of pink and red where ergonomically designed banquettes are conducive to group conversations among the residents.
+Particular attention has been paid to making the collective areas both fluid and transparent. The dining rooms occupy a central balcony position looking towards the lobby, opening broadly to the south. Sheltered terraces are a further addition to the residents’ quality of life.
+The rooms, each measuring 20 square metres, have been very carefully designed. The combination of bay windows and furnishings reinforces the feeling of thickness of the facade. The diversity of the three types of room is enhanced by the careful attention paid to both colour and solar orientation.
+The building is certified to high energy performance standards. The exterior insulation confers good inertia and provides a high level of thermal comfort.
+In drawing up this project, particular care has been paid to use and functionality. Everything has been done to use routes, natural light and materials to best advantage, producing living spaces which respect the dignity of their residents.
+
+I. Vocabulary extraction
+- Residential units / bedrooms (repeated single rooms)
+- Corridors / circulation spine
+- Hall / agora (0.01) — main public entry/meeting space
+- Dining rooms (0.02, 0.15)
+- Multipurpose room (0.03)
+- Secretary / administration / offices (0.04, 0.05, 0.12)
+- Meeting room (0.06)
+- Nursing room / nursing station (0.07, 0.09)
+- Medical consultory / pharmacy (0.08, 0.10)
+- Washing / laundry (0.11)
+- Open living rooms / communal lounges (0.13)
+- Hairdressing (0.14)
+- Therapeutic kitchen (0.16)
+- Courtyards / interior courtyards / light wells (0.17, 0.18)
+- Vertical circulation cores (stair/elevator locations)
+- Service / support zones (adjacent to medical and admin)
+- Exterior landscape elements (trees, triangular site geometry)
+
+II. Spatial relationship descriptions
+- Two long residential wings (and a perpendicular wing) are linked through a central public core (hall/agora 0.01) and a multipurpose/dining cluster, forming an L-shaped plan.
+- Private bedroom0s are organized in linear clusters along the exterior façades, served by continuous corridors that run the length of each wing for direct access and efficient supervision.
+- Communal lounges (open living rooms 0.13) and dining spaces (0.02, 0.15) are distributed at nodes along the corridors so each cluster of rooms has nearby semi-public space; therapeutic kitchen (0.16) is located adjacent to dining areas.
+- Medical, nursing and support functions (0.07–0.11) are grouped near the central core to enable quick access from multiple wings and to separate clinical services from purely domestic areas.
+- Internal courtyards/light wells (0.17, 0.18) are placed within the plan’s interior to bring daylight and views into the building’s heart; some communal spaces open directly onto these courtyards.
+- Administrative and reception-type spaces are sited close to the main entry/hall, creating a public-facing layer between the exterior and the private residential wings.
+- Service and vertical circulation cores are located at junctions and ends of wings, creating clear layering: public/entry → shared/communal → private rooms.
+
+III. Overall spatial impression (1–2 sentences)
+The plan organizes occupants into repeating, linear residential clusters around a clearly defined public core and a series of internal courtyards, producing a compact, legible hierarchy of public, semi-public and private spaces. The layout balances clinical efficiency (centralized nursing/medical support) with distributed communal nodes to encourage social interaction and daylight penetration.
+
+IV. Design intent reading
+- Promote community and wayfinding: a central agora and distributed living/dining nodes create recognizable social hubs and short journeys from bedrooms to communal activities.
+- Daylight, ventilation and connection to nature: internal courtyards and openings over courtyards are used to bring light and outdoor orientation into deep plan zones, improving comfort for residents.
+- Operational clarity and supervision: clustering bedrooms along corridors with nursing stations and medical services near the core supports efficient care delivery and observation.
+- Modularity and economy: repeated room layouts and linear wings suggest a modular approach for construction and ease of circulation.
+- Clear programmatic layering: public/administrative functions are concentrated at the entrance while private rooms are pushed to the exterior, with intermediate communal spaces mediating between the two.

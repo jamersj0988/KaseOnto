@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "exportedAt": "2026-05-20T19:02:41.314Z",
+  "corpus": "./corpus/case53_merged.txt",
+  "entityList": "./entity_list/entity_ids_case53.txt",
+  "ontology": "./ontology/ontology_20.dot",
+  "populatedTerms": [
+    {
+      "id": "entity-41",
+      "label": "Dark Blocks",
+      "ontologyClass": "event",
+      "branchClass": "branch-event"
+    },
+    {
+      "id": "entity-75",
+      "label": "Geometric Shapes",
+      "ontologyClass": "geometry",
+      "branchClass": "branch-building"
+    },
+    {
+      "id": "entity-2",
+      "label": "5395 M²",
+      "ontologyClass": "building area",
+      "branchClass": "branch-building"
+    },
+    {
+      "id": "entity-56",
+      "label": "Dominique Coulon & Associés",
+      "ontologyClass": "architect",
+      "branchClass": "branch-participant"
+    }
+  ]
+}
