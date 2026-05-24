@@ -18,7 +18,6 @@ const els = {
   ontologyTree: document.querySelector("#ontology-tree"),
   selectedTermLabel: document.querySelector("#selected-term-label"),
   selectedClassLabel: document.querySelector("#selected-class-label"),
-  savePopulation: document.querySelector("#save-population"),
   exportResults: document.querySelector("#export-results"),
   loadResults: document.querySelector("#load-results"),
   resultsFile: document.querySelector("#results-file"),
@@ -36,7 +35,9 @@ let readerFontSize = 15;
 let ontology = null;
 let ontologyFocusNode = null;
 let activeOntologyNode = null;
+let hasClickedOntologyClass = false;
 let ontologyFilter = "";
+let ontologyAnimationTimer = null;
 const ontologyBranchClasses = new Map([
   ["design case", "branch-design-case"],
   ["building", "branch-building"],
@@ -202,7 +203,14 @@ function getOntologyBranchClass(nodeName) {
 }
 
 function createOntologyNode(nodeName, relation, depth, options = {}) {
-  const { visibleNodes = null, forceExpanded = false, includeChildren = false, isPath = false } = options;
+  const {
+    visibleNodes = null,
+    forceExpanded = false,
+    includeChildren = false,
+    isPath = false,
+    showCaret = true,
+    caretSymbol = null,
+  } = options;
   const children = ontology.childrenByParent.get(nodeName) || [];
   const isExpanded = ontologyFilter || forceExpanded;
   const isMatched = ontologyFilter && nodeName.toLowerCase().includes(ontologyFilter.toLowerCase());
@@ -225,7 +233,9 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
   row.setAttribute("aria-selected", String(activeOntologyNode === nodeName));
   row.setAttribute("aria-level", String(depth + 1));
   row.classList.toggle("is-selected", activeOntologyNode === nodeName);
+  row.classList.toggle("is-save-ready", hasClickedOntologyClass && activeOntologyNode === nodeName);
   row.classList.toggle("is-match", Boolean(isMatched));
+  row.classList.toggle("is-jump-target", isPath && !showCaret);
 
   if (children.length) {
     row.setAttribute("aria-expanded", String(isExpanded));
@@ -235,11 +245,16 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
   caret.className = "ontology-caret";
   caret.type = "button";
   caret.setAttribute("aria-label", `${isExpanded ? "Collapse" : "Open"} ${nodeName}`);
-  caret.textContent = isExpanded ? "v" : ">";
+  caret.textContent = caretSymbol || (isExpanded ? "-" : "+");
+  caret.classList.toggle("is-collapse", caret.textContent === "-");
 
-  if (!children.length) {
+  if (!children.length || !showCaret) {
     caret.classList.add("is-empty");
+    caret.disabled = true;
+    caret.tabIndex = -1;
+    caret.setAttribute("aria-hidden", "true");
     caret.textContent = ".";
+    caret.classList.remove("is-collapse");
   }
 
   const label = document.createElement("span");
@@ -254,6 +269,20 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
     chip.textContent = relation;
     row.appendChild(chip);
   }
+
+  const saveButton = document.createElement("button");
+  saveButton.className = "save-population ontology-row-save";
+  saveButton.type = "button";
+  saveButton.textContent = "Save";
+  saveButton.disabled = !activeEntityId;
+  saveButton.setAttribute("aria-label", `Save selected term as ${nodeName}`);
+  saveButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    activeOntologyNode = nodeName;
+    hasClickedOntologyClass = true;
+    savePopulation();
+  });
+  row.appendChild(saveButton);
 
   wrapper.appendChild(row);
 
@@ -321,11 +350,14 @@ function createOntologyDrilldownTree() {
 
   path.forEach((nodeName, index) => {
     const relation = index === 0 ? "" : getOntologyRelation(nodeName);
+    const isCurrentOrParent = index >= path.length - 1;
     fragment.appendChild(
       createOntologyNode(nodeName, relation, index, {
-        forceExpanded: false,
+        forceExpanded: isCurrentOrParent,
         includeChildren: false,
         isPath: index < path.length - 1,
+        showCaret: isCurrentOrParent,
+        caretSymbol: "-",
       }),
     );
   });
@@ -384,14 +416,19 @@ function renderOntologyTree() {
 
 function animateOntologyTree(shouldAnimate) {
   els.ontologyTree.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  clearTimeout(ontologyAnimationTimer);
 
   if (!shouldAnimate) {
+    els.ontologyTree.classList.remove("is-transitioning");
     return;
   }
 
   els.ontologyTree.classList.remove("is-transitioning");
   void els.ontologyTree.offsetWidth;
   els.ontologyTree.classList.add("is-transitioning");
+  ontologyAnimationTimer = setTimeout(() => {
+    els.ontologyTree.classList.remove("is-transitioning");
+  }, 620);
 }
 
 function toggleOntologyNode(nodeName) {
@@ -404,11 +441,30 @@ function toggleOntologyNode(nodeName) {
   renderOntologyTree();
 }
 
+function updateOntologySelectionState() {
+  els.ontologyTree.querySelectorAll(".ontology-row").forEach((row) => {
+    const isSelected = row.dataset.node === activeOntologyNode;
+    row.classList.toggle("is-selected", isSelected);
+    row.classList.toggle("is-save-ready", hasClickedOntologyClass && isSelected);
+    row.setAttribute("aria-selected", String(isSelected));
+  });
+}
+
 function setActiveOntologyNode(nodeName) {
   activeOntologyNode = nodeName;
-  if (!ontologyFilter && ontology?.childrenByParent.has(nodeName)) {
-    ontologyFocusNode = nodeName;
+  hasClickedOntologyClass = true;
+  updateMappingPanel();
+  updateOntologySelectionState();
+}
+
+function jumpToOntologyLayer(nodeName) {
+  if (!ontology?.nodes.has(nodeName) || ontologyFilter) {
+    return;
   }
+
+  activeOntologyNode = nodeName;
+  ontologyFocusNode = nodeName;
+  hasClickedOntologyClass = false;
   updateMappingPanel();
   renderOntologyTree();
 }
@@ -442,9 +498,15 @@ function savePopulation() {
   }
 
   activeEntityId = populatedEntity.id;
+  activeOntologyNode = populatedEntity.ontologyClass;
+  ontologyFocusNode = populatedEntity.ontologyClass;
+  hasClickedOntologyClass = false;
+  ontologyFilter = "";
+  els.ontologySearch.value = "";
   els.entityCount.textContent = formatNumber(entities.length);
   renderEntities(els.entitySearch.value);
   renderCorpus(corpusText);
+  renderOntologyTree();
   setEntityState(activeEntityId, "is-selected", true);
   updateMappingPanel();
 }
@@ -530,6 +592,7 @@ function restoreResults(payload) {
   activeEntityId = null;
   activeOntologyNode = ontology?.root || null;
   ontologyFocusNode = ontology?.root || null;
+  hasClickedOntologyClass = false;
   ontologyFilter = "";
   els.ontologySearch.value = "";
   els.entityCount.textContent = formatNumber(entities.length);
@@ -566,7 +629,11 @@ function updateMappingPanel() {
 
   els.selectedTermLabel.textContent = selectedEntity?.label || "None";
   els.selectedClassLabel.textContent = hasClass ? activeOntologyNode : "None";
-  els.savePopulation.disabled = !(selectedEntity && hasClass);
+  els.ontologyTree
+    .querySelectorAll(".ontology-row-save")
+    .forEach((button) => {
+      button.disabled = !selectedEntity;
+    });
 }
 
 function setEntityState(entityId, state, enabled) {
@@ -622,12 +689,14 @@ function setActiveEntity(entityId, shouldScroll = false) {
   if (selectedEntity?.ontologyClass && ontology?.nodes.has(selectedEntity.ontologyClass)) {
     activeOntologyNode = selectedEntity.ontologyClass;
     ontologyFocusNode = selectedEntity.ontologyClass;
+    hasClickedOntologyClass = false;
     ontologyFilter = "";
     els.ontologySearch.value = "";
     renderOntologyTree();
   } else if (ontology?.root) {
     activeOntologyNode = ontology.root;
     ontologyFocusNode = ontology.root;
+    hasClickedOntologyClass = false;
     ontologyFilter = "";
     els.ontologySearch.value = "";
     renderOntologyTree();
@@ -835,6 +904,7 @@ async function init() {
     ontology = parseOntologyDot(ontologyText);
     ontologyFocusNode = ontology.root;
     activeOntologyNode = ontology.root;
+    hasClickedOntologyClass = false;
     renderOntologyTree();
   } catch (error) {
     els.ontologyStatus.textContent = "Could not load ontology.";
@@ -874,6 +944,19 @@ els.ontologyTree.addEventListener("click", (event) => {
   setActiveOntologyNode(nodeName);
 });
 
+els.ontologyTree.addEventListener("dblclick", (event) => {
+  if (event.target.closest(".ontology-caret") || event.target.closest(".ontology-row-save")) {
+    return;
+  }
+
+  const row = event.target.closest(".ontology-row.is-jump-target");
+  if (!row) {
+    return;
+  }
+
+  jumpToOntologyLayer(row.dataset.node);
+});
+
 els.ontologyTree.addEventListener("keydown", (event) => {
   if (event.key !== "Enter" && event.key !== " ") {
     return;
@@ -886,10 +969,6 @@ els.ontologyTree.addEventListener("keydown", (event) => {
 
   event.preventDefault();
   setActiveOntologyNode(row.dataset.node);
-});
-
-els.savePopulation.addEventListener("click", () => {
-  savePopulation();
 });
 
 els.exportResults.addEventListener("click", async () => {

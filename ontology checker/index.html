@@ -24,27 +24,27 @@
               <small><i></i>Ready</small>
             </div>
             <div class="document-file">
-              <span class="file-icon">OWL</span>
+              <span class="file-icon">DOT</span>
               <span>
-                <strong>kaseonto-populated.owl</strong>
-                <small>Local draft ontology</small>
+                <strong id="ontology-file-name">ontology_20.dot</strong>
+                <small>Local DOT ontology</small>
               </span>
             </div>
             <div class="compact-stats">
               <span>Classes <strong id="class-count">128</strong></span>
-              <span>Relations <strong id="relation-count">47</strong></span>
-              <span>Issues <strong id="issue-count">9</strong></span>
+              <span>Completed <strong id="issue-count">0</strong></span>
             </div>
           </div>
 
           <div class="compact-review result-card" aria-label="Checker actions">
             <div class="compact-review-title">
-              <span>Run</span>
-              <small>Draft</small>
+              <span>File</span>
+              <small>DOT</small>
             </div>
             <div class="result-actions">
-              <button id="run-check" class="secondary-action" type="button">Check</button>
-              <button id="export-report" class="secondary-action" type="button">Export</button>
+              <button id="load-dot" class="secondary-action" type="button">LOAD</button>
+              <button id="export-report" class="secondary-action" type="button">EXPORT</button>
+              <input id="dot-file-input" class="file-input" type="file" accept=".dot,text/vnd.graphviz,text/plain" />
             </div>
           </div>
         </header>
@@ -58,20 +58,20 @@
                 type="button"
                 role="tab"
                 aria-selected="true"
-                data-filter="all"
+                data-filter="checklist"
               >
-                All Issues
+                Check List
               </button>
-              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="critical">
-                Critical
+              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="accept">
+                Accept
               </button>
-              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="warning">
-                Warnings
+              <button class="issue-tab" type="button" role="tab" aria-selected="false" data-filter="reject">
+                Reject
               </button>
             </div>
             <div class="issue-head-actions">
               <small id="checker-status">Idle</small>
-              <input id="issue-search" type="search" placeholder="Search issues" aria-label="Search issues" />
+              <input id="issue-search" type="search" placeholder="Search targets" aria-label="Search targets" />
             </div>
           </div>
           <div id="issue-list" class="issue-list"></div>
@@ -82,41 +82,74 @@
             <div class="reader-toolbar">
               <div>
                 <p class="eyebrow">Selected issue</p>
-                <h2 id="detail-title">Issue Detail</h2>
+                <h2 id="detail-title">Check Board</h2>
               </div>
               <div class="reader-actions">
-                <button id="decrease-font" class="icon-button" type="button" title="Decrease text size">A-</button>
-                <button id="increase-font" class="icon-button" type="button" title="Increase text size">A+</button>
+                <small id="checking-mode-status" class="mode-status"><i></i>Check mode</small>
               </div>
             </div>
+            <button id="back-target" class="back-button" type="button" title="Return to previous target">↩</button>
             <article id="issue-detail" class="issue-detail" tabindex="0"></article>
           </section>
 
-          <section class="ontology-card" aria-labelledby="ontology-title">
-            <div class="ontology-toolbar">
-              <div>
-                <p class="eyebrow">Ontology</p>
-                <h2 id="ontology-title">Class Context</h2>
-              </div>
-              <div class="ontology-selection" aria-label="Selected ontology context">
-                <div class="mapping-item">
-                  <span>Class</span>
-                  <strong id="selected-class-label">None</strong>
+          <section class="ontology-card" aria-label="Ontology result workspace">
+            <div class="ontology-result-grid">
+              <!-- 左側先保留 graph visualize 的視覺容器，之後可接上即時 graph rendering。 -->
+              <section class="graph-panel" aria-labelledby="graph-title">
+                <div class="graph-panel-heading">
+                  <div>
+                    <p class="eyebrow">Graph</p>
+                    <h2 id="graph-title">Graph Visualize</h2>
+                  </div>
+                  <div class="graph-help" aria-label="Graph controls">
+                    <div class="graph-help-item">
+                      <span class="graph-help-icon" aria-hidden="true">R</span>
+                      <span>滑鼠右鍵: 拖動畫面</span>
+                    </div>
+                    <div class="graph-help-item">
+                      <span class="graph-help-icon" aria-hidden="true">W</span>
+                      <span>滾輪: 縮放畫面</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="mapping-item">
-                  <span>Severity</span>
-                  <strong id="selected-severity-label">None</strong>
+                <div id="graph-visualize" class="graph-visualize" role="img" aria-label="Ontology result radial graph"></div>
+              </section>
+
+              <!-- 右側維持既有 Ontology Result tree，讓目前的 selection 與搜尋邏輯不用改。 -->
+              <section class="result-panel" aria-labelledby="ontology-title">
+                <div class="ontology-toolbar">
+                  <div>
+                    <p class="eyebrow">Ontology</p>
+                    <h2 id="ontology-title">Ontology Result</h2>
+                  </div>
                 </div>
-                <button id="mark-resolved" class="save-population" type="button">Resolve</button>
-              </div>
-              <input id="class-search" type="search" placeholder="Search classes" aria-label="Search classes" />
+                <div id="class-list" class="class-list ontology-tree" role="tree" aria-label="Ontology result"></div>
+              </section>
             </div>
-            <div id="ontology-status" class="ontology-status is-loaded">Ontology graph loaded</div>
-            <div id="class-list" class="class-list" aria-label="Ontology classes"></div>
           </section>
         </div>
       </section>
     </main>
+
+    <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-dialog-title">
+      <form id="export-form" class="export-dialog-panel" method="dialog">
+        <div class="export-dialog-heading">
+          <div>
+            <p class="eyebrow">File</p>
+            <h2 id="export-dialog-title">Export DOT</h2>
+          </div>
+          <button id="export-cancel" class="export-close-button" type="button" aria-label="Close export dialog">×</button>
+        </div>
+        <label class="export-field">
+          <span>Filename</span>
+          <input id="export-file-name" type="text" autocomplete="off" spellcheck="false" />
+        </label>
+        <p class="export-help">Choose where to save this checked ontology DOT file.</p>
+        <div class="export-dialog-actions">
+          <button class="secondary-action" type="button" id="export-save">SAVE AS</button>
+        </div>
+      </form>
+    </dialog>
 
     <script src="./app.js"></script>
   </body>

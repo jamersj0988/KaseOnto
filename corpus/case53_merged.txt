@@ -48,7 +48,7 @@ I. Vocabulary extraction
 
 II. Spatial relationship descriptions
 - Two long residential wings (and a perpendicular wing) are linked through a central public core (hall/agora 0.01) and a multipurpose/dining cluster, forming an L-shaped plan.
-- Private bedroom0s are organized in linear clusters along the exterior façades, served by continuous corridors that run the length of each wing for direct access and efficient supervision.
+- Private bedrooms are organized in linear clusters along the exterior façades, served by continuous corridors that run the length of each wing for direct access and efficient supervision.
 - Communal lounges (open living rooms 0.13) and dining spaces (0.02, 0.15) are distributed at nodes along the corridors so each cluster of rooms has nearby semi-public space; therapeutic kitchen (0.16) is located adjacent to dining areas.
 - Medical, nursing and support functions (0.07–0.11) are grouped near the central core to enable quick access from multiple wings and to separate clinical services from purely domestic areas.
 - Internal courtyards/light wells (0.17, 0.18) are placed within the plan’s interior to bring daylight and views into the building’s heart; some communal spaces open directly onto these courtyards.

@@ -18,6 +18,7 @@
   --shadow: 0 18px 50px rgba(35, 38, 40, 0.1);
   --radius: 8px;
   --reader-font-size: 15px;
+  --ontology-toolbar-control-height: 42px;
 }
 
 * {
@@ -77,30 +78,32 @@ input {
 
 .compact-review {
   flex: 1;
-  min-width: 310px;
+  min-width: 260px;
   max-width: 520px;
   border: 1px solid rgba(222, 217, 207, 0.85);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.64);
-  padding: 11px 12px;
+  /* 壓低最上方摘要卡片高度，讓它接近 KaseOnto 品牌區的視覺高度。 */
+  padding: 6px 8px;
   box-shadow: 0 10px 26px rgba(35, 38, 40, 0.06);
 }
 
 .document-summary {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) auto;
-  gap: 9px 14px;
+  grid-template-columns: minmax(104px, auto) minmax(150px, 1fr) auto;
+  align-items: center;
+  gap: 6px 10px;
 }
 
 .document-summary .compact-review-title {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .document-file {
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 .document-file strong,
@@ -112,6 +115,13 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 11px;
+  line-height: 1.15;
+}
+
+.document-file small {
+  font-size: 9px;
+  line-height: 1.15;
 }
 
 .compact-review-title,
@@ -122,8 +132,9 @@ input {
   gap: 10px;
 }
 
+/* 控制頁面摘要卡片的小標題字級，讓上方資訊列維持輕量。 */
 .compact-review-title span {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 800;
 }
 
@@ -132,6 +143,7 @@ input {
   align-items: center;
   gap: 6px;
   color: var(--accent-deep);
+  font-size: 10px;
   font-weight: 800;
 }
 
@@ -149,14 +161,14 @@ input {
 
 .compact-stats span {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 .compact-stats strong {
   margin-left: 4px;
   color: var(--accent-deep);
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1;
 }
 
@@ -172,22 +184,37 @@ input {
 
 .result-card {
   display: flex;
-  flex: 0 0 310px;
-  max-width: 310px;
-  flex-direction: column;
+  flex: 0 0 240px;
+  max-width: 240px;
+  align-items: center;
   justify-content: space-between;
+  gap: 8px;
+}
+
+/* 只縮小最上方文件摘要的 TXT 小圖示，不影響其他檔案列樣式。 */
+.document-file .file-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 9px;
 }
 
 .result-card .compact-review-title {
-  margin-bottom: 9px;
+  margin-bottom: 0;
 }
 
 .result-card .result-actions {
-  width: 100%;
+  width: auto;
 }
 
 .result-card .secondary-action {
   flex: 1;
+}
+
+/* 只縮小最上方 Results 按鈕，保留外框與左右分隔線。 */
+.result-actions .secondary-action {
+  min-height: 28px;
+  padding: 5px 9px;
+  font-size: 11px;
 }
 
 .brand-mark {
@@ -207,8 +234,9 @@ p {
   margin: 0;
 }
 
+/* 控制主要品牌標題字級，避免壓過實際 review 工作區。 */
 .brand h1 {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.15;
 }
 
@@ -250,6 +278,7 @@ small,
 }
 
 .panel-heading > span {
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -323,48 +352,90 @@ small,
   padding-bottom: 14px;
 }
 
+/* 控制主要區塊標題字級，讓 reader 與 ontology 面板更適合密集閱讀。 */
 .reader-toolbar h2,
 .topbar h2,
 .ontology-toolbar h2 {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
 .ontology-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.ontology-selection {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(88px, 1fr) minmax(88px, 1fr) auto;
+  grid-template-columns: minmax(156px, 1fr) 164px 92px;
+  align-items: end;
   gap: 8px;
-  align-items: center;
-  flex: 1;
-  min-width: 260px;
-  min-height: 42px;
-  border: 1px solid rgba(222, 217, 207, 0.78);
-  border-radius: 8px;
-  background: rgba(250, 248, 244, 0.58);
-  padding: 4px 6px 4px 8px;
 }
 
-.ontology-selection .mapping-item span {
+.ontology-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+  max-width: 156px;
+}
+
+.ontology-title-group .eyebrow {
+  margin-bottom: 0;
   font-size: 10px;
 }
 
+.ontology-title-group .eyebrow,
+.ontology-title-group h2 {
+  white-space: nowrap;
+}
+
+.ontology-title-group h2 {
+  /* 讓 Ontology Browser 標題與 Corpus Preview 使用相同的視覺層級。 */
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.ontology-selection {
+  /* 讓已選 term/class 區塊成為 toolbar 的固定欄位，位置與標題底線對齊。 */
+  display: grid;
+  grid-template-columns: minmax(70px, 1fr) minmax(70px, 1fr);
+  gap: 5px;
+  align-items: center;
+  position: static;
+  grid-column: 2;
+  grid-row: 1;
+  width: 164px;
+  min-width: 164px;
+  max-width: 164px;
+  justify-self: end;
+  align-self: end;
+  height: var(--ontology-toolbar-control-height);
+  min-height: var(--ontology-toolbar-control-height);
+  border: 1px solid rgba(222, 217, 207, 0.78);
+  border-radius: 8px;
+  background: rgba(250, 248, 244, 0.58);
+  padding: 3px 6px;
+}
+
+.ontology-selection .mapping-item span {
+  font-size: 9px;
+}
+
 .ontology-selection .mapping-item strong {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #ontology-search {
-  width: min(210px, 44%);
+  /* 讓 Search classes 與 selected term/class 的邊框高度一致。 */
+  grid-column: 3;
+  grid-row: 1;
+  width: 92px;
+  height: var(--ontology-toolbar-control-height);
+  justify-self: end;
+  align-self: end;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: white;
-  padding: 10px 12px;
+  padding: 8px 8px;
+  font-size: 11px;
   outline: none;
 }
 
@@ -618,13 +689,13 @@ small,
   display: flex;
   align-items: center;
   gap: 7px;
-  min-height: 34px;
+  min-height: 31px;
   margin: 2px 0;
   margin-left: calc(var(--depth) * 18px);
   border: 1px solid transparent;
   border-radius: 8px;
   color: #303438;
-  padding: 5px 8px;
+  padding: 4px 76px 4px 8px;
   cursor: pointer;
   transition:
     background 140ms ease,
@@ -650,6 +721,28 @@ small,
   color: var(--branch-ink);
 }
 
+.ontology-row-save {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  min-height: 30px;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) translateX(4px);
+  transition:
+    opacity 140ms ease,
+    transform 140ms ease;
+}
+
+.ontology-row.is-save-ready .ontology-row-save {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%);
+}
+
 .ontology-tree.is-transitioning .ontology-node {
   animation: ontology-row-drop 520ms cubic-bezier(0.16, 0.78, 0.2, 1) both;
   animation-delay: calc(min(var(--depth), 8) * 52ms);
@@ -670,15 +763,17 @@ small,
 
 .ontology-caret {
   display: grid;
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
   place-items: center;
   border: 0;
   border-radius: 5px;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
+  font-size: 17px;
+  font-weight: 850;
   line-height: 1;
   padding: 0;
 }
@@ -686,6 +781,12 @@ small,
 .ontology-caret:hover {
   background: rgba(78, 82, 86, 0.1);
   color: var(--ink);
+}
+
+.ontology-caret.is-collapse {
+  color: var(--branch-ink);
+  font-size: 20px;
+  font-weight: 950;
 }
 
 .ontology-caret.is-empty {
@@ -698,8 +799,8 @@ small,
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 15px;
-  font-weight: 750;
+  font-size: 13px;
+  font-weight: 740;
 }
 
 .relation-chip {
@@ -709,7 +810,7 @@ small,
   background: var(--branch-chip-bg);
   color: var(--branch-ink);
   padding: 2px 7px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   line-height: 1.35;
 }
@@ -844,7 +945,7 @@ small,
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 244, 239, 0.92));
   color: var(--accent-deep);
   padding: 9px 18px 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 850;
   line-height: 1;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.75) inset;
@@ -873,12 +974,21 @@ small,
   gap: 10px;
 }
 
+/* 控制 entity 工具列右上角狀態文字，避免 Loaded 比 tab 標題更搶眼。 */
+#corpus-status {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 #entity-search {
   width: 220px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: white;
   padding: 10px 12px;
+  /* 只縮小搜尋框文字，不更動輸入框的邊框、寬度或內距。 */
+  font-size: 12px;
   outline: none;
 }
 
@@ -968,7 +1078,7 @@ small,
 
 .workspace-note h2 {
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .workspace-note p:last-child {
@@ -1051,14 +1161,22 @@ small,
 
   .ontology-toolbar {
     align-items: stretch;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .ontology-selection {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    max-width: none;
     min-width: 0;
+    justify-self: stretch;
   }
 
   #ontology-search {
+    grid-column: 1;
+    grid-row: auto;
     width: 100%;
   }
 }
