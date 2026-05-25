@@ -2,6 +2,7 @@
 
 const defaultOntologyFileName = "ontology_20.dot";
 const checkerStateCommentPrefix = "KASEONTO_CHECKER_STATE";
+const bundledDefaultOntologyDot = window.KASEONTO_DEFAULT_ONTOLOGY_DOT || "";
 
 const allowedRelations = new Set(["top sense", "sense", "partial", "feature attribute", "data attribute"]);
 const relationSortOrder = new Map([
@@ -11,6 +12,7 @@ const relationSortOrder = new Map([
   ["feature attribute", 3],
   ["data attribute", 4],
 ]);
+const rejectReasonOptions = ["父類別無關或錯誤", "關係類型錯誤", "概念重複或多餘", "其他"];
 const radialGraphRotation = 215 * (Math.PI / 180);
 // ??? v1 UI ??top-level sense ??拙楊??hecker ??畸??堆???branch class??
 const ontologyBranchClasses = new Map([
@@ -36,6 +38,7 @@ const state = {
   graphZoom: 0.78,
   activeTargetIndex: 0,
   pendingRejectTargetName: null,
+  pendingRejectReasonChoice: "",
   rejectReasonDraft: "",
 };
 
@@ -75,6 +78,9 @@ const exportDialog = document.querySelector("#export-dialog");
 const exportFileNameInput = document.querySelector("#export-file-name");
 const exportSaveButton = document.querySelector("#export-save");
 const exportCancelButton = document.querySelector("#export-cancel");
+const manualGuideButton = document.querySelector("#manual-guide");
+const manualDialog = document.querySelector("#manual-dialog");
+const manualCloseButton = document.querySelector("#manual-close");
 
 function escapeHtml(value) {
   return value
@@ -104,6 +110,29 @@ async function loadText(path) {
   }
 
   return response.text();
+}
+
+async function loadDefaultOntology() {
+  // 用本機 server 開啟時，優先讀專案根目錄的最新 DOT；雙擊 HTML 時，改用內建 DOT 避免 file:// 被瀏覽器擋住。
+  if (window.location.protocol !== "file:") {
+    try {
+      return {
+        dotText: await loadText(ontologyPath),
+        fileName: defaultOntologyFileName,
+      };
+    } catch (error) {
+      console.warn("KaseOnto default ontology fetch failed; falling back to bundled DOT.", error);
+    }
+  }
+
+  if (bundledDefaultOntologyDot) {
+    return {
+      dotText: bundledDefaultOntologyDot,
+      fileName: defaultOntologyFileName,
+    };
+  }
+
+  throw new Error("No bundled default ontology is available. Use IMPORT to load a .dot file.");
 }
 
 function encodeCheckerPayload(payload) {
@@ -252,7 +281,7 @@ function createIssue({ id, title, severity, className, message, rule, suggestion
 
 function buildRelationReviews(parsedOntology) {
   return parsedOntology.nodes
-    .filter((node) => node.children.length > 0)
+    .filter((node) => node.children.length > 0 && node.name !== parsedOntology.rootNames[0])
     .sort((a, b) => {
       const rootName = parsedOntology.rootNames[0] || "";
       if (a.name === rootName) {
@@ -282,6 +311,14 @@ function buildRelationReviews(parsedOntology) {
         targets,
       };
     });
+}
+
+function isDefaultRootChild(className) {
+  // design case 的第一層 top sense 是 ontology 的預設骨架，跟 root 一樣直接視為已存在。
+  const rootName = ontology.rootNames[0];
+  const rootNode = ontology.nodeMap.get(rootName);
+
+  return Boolean(rootNode?.children.some((edge) => edge.relation === "top sense" && edge.child === className));
 }
 
 function selectedRelationReview() {
@@ -431,14 +468,15 @@ function setRelationDecision(targetName, decision, targetElement = null, options
 function showRejectReasonPanel(targetName) {
   const review = selectedRelationReview();
   const reasonKey = `${review.id}:${targetName}`;
+  const existingReason = relationRejectReasons.get(reasonKey) || "";
 
-  // 按下 reject 時先展開 wrong reason 輸入區，不直接提交 rejected decision。
+  // 按下 reject 時先顯示可展開的原因選單，只有選「其他」才需要補文字說明。
   state.pendingRejectTargetName = targetName;
-  state.rejectReasonDraft = relationRejectReasons.get(reasonKey) || state.rejectReasonDraft || "";
+  state.pendingRejectReasonChoice = existingReason && !rejectReasonOptions.includes(existingReason) ? "其他" : "";
+  state.rejectReasonDraft = state.pendingRejectReasonChoice === "其他" ? existingReason : "";
   state.selectedClassName = targetName;
-  checkerStatus.textContent = "Wrong reason required";
+  checkerStatus.textContent = "Choose reason";
   renderDetail({ animateTarget: false });
-  issueDetail.querySelector(".reject-reason-input")?.focus();
 }
 
 function submitRejectReason(targetName) {
@@ -460,9 +498,29 @@ function submitRejectReason(targetName) {
   renderClasses();
 }
 
+function chooseRejectReason(targetName, reason, optionElement = null) {
+  // 固定原因可以直接提交；「其他」保留 panel 並展開輸入框，避免選單占用平常操作空間。
+  if (reason === "其他") {
+    state.pendingRejectReasonChoice = "其他";
+    state.pendingRejectTargetName = targetName;
+    checkerStatus.textContent = "Write other reason";
+    renderDetail({ animateTarget: false });
+    issueDetail.querySelector(`.reject-reason-input[data-target="${CSS.escape(targetName)}"]`)?.focus();
+    return;
+  }
+
+  state.pendingRejectReasonChoice = "";
+  state.rejectReasonDraft = reason;
+  const targetElement = optionElement?.closest(".relation-target");
+  optionElement?.closest(".reject-reason-panel")?.remove();
+  setRelationDecision(targetName, "rejected", targetElement, { rejectReason: reason });
+  renderClasses();
+}
+
 function cancelRejectReason() {
   // 取消 reason panel 時只收起輸入區，不改變目前 target 的 pending decision。
   state.pendingRejectTargetName = null;
+  state.pendingRejectReasonChoice = "";
   state.rejectReasonDraft = "";
   checkerStatus.textContent = "Check mode";
   renderDetail({ animateTarget: false });
@@ -478,6 +536,7 @@ function commitRelationDecision(review, targetName, decision, targetIndex, optio
     relationRejectReasons.set(`${review.id}:${targetName}`, rejectReason.trim());
   }
   state.pendingRejectTargetName = null;
+  state.pendingRejectReasonChoice = "";
   state.rejectReasonDraft = "";
   state.activeTargetIndex = getNextTargetIndex(review, targetIndex);
   state.selectedClassName = review.targets[state.activeTargetIndex]?.name || targetName;
@@ -750,6 +809,10 @@ function isDescendantOfRejectedAncestor(className, rejectedNames) {
 }
 
 function getOntologyResultStatus(className) {
+  if (className === ontology.rootNames[0] || isDefaultRootChild(className)) {
+    return "approved";
+  }
+
   const rejectedNames = getRejectedClassNames();
   let status = "pending";
 
@@ -782,6 +845,14 @@ function getOntologyRelationLabel(parentName, childName) {
 
 function getOntologyResultVisibleNames() {
   const visible = new Set(ontology.rootNames);
+  const rootNode = ontology.nodeMap.get(ontology.rootNames[0]);
+
+  // Result 預設展開 root 的第一層 top sense，這些 branch 不進入人工檢查。
+  rootNode?.children.forEach((edge) => {
+    if (edge.relation === "top sense") {
+      visible.add(edge.child);
+    }
+  });
 
   relationReviews.forEach((review) => {
     review.targets.forEach((target) => {
@@ -1192,6 +1263,7 @@ function renderDetail(options = {}) {
   const hasRejectReasonPanel =
     Boolean(state.pendingRejectTargetName) ||
     Boolean(isEditingCompletedTarget && activeTarget && relationRejectReasons.get(`${review.id}:${activeTarget.name}`));
+  const hasOtherRejectReasonPanel = Boolean(state.pendingRejectTargetName && state.pendingRejectReasonChoice === "其他");
   const targetMarkup = review.targets
     .map((target, index) => {
       if (isEditingCompletedTarget && target.name !== state.editingCompletedTargetName) {
@@ -1206,6 +1278,15 @@ function renderDetail(options = {}) {
       const isRejectReasonOpen = isActive && state.pendingRejectTargetName === target.name;
       const existingRejectReason = relationRejectReasons.get(`${review.id}:${target.name}`) || "";
       const shouldShowRejectReason = isEditingCompletedTarget && decision === "rejected" && existingRejectReason && !isRejectReasonOpen;
+      const isOtherRejectReason = isRejectReasonOpen && state.pendingRejectReasonChoice === "其他";
+      const rejectReasonSummary = isOtherRejectReason ? "其他：自行填寫" : "選擇錯誤原因";
+      const rejectReasonOptionsMarkup = rejectReasonOptions
+        .map((reason) => {
+          const isOther = reason === "其他";
+          const optionLabel = isOther ? "其他：自行填寫" : reason;
+          return `<button class="reject-reason-option ${isOtherRejectReason && isOther ? "is-selected" : ""}" type="button" data-target="${escapeHtml(target.name)}" data-reason="${escapeHtml(reason)}">${escapeHtml(optionLabel)}</button>`;
+        })
+        .join("");
       const decisionControls = isActive
         ? `
           <div class="relation-target-actions" aria-label="${escapeHtml(target.name)} decision">
@@ -1225,18 +1306,30 @@ function renderDetail(options = {}) {
       const rejectReasonMarkup = isRejectReasonOpen
         ? `
           <div class="reject-reason-panel">
-            <label for="reject-reason-${index}">Wrong reason</label>
-            <textarea id="reject-reason-${index}" class="reject-reason-input" data-target="${escapeHtml(target.name)}" rows="3" placeholder="Write why this is wrong">${escapeHtml(state.rejectReasonDraft || existingRejectReason)}</textarea>
+            <details class="reject-reason-menu">
+              <summary>${escapeHtml(rejectReasonSummary)}</summary>
+              <div class="reject-reason-options">
+                ${rejectReasonOptionsMarkup}
+              </div>
+            </details>
+            ${
+              isOtherRejectReason
+                ? `
+                  <label for="reject-reason-${index}">其他原因</label>
+                  <textarea id="reject-reason-${index}" class="reject-reason-input" data-target="${escapeHtml(target.name)}" rows="3" placeholder="請寫下原因">${escapeHtml(state.rejectReasonDraft || "")}</textarea>
+                `
+                : ""
+            }
             <div class="reject-reason-actions">
               <button class="reject-reason-cancel" type="button">Cancel</button>
-              <button class="reject-reason-submit" type="button" data-target="${escapeHtml(target.name)}">Confirm reject</button>
+              ${isOtherRejectReason ? `<button class="reject-reason-submit" type="button" data-target="${escapeHtml(target.name)}">Confirm reject</button>` : ""}
             </div>
           </div>
         `
         : "";
 
       return `
-        <div class="relation-target ${targetBranchClass} ${target.isPrimary ? "is-primary" : "is-secondary"} ${isActive ? "is-current" : ""} ${isRejectReasonOpen || shouldShowRejectReason ? "has-reject-reason" : ""} ${isEditingCompletedTarget ? "is-editing-completed" : ""} ${isLocked ? "is-locked" : ""} ${isLocked ? `queue-depth-${Math.min(queueDepth, 3)}` : ""}" data-decision="${decision}" data-target="${escapeHtml(target.name)}">
+        <div class="relation-target ${targetBranchClass} ${target.isPrimary ? "is-primary" : "is-secondary"} ${isActive ? "is-current" : ""} ${isRejectReasonOpen || shouldShowRejectReason ? "has-reject-reason" : ""} ${isOtherRejectReason ? "has-other-reject-reason" : ""} ${isEditingCompletedTarget ? "is-editing-completed" : ""} ${isLocked ? "is-locked" : ""} ${isLocked ? `queue-depth-${Math.min(queueDepth, 3)}` : ""}" data-decision="${decision}" data-target="${escapeHtml(target.name)}">
           <div class="relation-target-main" role="button" tabindex="${isLocked ? "-1" : "0"}" data-target="${escapeHtml(target.name)}" ${isLocked ? "aria-disabled=\"true\"" : ""}>
             <strong>${escapeHtml(target.name)}</strong>
             <span>${isEditingCompletedTarget ? decision : isActive ? "checking" : isLocked ? "left" : decision}</span>
@@ -1275,11 +1368,7 @@ function renderDetail(options = {}) {
           ${renderRelationBackArrow(relationPresentation)}
         </div>
         <div class="relation-target-panel">
-          <div class="relation-target-heading">
-            <span>Target axis</span>
-            <small>${isEditingCompletedTarget ? "Edit decision" : pendingCount ? "One by one" : "Complete"}</small>
-          </div>
-          <div class="relation-target-axis ${hasRejectReasonPanel ? "has-reject-reason-open" : ""}">${targetMarkup}</div>
+          <div class="relation-target-axis ${hasRejectReasonPanel ? "has-reject-reason-open" : ""} ${hasOtherRejectReasonPanel ? "has-other-reject-reason-open" : ""}">${targetMarkup}</div>
         </div>
       </section>
     `;
@@ -1316,11 +1405,7 @@ function renderDetail(options = {}) {
         ${renderRelationBackArrow(relationPresentation)}
       </div>
       <div class="relation-target-panel">
-        <div class="relation-target-heading">
-          <span>Target axis</span>
-          <small>${isEditingCompletedTarget ? "Edit decision" : pendingCount ? "One by one" : "Complete"}</small>
-        </div>
-        <div class="relation-target-axis ${hasRejectReasonPanel ? "has-reject-reason-open" : ""}">${targetMarkup}</div>
+        <div class="relation-target-axis ${hasRejectReasonPanel ? "has-reject-reason-open" : ""} ${hasOtherRejectReasonPanel ? "has-other-reject-reason-open" : ""}">${targetMarkup}</div>
       </div>
     </section>
   `;
@@ -1396,6 +1481,12 @@ function bindRelationReviewEvents(options = {}) {
     });
   });
 
+  issueDetail.querySelectorAll(".reject-reason-option").forEach((button) => {
+    button.addEventListener("click", () => {
+      chooseRejectReason(button.dataset.target, button.dataset.reason, button);
+    });
+  });
+
   issueDetail.querySelectorAll(".reject-reason-submit").forEach((button) => {
     button.addEventListener("click", () => {
       submitRejectReason(button.dataset.target);
@@ -1422,17 +1513,12 @@ function updateRelationAxisInPlace(review) {
   const activeRelation = activeTarget.relation || review.relation;
   const relationPresentation = getRelationPresentation(activeRelation);
   const relationLabel = issueDetail.querySelector(".relation-label");
-  const headingStatus = issueDetail.querySelector(".relation-target-heading small");
   const detailMeta = issueDetail.querySelectorAll(".detail-meta span");
 
   if (detailMeta.length >= 3) {
     detailMeta[0].textContent = `${pendingCount} left`;
     detailMeta[1].textContent = `${approvedCount} approved`;
     detailMeta[2].textContent = `${rejectedCount} rejected`;
-  }
-
-  if (headingStatus) {
-    headingStatus.textContent = pendingCount ? "One by one" : "Complete";
   }
 
   if (relationLabel) {
@@ -1551,7 +1637,7 @@ function createSvgElement(name) {
   return document.createElementNS("http://www.w3.org/2000/svg", name);
 }
 
-function appendGraphNodeShape(group, relation, color) {
+function appendGraphNodeShape(group, relation, color, depth = 2) {
   let shape;
 
   if (relation === "partial") {
@@ -1572,8 +1658,20 @@ function appendGraphNodeShape(group, relation, color) {
   }
 
   shape.classList.add("graph-node-shape");
+  // Graph Visualize 的 root 與第一層 class 是主要辨識錨點，使用 scale 放大所有 relation 形狀。
+  if (depth === 0) {
+    shape.setAttribute("transform", "scale(1.45)");
+  } else if (depth === 1) {
+    shape.setAttribute("transform", "scale(1.25)");
+  }
   shape.setAttribute("fill", color);
   group.appendChild(shape);
+}
+
+function getGraphLabelOffset(depth, flipLabel) {
+  // 節點變大時同步拉開文字，避免 label 貼住 root 與 top-level nodes。
+  const offset = depth === 0 ? 12 : depth === 1 ? 10 : 8;
+  return flipLabel ? `-${offset}` : String(offset);
 }
 
 function buildResultGraphNode(nodeName, visibleResultNames, visibleNames, relation = "top sense", depth = 0) {
@@ -1784,6 +1882,11 @@ function renderOntologyGraph(visibleNames, visibleResultNames, activeClassName) 
     const color = getGraphBranchColor(node.name, node.status);
 
     nodeGroup.classList.add("graph-node", `is-${node.status}`);
+    if (node.depth === 0) {
+      nodeGroup.classList.add("is-root-node");
+    } else if (node.depth === 1) {
+      nodeGroup.classList.add("is-primary-node");
+    }
     if (node.name === activeClassName) {
       nodeGroup.classList.add("is-selected");
     }
@@ -1799,13 +1902,13 @@ function renderOntologyGraph(visibleNames, visibleResultNames, activeClassName) 
       }
     });
 
-    appendGraphNodeShape(nodeGroup, node.relation, color);
+    appendGraphNodeShape(nodeGroup, node.relation, color, node.depth);
 
     label.classList.add("graph-label");
     // 文字沿著節點相對圓心的法向量旋轉，左半邊翻轉 180 度保持可讀。
     label.setAttribute("transform", `rotate(${labelAngle})`);
     label.setAttribute("dy", "0.32em");
-    label.setAttribute("x", flipLabel ? "-8" : "8");
+    label.setAttribute("x", getGraphLabelOffset(node.depth, flipLabel));
     label.setAttribute("text-anchor", flipLabel ? "end" : "start");
     label.textContent = node.name;
     nodeGroup.appendChild(label);
@@ -1841,7 +1944,7 @@ function bindGraphViewportControls() {
     "wheel",
     (event) => {
       event.preventDefault();
-      updateGraphZoom(event.deltaY < 0 ? 0.12 : -0.12, event);
+      updateGraphZoom(event.deltaY < 0 ? 0.2 : -0.2, event);
     },
     { passive: false },
   );
@@ -2153,6 +2256,31 @@ function closeExportDialog() {
   }
 }
 
+function openManualDialog() {
+  // 說明書使用原生 dialog，讓使用者可以快速查看流程說明而不離開目前 review 狀態。
+  if (!manualDialog) {
+    return;
+  }
+
+  if (typeof manualDialog.showModal === "function") {
+    manualDialog.showModal();
+  } else {
+    manualDialog.setAttribute("open", "");
+  }
+}
+
+function closeManualDialog() {
+  if (!manualDialog) {
+    return;
+  }
+
+  if (typeof manualDialog.close === "function") {
+    manualDialog.close();
+  } else {
+    manualDialog.removeAttribute("open");
+  }
+}
+
 async function confirmExportDialog() {
   const fileName = normalizeExportFileName(exportFileNameInput?.value);
 
@@ -2202,15 +2330,15 @@ function loadDotFile(file) {
 async function init() {
   try {
     checkerStatus.textContent = "Loading";
-    const dotText = await loadText(ontologyPath);
-    applyOntologyDot(dotText, defaultOntologyFileName);
+    const defaultOntology = await loadDefaultOntology();
+    applyOntologyDot(defaultOntology.dotText, defaultOntology.fileName);
     render();
   } catch (error) {
     checkerStatus.textContent = "Load failed";
     issueDetail.innerHTML = `
       <h3>Ontology could not be loaded</h3>
       <p>${escapeHtml(error.message)}</p>
-      <p>Please start a local web server from the project root before opening this page.</p>
+      <p>Use IMPORT to load a DOT file from this computer.</p>
     `;
   }
 }
@@ -2284,6 +2412,10 @@ dotFileInput?.addEventListener("change", (event) => {
 
 document.querySelector("#export-report").addEventListener("click", openExportDialog);
 
+manualGuideButton?.addEventListener("click", openManualDialog);
+
+manualCloseButton?.addEventListener("click", closeManualDialog);
+
 exportSaveButton?.addEventListener("click", confirmExportDialog);
 
 exportCancelButton?.addEventListener("click", closeExportDialog);
@@ -2299,6 +2431,12 @@ exportFileNameInput?.addEventListener("keydown", (event) => {
 exportDialog?.addEventListener("click", (event) => {
   if (event.target === exportDialog) {
     closeExportDialog();
+  }
+});
+
+manualDialog?.addEventListener("click", (event) => {
+  if (event.target === manualDialog) {
+    closeManualDialog();
   }
 });
 

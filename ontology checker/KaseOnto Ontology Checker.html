@@ -16,6 +16,9 @@
               <h1>KaseOnto Checker</h1>
               <p>Ontology quality review workspace</p>
             </div>
+            <button id="manual-guide" class="manual-guide-button" type="button" title="Open guide" aria-label="Open guide">
+              <span aria-hidden="true">📖</span>
+            </button>
           </div>
 
           <div class="compact-review document-summary" aria-label="Ontology summary">
@@ -27,7 +30,7 @@
               <span class="file-icon">DOT</span>
               <span>
                 <strong id="ontology-file-name">ontology_20.dot</strong>
-                <small>Local DOT ontology</small>
+                <small>Bundled default DOT</small>
               </span>
             </div>
             <div class="compact-stats">
@@ -42,7 +45,7 @@
               <small>DOT</small>
             </div>
             <div class="result-actions">
-              <button id="load-dot" class="secondary-action" type="button">LOAD</button>
+              <button id="load-dot" class="secondary-action" type="button">IMPORT</button>
               <button id="export-report" class="secondary-action" type="button">EXPORT</button>
               <input id="dot-file-input" class="file-input" type="file" accept=".dot,text/vnd.graphviz,text/plain" />
             </div>
@@ -99,7 +102,7 @@
                 <div class="graph-panel-heading">
                   <div>
                     <p class="eyebrow">Graph</p>
-                    <h2 id="graph-title">Graph Visualize</h2>
+                    <h2 id="graph-title">Radial Tree</h2>
                   </div>
                   <div class="graph-help" aria-label="Graph controls">
                     <div class="graph-help-item">
@@ -151,6 +154,62 @@
       </form>
     </dialog>
 
+    <dialog id="manual-dialog" class="manual-dialog" aria-labelledby="manual-dialog-title">
+      <section class="manual-dialog-panel">
+        <div class="manual-dialog-heading">
+          <div>
+            <p class="eyebrow">Guide</p>
+            <h2 id="manual-dialog-title">使用說明</h2>
+          </div>
+          <button id="manual-close" class="export-close-button" type="button" aria-label="Close guide dialog">×</button>
+        </div>
+        <div class="manual-dialog-body">
+          <section>
+            <h3>Check Board</h3>
+            <ul>
+              <li>左側是目前檢查的<em>source class</em>，右側是依序檢查的<em>target class</em>。</li>
+              <li>按 ✓ 接受目前關係，按 ✕ 選擇錯誤原因並拒絕。</li>
+              <li>選擇「其他」時，需要填寫原因後才能確認拒絕。</li>
+              <li>「↩」可撤回上一筆判定並回到上一個 target。</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Result</h3>
+            <ul>
+              <li><em>Radial Tree</em> 以放射狀圖顯示目前已接受的 ontology 結果。</li>
+              <li><em>Ontology Result</em> 以階層樹狀清單顯示已接受的 class path。</li>
+              <li>點選<em>Radial Tree</em> 或 <em>Ontology Result</em> 中的已接受 class，會同步切到「Accept」並進入 Edit mode。</li>
+              <li>未被接受的 class 不會出現在 Result；若需要修改，請從「Reject」進入編輯。</li>
+            </ul>
+          </section>
+        </div>
+        <div>
+            <p class="eyebrow">Definition</p>
+            <h2 id="manual-dialog-title">定義說明</h2>
+          </div>
+          <div class="manual-dialog-body">
+          <section>
+            <h3>Sense</h3>
+            <ul>
+              <li>「<em>buildings</em>」:描述建築的基本構成，包含:空間元件,建築元件,構造元件等等。</li>
+              <li>「<em>participant</em>」:描述建築案例涉及到之利害關係人。</li>
+              <li>「<em>event</em>」: 描述建築案例事件或時間相關的概念。</li>
+              <li>「<em>issue</em>」:描述建築中的議題。</li>
+              <li>「<em>site</em>」:描述建築中的基地相關內容。</li>
+            </ul>
+      </section>
+      <section>
+            <h3>Relation type</h3>
+            <ul>
+              <li>「<em>has feature</em>」:<em>children(material)</em>類別為<em></em>parent(facade)</em>類別的屬性特徵。</li>
+              <li>「<em>has subclass</em>」:children(museum)</em>類別為<em></em>parent(building type)</em>類別子類別。</li>
+              <li>「<em>has data</em>」: children(height)</em>類別為<em></em>parent(room)</em>類別子類別。</li>
+              <li>「<em>has part</em>」:children(wall)</em>類別為<em></em>parent(building)</em>的部分(可分割)構成。</li>
+            </ul>
+      </section>
+    </dialog>
+
+    <script src="./default-ontology.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

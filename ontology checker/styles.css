@@ -97,16 +97,43 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   overflow: hidden;
   min-height: 100vh;
-  background:
-    linear-gradient(120deg, rgba(31, 122, 104, 0.045), transparent 32%),
-    var(--bg);
+  background: var(--bg);
   color: var(--ink);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans TC", sans-serif;
+}
+
+body::before {
+  /* 最底層使用使用者提供的背景圖，放大並柔化，做出隔著玻璃看的模糊底色。 */
+  position: fixed;
+  z-index: 0;
+  inset: -24px;
+  background: url("./assets/background.jpg") center / cover no-repeat;
+  content: "";
+  filter: blur(12px) saturate(0.02) brightness(1.08);
+  opacity: 0.84;
+  pointer-events: none;
+  transform: scale(1.04);
+}
+
+body::after {
+  /* 圖片上方再疊半透明玻璃與光暈，讓背景有水感但前景卡片保持可讀。 */
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.12) 34%, rgba(31, 122, 104, 0.12) 68%),
+    repeating-linear-gradient(102deg, rgba(255, 255, 255, 0.16) 0 1px, transparent 1px 24px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(238, 234, 226, 0.34));
+  backdrop-filter: blur(30px) saturate(1.34) contrast(1.04);
+  content: "";
+  opacity: 0.82;
+  pointer-events: none;
 }
 
 button,
@@ -125,6 +152,8 @@ p {
 }
 
 .app-shell {
+  position: relative;
+  z-index: 1;
   height: 100vh;
   min-height: 100vh;
   padding: 24px;
@@ -140,7 +169,7 @@ p {
 
 .brand {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 14px;
   padding: 4px 2px;
@@ -149,6 +178,7 @@ p {
 .brand-main {
   display: flex;
   align-items: center;
+  align-self: stretch;
   gap: 14px;
   min-width: 0;
   flex: 0 1 auto;
@@ -174,6 +204,26 @@ p {
 small,
 .eyebrow {
   color: var(--muted);
+}
+
+.manual-guide-button {
+  /* 說明書按鈕跟 Ontology Review 卡片同高，讓左上操作入口與摘要卡視覺對齊。 */
+  align-self: stretch;
+  min-width: 56px;
+  border: 1px solid rgba(222, 217, 207, 0.85);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.64);
+  box-shadow: 0 10px 26px rgba(35, 38, 40, 0.06);
+  color: var(--accent-deep);
+  padding: 0 14px;
+  font-size: 22px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.manual-guide-button:hover {
+  border-color: rgba(31, 122, 104, 0.28);
+  background: rgba(31, 122, 104, 0.09);
 }
 
 .compact-review {
@@ -333,11 +383,25 @@ small,
   padding: 0;
 }
 
+.manual-dialog {
+  width: min(520px, calc(100vw - 36px));
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+}
+
 .export-dialog::backdrop {
   background: rgba(32, 35, 37, 0.18);
 }
 
-.export-dialog-panel {
+.manual-dialog::backdrop {
+  background: rgba(32, 35, 37, 0.18);
+}
+
+.export-dialog-panel,
+.manual-dialog-panel {
   display: grid;
   gap: 14px;
   border: 1px solid rgba(222, 217, 207, 0.9);
@@ -347,16 +411,41 @@ small,
   box-shadow: 0 22px 70px rgba(35, 38, 40, 0.2);
 }
 
-.export-dialog-heading {
+.export-dialog-heading,
+.manual-dialog-heading {
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 16px;
 }
 
-.export-dialog-heading h2 {
+.export-dialog-heading h2,
+.manual-dialog-heading h2 {
   font-size: 22px;
   line-height: 1.15;
+}
+
+.manual-dialog-body {
+  display: grid;
+  gap: 16px;
+  color: #303438;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.manual-dialog-body h3 {
+  margin: 0 0 6px;
+  color: var(--accent-deep);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.manual-dialog-body ul {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 19px;
 }
 
 .export-close-button {
@@ -668,8 +757,8 @@ small,
 }
 
 .graph-panel {
-  border-radius: 12px;
-  background: rgba(250, 248, 244, 0.5);
+  /* Radial Tree 外層只負責排版，不畫框；真正的框留給 graph canvas 本身。 */
+  background: transparent;
   padding: 0;
 }
 
@@ -751,8 +840,9 @@ small,
 
 .graph-link {
   fill: none;
-  stroke-width: 1.8;
-  stroke-opacity: 0.42;
+  /* Graph edge 稍微加粗並提高不透明度，讓階層連線比背景更清楚。 */
+  stroke-width: 2.4;
+  stroke-opacity: 0.54;
 }
 
 .graph-node {
@@ -784,6 +874,18 @@ small,
   stroke: rgba(255, 253, 249, 0.92);
   stroke-linejoin: round;
   stroke-width: 3px;
+}
+
+.graph-node.is-root-node .graph-label {
+  font-size: 14px;
+  font-weight: 850;
+  stroke-width: 3.8px;
+}
+
+.graph-node.is-primary-node .graph-label {
+  font-size: 13px;
+  font-weight: 820;
+  stroke-width: 3.4px;
 }
 
 .graph-empty {
@@ -916,6 +1018,8 @@ small,
 
 .issue-detail {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   min-height: 0;
   overflow: auto;
   border: 1px solid var(--line);
@@ -969,10 +1073,16 @@ small,
 .relation-review {
   display: grid;
   grid-template-columns: minmax(104px, 0.72fr) minmax(84px, 0.5fr) minmax(156px, 1fr);
+  align-content: center;
   align-items: center;
   gap: 10px;
-  min-height: 228px;
-  margin-top: -38px;
+  min-height: 334px;
+  margin-top: 0;
+}
+
+.issue-detail > .relation-review:not(.is-compact) {
+  /* Check Board 的主要操作列吃滿剩餘空間，讓 source、箭頭與 checking target 共同置中。 */
+  flex: 1;
 }
 
 .relation-review.is-compact {
@@ -1076,8 +1186,7 @@ small,
   text-align: center;
 }
 
-.relation-source span,
-.relation-target-heading span {
+.relation-source span {
   color: var(--muted);
   font-size: 11px;
   font-weight: 850;
@@ -1234,21 +1343,6 @@ small,
   padding: 12px 4px;
 }
 
-.relation-target-heading {
-  position: absolute;
-  z-index: 2;
-  top: 12px;
-  right: 12px;
-  left: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  /* Target axis ?頦??叟■??綽?????????蹇???????iOS ???璆??暑??*/
-  background: linear-gradient(180deg, #fffdf9 70%, rgba(255, 253, 249, 0));
-  padding-bottom: 8px;
-}
-
 /* ??啾? target ?岳??蹇?????????伍??class ?鞈??秋撫??v/x ?????*/
 .relation-target-axis {
   display: flex;
@@ -1263,13 +1357,22 @@ small,
 }
 
 .relation-target-axis.has-reject-reason-open {
-  /* Wrong reason 開啟時要保留完整 textarea 與 confirm/cancel 按鈕，不讓兩行 class name 把底部裁掉。 */
-  height: 380px;
-  max-height: 380px;
-  padding: 66px 3px 34px 0;
+  /* Wrong reason 選單開啟時只保留短版操作空間，避免固定選項占掉太多 target 軸高度。 */
+  height: 330px;
+  max-height: 330px;
+  padding: 78px 3px 64px 0;
+}
+
+.relation-target-axis.has-other-reject-reason-open {
+  /* 選「其他」後才加高，保留 textarea 與 confirm/cancel 按鈕的完整操作空間。 */
+  height: 390px;
+  max-height: 390px;
+  padding: 54px 3px 32px 0;
 }
 
 .relation-target {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
@@ -1306,6 +1409,7 @@ small,
 /* ????獢?????target ??剛????????嚗? target ????堊姿??????????????甄?????純?*/
 .relation-target.is-current {
   position: relative;
+  z-index: 8;
   overflow: hidden;
   min-height: 112px;
   padding: 14px;
@@ -1319,7 +1423,8 @@ small,
 }
 
 .relation-target.is-current.has-reject-reason {
-  min-height: 262px;
+  z-index: 20;
+  min-height: 170px;
   align-content: start;
   overflow: visible;
   background: #fffaf8;
@@ -1327,6 +1432,10 @@ small,
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.92) inset,
     0 12px 28px rgba(164, 70, 52, 0.12);
+}
+
+.relation-target.is-current.has-other-reject-reason {
+  min-height: 232px;
 }
 
 .relation-target.is-current.has-reject-reason::before,
@@ -1372,6 +1481,7 @@ small,
 }
 
 .relation-target.is-locked {
+  z-index: 0;
   opacity: 0.34;
   transform: scale(0.82);
 }
@@ -1490,7 +1600,7 @@ small,
 
 .reject-reason-panel {
   position: relative;
-  z-index: 3;
+  z-index: 30;
   display: grid;
   grid-column: 1 / -1;
   gap: 7px;
@@ -1511,9 +1621,68 @@ small,
   text-transform: uppercase;
 }
 
+.reject-reason-menu {
+  display: grid;
+  gap: 7px;
+}
+
+.reject-reason-menu summary {
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid rgba(164, 70, 52, 0.22);
+  border-radius: 8px;
+  background: rgba(164, 70, 52, 0.08);
+  color: var(--danger);
+  padding: 7px 9px;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.reject-reason-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.reject-reason-menu summary::after {
+  float: right;
+  content: "⌄";
+}
+
+.reject-reason-menu[open] summary::after {
+  content: "⌃";
+}
+
+.reject-reason-options {
+  display: grid;
+  gap: 6px;
+  /* 原因選單自己捲動，避免展開後被 queued target 小卡文字穿插或遮住。 */
+  max-height: 116px;
+  overflow-y: auto;
+  padding-right: 3px;
+  overscroll-behavior: contain;
+}
+
+.reject-reason-option {
+  min-height: 30px;
+  border: 1px solid rgba(164, 70, 52, 0.18);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.reject-reason-option:hover,
+.reject-reason-option.is-selected {
+  border-color: rgba(164, 70, 52, 0.45);
+  background: rgba(164, 70, 52, 0.1);
+  color: var(--danger);
+}
+
 .reject-reason-input {
   width: 100%;
-  min-height: 58px;
+  min-height: 50px;
   resize: vertical;
   border: 1px solid rgba(164, 70, 52, 0.24);
   border-radius: 8px;
