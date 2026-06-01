@@ -1,4 +1,4 @@
-﻿const ontologyPath = "ontology_20.dot";
+﻿const ontologyPath = "../ontology/ontology_20.dot";
 
 const defaultOntologyFileName = "ontology_20.dot";
 const checkerStateCommentPrefix = "KASEONTO_CHECKER_STATE";
@@ -14,6 +14,7 @@ const relationSortOrder = new Map([
 ]);
 const rejectReasonOptions = ["父類別無關或錯誤", "關係類型錯誤", "概念重複或多餘", "其他"];
 const radialGraphRotation = 215 * (Math.PI / 180);
+const sessionCheckTargetLimit = 60;
 // ??? v1 UI ??top-level sense ??拙楊??hecker ??畸??堆???branch class??
 const ontologyBranchClasses = new Map([
   ["design case", "branch-design-case"],
@@ -59,7 +60,6 @@ let targetScrollAnimation = null;
 let pendingGraphZoomAnchor = null;
 let graphPanDrag = null;
 let reviewerProfile = null;
-let importedReviewerProfileCommentLines = [];
 
 const issueList = document.querySelector("#issue-list");
 const issueDetail = document.querySelector("#issue-detail");
@@ -182,38 +182,6 @@ function extractCheckerState(dotText) {
     console.warn("KaseOnto checker state could not be decoded.", error);
     return null;
   }
-}
-
-function extractReviewerProfileCommentLines(dotText) {
-  // LOAD 進來的 checked DOT 若已經有基本資料 comment，這裡只保存原文，EXPORT 時不重新產生也不改內容。
-  const lines = dotText.split(/\r?\n/);
-  const startIndex = lines.findIndex((line) => /^\s*\/\/\s*KASEONTO\s+使用者基本資料\s*$/.test(line));
-
-  if (startIndex === -1) {
-    return [];
-  }
-
-  const profileLines = [];
-
-  for (let index = startIndex; index < lines.length; index += 1) {
-    const line = lines[index];
-
-    if (!/^\s*\/\//.test(line)) {
-      break;
-    }
-
-    if (
-      index !== startIndex &&
-      (/^\s*\/\/\s*KASEONTO\s+(Approved List|Rejected List)\s*$/.test(line) ||
-        new RegExp(`^\\s*//\\s*${checkerStateCommentPrefix}\\b`).test(line))
-    ) {
-      break;
-    }
-
-    profileLines.push(line);
-  }
-
-  return profileLines;
 }
 
 function stripDotLineComments(dotText) {
@@ -602,7 +570,7 @@ function commitRelationDecision(review, targetName, decision, targetIndex, optio
   let shouldRenderDetail = !keepAxisDom || state.activeTargetIndex >= review.targets.length || !selectedReviewStillVisible || !selectedReviewStillHasPending;
 
   if (!selectedReviewStillVisible || !selectedReviewStillHasPending) {
-    const nextReview = getNextPendingReview(review.id);
+    const nextReview = getRandomPendingReview(review.id);
 
     if (nextReview) {
       state.selectedReviewId = nextReview.id;
@@ -693,24 +661,40 @@ function getSessionCheckTargetEntries(review) {
     });
 }
 
+function shuffleItems(items) {
+  // 每次載入頁面重新洗牌，讓 60 個待檢查項目是隨機抽樣。
+  const shuffled = [...items];
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
 function initializeSessionCheckTargets() {
-  // 正常版不抽樣也不限制筆數；所有尚未判定且可見的 target 都會進入 Check List。
+  // 抽樣只決定「本次要人工檢查」的 pending target；未抽到的 class 不會因此出現在右側結果視覺化。
   sessionCheckTargetKeys.clear();
   const rejectedNames = getRejectedClassNames();
-  relationReviews.forEach((review) => {
+  const candidates = relationReviews.flatMap((review) => {
     if (isDescendantOfRejectedClass(review.source, rejectedNames)) {
-      return;
+      return [];
     }
 
-    review.targets.forEach((target) => {
-      if (
-        getRelationDecisionForReview(review, target.name) === "pending" &&
-        !isDescendantOfRejectedAncestor(target.name, rejectedNames)
-      ) {
-        sessionCheckTargetKeys.add(getReviewTargetKey(review, target.name));
-      }
-    });
+    return review.targets
+      .filter((target) => {
+        return (
+          getRelationDecisionForReview(review, target.name) === "pending" &&
+          !isDescendantOfRejectedAncestor(target.name, rejectedNames)
+        );
+      })
+      .map((target) => getReviewTargetKey(review, target.name));
   });
+
+  shuffleItems(candidates)
+    .slice(0, sessionCheckTargetLimit)
+    .forEach((key) => sessionCheckTargetKeys.add(key));
 }
 
 function getNextTargetIndex(review, currentIndex = -1) {
@@ -782,7 +766,6 @@ function resetReviewState() {
   relationDecisions.clear();
   relationRejectReasons.clear();
   sessionCheckTargetKeys.clear();
-  importedReviewerProfileCommentLines = [];
   state.filter = "checklist";
   state.query = "";
   state.classQuery = "";
@@ -864,10 +847,8 @@ function applyOntologyDot(dotText, fileName = defaultOntologyFileName) {
   // 所有 DOT 載入路徑共用這裡：解析 graph、重建 review list、再套用 Export 內的狀態。
   const parsedOntology = parseOntologyDot(dotText);
   const checkerState = extractCheckerState(dotText);
-  const reviewerProfileCommentLines = extractReviewerProfileCommentLines(dotText);
 
   resetReviewState();
-  importedReviewerProfileCommentLines = reviewerProfileCommentLines;
   ontology = parsedOntology;
   loadedOntologyName = fileName || defaultOntologyFileName;
   relationReviews = buildRelationReviews(ontology);
@@ -1091,26 +1072,20 @@ function getReviewPendingCount(review) {
 }
 
 function getRemainingSessionCheckCount() {
-  // Ontology Review 的 Left 顯示目前 Check List / Check Board 還剩多少 target 要判定。
+  // Ontology Review 的 Left 顯示目前 Check List / Check Board 還剩多少 sampled target 要判定。
   return getVisibleRelationReviews().reduce((count, review) => count + getReviewPendingCount(review), 0);
 }
 
-function getNextPendingReview(currentReviewId = null) {
-  // Source 完成後依照 relationReviews 的既有順序往下找，讓 Check List 推進保持穩定。
-  const visibleReviews = getVisibleRelationReviews();
-  const pendingReviews = visibleReviews.filter((review) => getReviewPendingCount(review) > 0);
+function getRandomPendingReview(excludedReviewId = null) {
+  const candidates = getVisibleRelationReviews().filter((review) => {
+    return review.id !== excludedReviewId && getReviewPendingCount(review) > 0;
+  });
 
-  if (!pendingReviews.length) {
-    return null;
+  if (!candidates.length && excludedReviewId) {
+    return getVisibleRelationReviews().find((review) => getReviewPendingCount(review) > 0) || null;
   }
 
-  const currentIndex = visibleReviews.findIndex((review) => review.id === currentReviewId);
-  const orderedReviews =
-    currentIndex === -1
-      ? visibleReviews
-      : [...visibleReviews.slice(currentIndex + 1), ...visibleReviews.slice(0, currentIndex + 1)];
-
-  return orderedReviews.find((review) => getReviewPendingCount(review) > 0) || pendingReviews[0];
+  return candidates.length ? candidates[Math.floor(Math.random() * candidates.length)] : null;
 }
 
 function getNextCheckModeReview(preferredReviewId = state.selectedReviewId) {
@@ -1120,7 +1095,7 @@ function getNextCheckModeReview(preferredReviewId = state.selectedReviewId) {
     return preferredReview;
   }
 
-  return getNextPendingReview(preferredReviewId);
+  return getRandomPendingReview(preferredReviewId);
 }
 
 function updateBackButtonState() {
@@ -2343,12 +2318,21 @@ function getReviewerProfileForExport() {
 }
 
 function buildReviewerProfileCommentLines() {
-  // 目前沒有基本資料填寫流程；只有 IMPORT 的 DOT 原本含有基本資料時，EXPORT 才原樣保留。
-  if (importedReviewerProfileCommentLines.length) {
-    return [...importedReviewerProfileCommentLines];
-  }
+  // 這段註解是給人讀的紀錄，不參與 import 還原，也不影響 Graphviz DOT edge。
+  const profile = getReviewerProfileForExport() || {};
+  const fallback = "未填";
+  const fields = [
+    ["名字", profile.name],
+    ["學歷", profile.education],
+    ["年級", profile.grade],
+    ["學號", profile.studentId],
+    ["填寫時間", profile.submittedAt],
+  ];
 
-  return [];
+  return [
+    "// KASEONTO 使用者基本資料",
+    ...fields.map(([label, value]) => `// ${label}: ${cleanDotCommentValue(value) || fallback}`),
+  ];
 }
 
 function formatDecisionPairComment(review, target) {
@@ -2418,14 +2402,9 @@ function buildExportDot() {
     });
   });
 
-  const reviewerProfileCommentLines = buildReviewerProfileCommentLines();
-
-  if (reviewerProfileCommentLines.length) {
-    lines.push("");
-    lines.push(...reviewerProfileCommentLines);
-    lines.push("");
-  }
-
+  lines.push("");
+  lines.push(...buildReviewerProfileCommentLines());
+  lines.push("");
   lines.push(...buildDecisionListCommentLines("Approved List", "approved"));
   lines.push("");
   lines.push(...buildDecisionListCommentLines("Rejected List", "rejected"));
@@ -2849,6 +2828,7 @@ document.querySelector("#mark-resolved")?.addEventListener("click", () => {
   render();
 });
 
+openProfileDialog();
 init();
 
 
