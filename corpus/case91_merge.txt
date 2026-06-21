@@ -1,0 +1,52 @@
+Lar Casa de Magalhaes / Carvalho Araújo
+
+Houses
+•
+Ponte de Lima, Portugal
+Architects: Carvalho Araújo
+Year: 
+2010
+Photographs:Hugo Carvalho Araújo
+  
+
+Category: Houses
+Architects: Atelier Carvalho Araújo - José Manuel Carvalho Araújo
+Design Team: Joel Moniz, Alexandre Branco, Sandra Ferreira, Mónica Peixoto, Liliana Costa, Ana Vilar, Lília Costa, Nuno Vieira, Filipe Russell
+Client: C. M. de Ponte de Lima - Casa do Povo
+City: Ponte de Lima
+Country: Portugal
+
+Inside a white house lives a lady without progeny. She donates the land, home and attachments to build a home for the elderly. She only requires that the construction be done prior to her death. It all starts from the house; it is the center and the symbol.
+
+The building of the home for the elderly results from the expansion of the platform floor of the existing house. In the center are built two courtyards, one social and one for services, dematerializing the built mass, as if a part of the building had been removed, exposing its interior. You realize there's life and movement.
+
+Outside, the rhythm of the facade refers to the tree trunks, a blending option, highlighting the existing houses, white-washed.
+
+Save this picture!
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   **Units/Rooms:** Numerous regularly shaped individual rooms, likely residential units, offices, or study rooms.
+*   **Corridors:** Primary circulation spine (shaded grey) and secondary corridors providing access to units.
+*   **Courtyard/Atrium (4):** A large internal open-air space with planted elements (indicated by circles).
+*   **Stairwells:** Vertical circulation elements (visible in the top-right and bottom-right blocks).
+*   **Elevator/Lift Shafts:** Small enclosed vertical transport areas, adjacent to stairwells (e.g., near 10).
+*   **Restrooms/Toilets (6, 7):** Smaller partitioned service rooms.
+*   **Communal/Shared Spaces (2, 3, 8, 9, 12):** Larger, more open areas suitable for gathering, dining, or other shared activities.
+*   **Service Rooms (10, 11):** Smaller utility or storage rooms, often located near vertical circulation.
+*   **Exterior Open Space:** Unbuilt areas surrounding the building footprint, partially defined by the site boundary.
+*   **Windows/Openings:** Indicated along the outer perimeter of units and facing the courtyard.
+
+**II. Spatial Relationship Descriptions:**
+*   **Linear Arrangement:** The individual units are primarily arranged in a linear fashion along corridors, forming distinct wings around a central core.
+*   **Courtyard-Centric Organization:** A significant portion of the building (the left block) is organized around a large, central courtyard (4), providing natural light, ventilation, and a visual focal point for the surrounding units.
+*   **Spine and Branch Circulation:** A prominent central corridor (shaded grey, including areas 2 and 3) acts as a primary circulation spine, connecting different functional blocks and providing access to various communal and service areas. Secondary corridors branch off this spine to reach the individual units.
+*   **Clustered Services:** Vertical circulation (stairwells and elevators) and essential services (restrooms, utility rooms) are clustered at strategic points along or at the ends of the main circulation spine, ensuring efficient access for all occupants.
+*   **Adjacency of Public and Private:** The main central spine and adjacent communal areas (2, 3) serve as transitional zones, separating the more private individual units from the larger shared facilities and external access points.
+
+**III. Overall Spatial Impression:**
+The building demonstrates a highly organized and repetitive modular plan, structured around a clear central circulation spine and a prominent internal courtyard. It efficiently accommodates numerous individual units while integrating communal spaces and essential services.
+
+**IV. Design Intent Reading:**
+The design suggests a strategy for maximizing density and efficiency, likely for a programmatic use requiring many similar individual spaces such as a dormitory, hotel, or office building. The integration of a large central courtyard aims to enhance natural light, ventilation, and potentially foster a sense of community or offer a quiet contemplative space amidst the density. The clear, direct circulation system emphasizes ease of navigation and accessibility throughout the complex.

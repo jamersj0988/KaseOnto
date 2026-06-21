@@ -1,0 +1,68 @@
+Concertina shutters shade the windows of Naud & Poux's Paris retirement home
+
+Project credits:
+
+Architects: Élizabeth Naud & Luc Poux, architectes associés
+Project leaders: Franck Grilo, Julien Ménard
+Structural engineering research: ScynA 4
+Economist: Tohier & Associés
+Fluids engineering research: ETB Antonelli
+
+Hinged shutters fold up and down over the windows of this monochromatic care home near Paris by French studio Naud & Poux (+ slideshow).
+Naud & Poux designed the metal-clad sheltered housing blocks in Villejuif, a suburb to the south of Paris.
+The 9,200-square-metre Antoine de St Exupéry Home for Dependent Elderly People has 160 elderly residents, who all require nursing care.
+The private and communal areas of the complex are divided up between two long blocks, each comprising a chain of nine connected volumes.
+
+Residents' bedrooms are housed in four-storey-high gabled buildings, joined by low-rise glazed blocks that contain cafeterias, treatment rooms and lounging areas.
+The two blocks follow similar layouts and are connected by a glazed walkway. The regimented organisation of the plan was designed to be clear to the 24 Alzheimers patients among the residents, as well as to mirror the neighbouring properties.
+
+"The volumes are intentionally simple in order to reflect those of the surrounding suburban fabric," said the architects.
+En-suite bedrooms are clustered around a centrally located staircase and elevator core in each block. The open stairwell, surrounded by metal railings, affords residents views into the communal lower storeys and gardens.
+"The service spaces are distributed along the main circulation areas to ensure that the establishment runs efficiently and that the nursing staff enjoy an effective working tool," said the architects.
+Each window in the gabled living quarters features a hinged shutter that slides upwards to form a horizontal shade, and down to completely conceal the windows and offer privacy.
+
+The shutters are coated in the same grooved cladding as the facades to give a uniform appearance.
+Inside, the windows and doors have black aluminium frames. Neon tube lighting lines the upper lintels.
+Communal areas feature wide expanses of glazing, which open out to decked terraces with integrated seating. A black metal framework that angles over the patios can be used to enclose the space.
+The architects also designed a new road infrastructure to service the blocks, ensuring ease of access for nursing staff and visitors.
+
+"A major road shaped all thinking for the building's design, offering residents an augmented human presence thanks to greater nursing-staff availability," they said.
+
+========================================
+
+I. Vocabulary extraction
+- Residential units / apartments (repeated unit plans)
+- Corridors / internal hallways
+- Stairwells / vertical circulation cores (stair cores; possible lift shafts)
+- Entry lobbies / foyers
+- Clustered building blocks (distinct low-rise wings)
+- Central linear axis / promenade
+- Pedestrian bridge / connector across the axis
+- Courtyards / semi‑private gardens between blocks
+- Terraces / stepped terraces and private outdoor platforms
+- Balconies (small projecting private terraces)
+- Landscaped planting beds and tree lines
+- Pathways / pedestrian circulation routes
+- Service/utility rooms and smaller support spaces
+- Boundary sidewalks and street edge planting
+- Rectilinear water feature or reflecting basin (long narrow element aligned with central axis)
+
+II. Spatial relationship descriptions
+- The plan is organized as two primary bands of clustered building blocks (north and south) separated by a continuous central axis that reads as a pedestrian promenade with a long rectangular water/reflecting feature.
+- Building blocks are staggered and offset from one another, creating intermediate courtyards and terraces that serve as semi‑private outdoor rooms between wings.
+- Vertical circulation cores and entry points are located at nodal intersections of corridors and the main axis, concentrating access where blocks meet the promenade.
+- Units are arranged along short internal corridors within each wing, facing either out toward the landscape/streets or inward toward courtyard spaces, producing alternation of public, semi‑public, and private frontages.
+- A pedestrian bridge/connector crosses the central axis to physically link the northern and southern clusters and reinforce a continuous circulation spine.
+- Landscaped strips, tree lines and stepped terraces layer between building volumes and the street edge, buffering and screening the blocks while creating graduated outdoor zones from public to private.
+- Service/support rooms are clustered at the ends or cores of blocks, keeping functional uses concentrated and circulation routes clear.
+- The composition emphasizes horizontal continuity (axis and terraces) combined with fragmented vertical clusters (wings) that promote light access and view shafts through the site.
+
+III. Overall spatial impression (1–2 sentences)
+The scheme reads as a deliberately fragmented ensemble of low‑rise residential wings organized around a strong linear central promenade and water feature, producing a sequence of interconnected courtyards and terraces. The layout balances shared communal space along the spine with sheltered, semi‑private outdoor rooms created by the staggered block arrangement.
+
+IV. Design intent reading
+- Encourage social interaction and pedestrian movement by centering the design on a continuous landscaped spine and bridge that link all building clusters.
+- Generate varied outdoor environments (reflecting pool, public promenade, semi‑private courtyards, private terraces) to create layered experiences of publicness and privacy for residents.
+- Maximize daylighting, natural ventilation and visual permeability by breaking the mass into offset wings rather than a single monolithic block, while preserving green buffer zones along the perimeter.
+- Concentrate vertical circulation and service functions at clear nodes to simplify wayfinding and keep living areas efficient and uninterrupted.
+- Use landscaping and terracing as a spatial device to mediate scale between street, communal areas, and individual units, reinforcing a human‑scaled residential fabric.

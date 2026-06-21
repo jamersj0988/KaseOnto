@@ -1,0 +1,51 @@
+Toranoko Nursery / Takashige Yamashita Office
+
+Healthcare
+•
+Japan
+Architects: Takashige Yamashita Office
+Area: 
+177 m²
+Year: 
+2016
+Manufacturers:  Aica Kogyo Compamy Limited, Central Glass, Mirocomachiko
+Structural Engineer: Sasaki
+General Contractor: Usuko Sangyo
+Category: Healthcare
+Client: Seiko-kai
+Site Area: 296.13 m2
+Total Floor Area: 170.66 m2
+Architect In Charge: Takashige Yamashita
+Country: Japan
+
+Text description provided by the architects. The site offers a spectacular view of Mt. Fuji. With some houses and farms spread out in its neighborhood, it creates a peaceful, but at the same time, a bit deserted atmosphere.The client manages three elderly facilities at the site. They wanted to make a community space for the users of the facility and the local people in the middle of the site where it is surrounded by the three facility buildings. The idea was then developed and specified to create a lounge area for having a tea and a nursery to take care of the children in the local area.Located in the center of the enclosed site, the roofs are lightly positioned in various angles, opening towards all possible directions to allow physical and visual approach from anywhere. Gentle curvature of the roofs creates a sequence of scenery, dividing garden, lounge, lunchroom, nursing room and office, while the spaces are still kept connected as one.Children play around, the elderly take a rest, mothers stand chatting with each other, and cats bask in the sun – there is a place for everyone under the roof.It is designed in hopes that this small nursery creates a core space for the community, like a big tree.Structure System
+A steel portal frame by H-100x100, which stands up from a footing beam of reinforced concrete, sets a boundary between rooms, then a 50x50 laminated veneer lumber (LVL) sits between the steel portal frames. To gain stiffness, LVL is wedged between two 9mm structural plywood. The roof can cover a large span of maximum 10m by just 86mm thickness. A soft and light curvature of the roof is achieved by utilizing wood, which can easily be manipulated into variety of form and size effectively. It thus would create a big open space filled with a warm atmosphere.
+
+========================================
+
+
+
+**I. Vocabulary Extraction:**
+*   Nursing room
+*   WC for Kids
+*   Storage (multiple instances)
+*   Lunch room
+*   Terrace
+*   Garden
+*   Sand pit
+*   Lounge
+*   Entrance
+*   WC (general)
+*   Office
+*   Kitchen
+*   Road boundary
+*   Site boundary
+
+**II. Spatial Relationship Descriptions:**
+The building is composed of several distinct, irregularly shaped volumes that are arranged around a central outdoor "Terrace" and "Garden." The "Lunch room" serves as a central communal space, directly opening onto the "Terrace" and connecting to the "Kitchen" and "WC for Kids." The "Terrace" acts as a primary outdoor circulation and activity zone, linking the "Lunch room" to the larger "Garden" and "Sand pit." The "Nursing room" is a large, somewhat isolated volume, connected to its own "WC for Kids" and "Storage." The "Entrance" leads into a cluster of administrative and service functions, including an "Office," "Kitchen," "Storage," and a general "WC," which are also adjacent to the "Lounge" area. The "Lounge" and "Sand pit" form a distinct outdoor recreational cluster, connected to the main entrance path.
+
+**III. Overall Spatial Impression:**
+The design presents a fragmented, pavilion-like arrangement of indoor spaces that are loosely organized around a central, irregular outdoor courtyard and terrace. This creates a dynamic interplay between interior and exterior environments, emphasizing connection to nature and varied activity zones.
+
+**IV. Design Intent Reading:**
+The design appears to prioritize a child-friendly and engaging environment, evident through dedicated spaces like the "Nursing room," "WC for Kids," and outdoor play areas such as the "Sand pit" and "Garden." The fragmented, non-orthogonal geometry and the strong integration of indoor and outdoor spaces suggest an intent to create a stimulating, flexible, and less institutional atmosphere, encouraging exploration and diverse activities within a natural setting.

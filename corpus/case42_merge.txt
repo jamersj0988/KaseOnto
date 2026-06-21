@@ -1,0 +1,44 @@
+Vivat Apartments for the Elderly
+
+Moravske Toplice, Slovenia
+
+Firm
+Type Residential ›
+YEAR 2000
+SIZE 500,000 sqft - 1,000,000 sqft
+
+Located in a well-known spa town and surrounded by green spaces and recreation facilities, the programme was developed to provide quality accommodation for the elderly. In addition to studio apartments and suites under medical surveillance, the building houses a doctor's office, fully equipped medical facilities with 30 beds, a dentist's office, a restaurant and a chapel. The H-plan form connects three housing wings and a medical one via the central three-storey atrium. Variations in rhythm and composition of elevation surfaces and colours create a series of diverse spaces, thus encouraging residents to explore and interact while offering views to open atriums outside and the countryside beyond.An enclosed space as offered by the building compares in many ways to a cruise ship on the open sea. One gets to know the contents in a day, explores them in detail the next day or two.Subsequently, one's well being depends greatly on their ability to enjoy the offer and to interact with people on board. In the similar enclosed space system of the apartments for the elderly, the dynamics of different programmes offers residents a variety of possibilities; it encourages interaction and sense of community. The nucleus of interaction is the volume of the central atrium with a fully glazed northern elevation and a solid protective wall to the south. Horizontal communication through the atrium via suspended bridges offers views to the countryside in the north. Vertical communication via ramps provides easy access to all floors for everyone, and adjacent slanted windows provide views of the surroundings from either standing or seating position.
+Building has since been converted to a hotel.
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   Units/Guest Rooms (with private bathrooms)
+*   Corridors
+*   Stairwells
+*   Elevator shafts
+*   Lobby/Reception Area
+*   Central Courtyard/Atrium (with outdoor seating/landscaping)
+*   Dining Areas/Restaurants (with various seating configurations)
+*   Kitchen
+*   Conference/Meeting Rooms
+*   Lounges/Waiting Areas
+*   Public Restrooms
+*   Offices
+*   Utility/Service Rooms
+*   Outdoor Terraces/Patios
+
+**II. Spatial Relationship Descriptions:**
+*   **Linear Clustering of Units:** Accommodation units are clustered into distinct, elongated blocks, organized along double-loaded corridors, maximizing the number of units per floor plate.
+*   **Centralized Public Core:** Major public functions such as the lobby, reception, main dining areas, and a large meeting room are consolidated in a central, more expansive zone that connects the various accommodation wings.
+*   **Courtyard as an Organizing Element:** A large, central courtyard serves as a primary organizing feature, providing light, views, and outdoor amenity space, and acting as a visual and spatial anchor for the surrounding public and semi-public areas.
+*   **Clear Circulation Spine:** A central circulation spine, encompassing the lobby and connecting corridors, links all programmatic zones, ensuring clear and intuitive navigation throughout the complex.
+*   **Functional Adjacency:** Kitchen facilities are directly adjacent to the main dining areas, enabling efficient service. Offices and utility rooms are strategically placed to support operations without directly interfering with guest circulation.
+*   **Hierarchical Zoning:** There is a clear hierarchy from highly public, active spaces in the central core to more private and quieter accommodation zones in the peripheral wings.
+
+**III. Overall Spatial Impression:**
+The building exhibits a well-defined organizational strategy, featuring multiple elongated wings of private accommodation units converging around a central public core and a prominent courtyard. This layout effectively segregates private living spaces from communal 
+and service areas while promoting clear circulation and access to amenities.
+
+**IV. Design Intent Reading:**
+The design intent is to create a large-scale, efficient, and user-friendly facility, likely for hospitality or residential living, that balances individual privacy with vibrant communal experiences. The central courtyard and public zones are designed to foster interaction and provide ample natural light, while the modular arrangement of units ensures operational efficiency and scalability.

@@ -1,0 +1,61 @@
+CAP Cibeles / Valor-Llimós
+
+Retirement, Housing
+•
+Barcelona, Spain
+Architects: Valor-Llimós
+Area: 
+5880 m²
+Year: 
+2010
+Photographs:Jordi Surroca
+Manufacturers:  Technal, ULMA Architectural Solutions, Armstrong Ceilings
+Products used in this Project
+Category: Retirement, Housing
+Collaborators: Laura Llimós, Marc Abril, Aiguasol, L3J, GPO, Conrad Torras
+Architects In Charge: Jaume Valor, Marc Obradó, Elisabeth Sadurní
+City: Barcelona
+Country: Spain
+
+32 dwellings for elderly people, Primary Care Center & parking
+
+The center is located on the border between the “Ensanche” and the “Gracia” neighborhood within an existing building that includes three different uses: 32 dwellings for elderly people, Primary Care Center and parking for 44 vehicles.
+The ground floor is strongly conditioned by the need for independent access to each of the different uses. Space distribution is very influenced by the strict dimensional requirements of the Primary Care Center and housing minimum surface requirements. All that is reflected in the design of structures, facilities and fire protection.
+The building is conditioned by the intention to take full advantage of the possibility of natural lighting and ventilation. To do so, the mezzanine floor is pulled apart from the façade, generating an elevated ramp that acts as a hallway, and works as an extension of the street as a space of relationship.
+In terms of energy efficiency, the building is one of the four High-Combi pilot projects of the VII European Union's Framework Program, for high-performance solar thermal buildings, and has achieved an Energy Certification A label.
+
+========================================
+
+I. Vocabulary Extraction:
+*   Residential units/apartments
+*   Commercial units/offices (specifically labeled "CAP" access, likely a public service or commercial space)
+*   Bedrooms
+*   Living rooms
+*   Kitchens
+*   Bathrooms
+*   Corridors
+*   Stairwells
+*   Elevator shafts (implied by stairwell configurations)
+*   Lobbies/Entrance areas
+*   Central courtyard/Patio
+*   Balconies/Terraces
+*   Street frontage (CARRER CORSEGA, PTGE ROMUL BOSCH)
+*   Vehicle access ramp (ACCÉS VEHICLES APARCAMENT)
+*   Parking entrance (ACCÉS PK)
+*   Service access (ACCÉS SERVEI)
+*   Emergency exit (SORTIDA EVACUACIÓ)
+*   Planting areas/Trees (represented by circles)
+
+II. Spatial Relationship Descriptions:
+*   Multiple residential and commercial units are organized around a large, irregular-shaped central courtyard, which serves as a significant light and ventilation source for the interior-facing spaces.
+*   Two primary vertical circulation cores, each comprising a stairwell and likely an elevator, are strategically positioned to serve the residential units, providing access from the ground floor lobbies to upper levels.
+*   Ground-floor access is clearly stratified, with distinct entrances for residential units (ACCÉS HAB), commercial/public services (ACCÉS CAP), and underground parking (ACCÉS PK, ACCÉS VEHICLES APARCAMENT) directly from the street (CARRER CORSEGA and PTGE ROMUL BOSCH).
+*   The building exhibits a dual aspect, with units opening towards both the external street facades and the internal courtyard, promoting cross-ventilation and varied visual connections.
+*   Service access and emergency exits are located discreetly, separate from main pedestrian entrances, ensuring efficient and safe building operation.
+*   The large vehicle access ramp on the southeast side of the plot indicates a direct connection from the street to an underground parking facility, separating vehicular traffic from pedestrian areas at the ground level.
+
+III. Overall Spatial Impression:
+The design features a dense urban block organized around a significant internal courtyard, providing light, air, and shared outdoor space to its inhabitants. The ground floor emphasizes clear functional separation and direct access for mixed-use programming, skillfully integrating with its urban surroundings.
+
+IV. Design Intent Reading:
+The design appears to intend creating a high-density, mixed-use urban environment that prioritizes natural light, ventilation, and a sense of community through its central courtyard. By segregating various access points, the design aims to optimize functionality and user experience for residents, commercial users, and vehicle owners, while also providing essential service and emergency provisions.

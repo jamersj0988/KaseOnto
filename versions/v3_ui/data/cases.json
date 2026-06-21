@@ -1,0 +1,45 @@
+[
+  {
+    "id": "case53",
+    "label": "Case 53",
+    "languages": {
+      "original": {
+        "corpus": "../corpus/case53_merged.txt",
+        "entities": "../entity_list/entity_ids_case53.txt"
+      },
+      "translation": {
+        "corpus": "../corpus/case53_merged_ch.txt",
+        "entities": "../entity_list/entity_ids_case53_ch.txt"
+      }
+    }
+  },
+  {
+    "id": "case55",
+    "label": "Case 55",
+    "languages": {
+      "original": {
+        "corpus": "../corpus/case55_merged.txt",
+        "entities": "../entity_list/entity_ids_case55.txt"
+      },
+      "translation": {
+        "corpus": "../corpus/case55_merged_ch.txt",
+        "entities": "../entity_list/entity_ids_case55_ch.txt"
+      }
+    }
+  },
+  {
+    "id": "case70",
+    "label": "Case 70",
+    "languages": {
+      "original": {
+        "corpus": "../corpus/case70_merged.txt",
+        "entities": "../entity_list/entity_ids_case70.txt"
+      },
+      "translation": {
+        "corpus": "../corpus/case70_merged_ch.txt",
+        "entities": "../entity_list/entity_ids_case70_ch.txt"
+      }
+    }
+  }
+]
+

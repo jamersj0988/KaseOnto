@@ -1,0 +1,70 @@
+KAPELLEVELD
+architecten de vylder vinck taillieu
+assignment: nieuwbouw van 41 assistentiewoningen en een WZC met 59 kamers.
+client: Teck & Partners, Hendrik Placestraat 43B, Sint Katherina-Lombeek
+year: 2014-2017 (gepland)
+location: Kerkstraat 39, Ternat
+area：8300m²
+collaborators：Laura Muyldermans, Francesca Caravello, Jeroen de Graaf, Sander Rutgers, Anne Femmer, Jan De Vylder, Inge Vinck, Jo Taillieu
+structural engineering：Pascal de Munck, Filips van Marnixstraat 36. 9000 Gent
+technical engineering：Studiebureel Boucherie cvba en Maes Projects bvba, Knapenstraat 5, 8800 Roeselare
+epb： Studiebureel Boucherie cvba en Maes Projects bvba
+safety coordination ：Bureau Bouwtechniek, Kammenstraat 18, 2000 Antwerpen
+contractors: Jan De Nul
+shell of the construction：onderaanneming Jan De Nul
+roofing：onderaanneming Jan De Nul
+carpentry：onderaanneming Jan De Nul
+electricity：onderaanneming Jan De Nul
+heating：onderaanneming Jan De Nul
+
+
+
+KAPELLEVELD is a residential care center in Ternat. The complex is impeccably settled into the sloping landscape, adjoining the back gardens of surrounding houses.
+In order to provide a new impetus to the typology of classic homes for senior citizens, architecten de vylder vinck taillieu introduced a structure that extends into the landscape. The six wings house a two-fold programme: two wings with 41 accompanying apartments – for autonomous living-and four wings with 57 nursing rooms for people in need of more care. Every living community has its own space with a kitchen, a seating area and a television.
+a structure that extends into the landscape 
+The plan originates from two design decisions: the wings are not parallel but mutually oblique, and the different housing units they encompass have been staggered. As such, the project focuses on the individuality of each apartment, while ensuring the unity of the whole.
+the different housing units of the wings have been staggered
+the project focuses on the individuality of each apartment, while ensuring the unity of the whole
+The long hospital corridors disappear in favor of a sequence of smaller rooms. The places thus emerging each provide access to two apartments.By placing the doors diagonally and designing the installation shafts to resemble the doors, small interior squares are created: small oases of peace in a sequence of movements. In addition, the corridors are provided with natural daylight through windows positioned at the end of each corridor. They create interior streets.
+view to the balcony from interior
+view to the garden from interior
+public area illuminated by natural daylight
+interior view of the apartment
+every living community has its own space with a kitchen
+
+The design realizes a large number of apartments in low-rise buildings, matching the project to the scale of the village and the neighboring houses. Also, the low-rise buildings cleverly harmonize with the existing topography. One one side, the site is 50cm higher than on the other. Since this hight difference was not leveled, but embraced, some of the apartments are in close contact with the ground. At the front, terraces continue the ground level, while at the back, they are sunken: the garden encroaches.
+the design realizes a large number of apartments in low-rise buildings
+exterior view from the neighborhood
+
+========================================
+
+I. Vocabulary Extraction
+- Residential units (repeated apartment modules)
+- Linear apartment blocks / wings (clustered rows of units)
+- Central spine / main corridor (horizontal connector)
+- Secondary corridors / branch circulation (vertical branches off the spine)
+- Stair cores / vertical circulation nodes
+- Entrances / lobby-like spaces at block junctions
+- Internal courtyards / pocket courtyards between wings
+- Communal plaza / amenity space (central open area)
+- Landscaped areas / planted buffers and individual trees
+- Pedestrian pathways and paved plazas
+- Site boundary and adjacent streets (vehicular edges)
+- Small ancillary buildings / service structures on site perimeter
+- Private outdoor spaces (balconies/terraces implied by unit projections)
+
+II. Spatial Relationship Descriptions
+- A continuous horizontal spine connects multiple perpendicular apartment wings, organizing movement across the site and linking clusters.
+- Apartment wings are clustered into repeating modules that form semi-enclosed courtyards and shared outdoor pockets between them.
+- Stair cores/vertical circulation are located at regular intervals where branches meet the main spine, acting as access nodes and organizing entrances.
+- Communal amenity/plaza is centrally positioned and framed by surrounding wings, creating a concentrated gathering space served directly by multiple units.
+- Landscaped zones and tree plantings buffer the buildings from adjacent streets, and pedestrian paths weave through these planted areas to connect blocks and entrances.
+- Smaller ancillary buildings sit near the site edges and are separated from the main residential clusters by landscaped open space, maintaining a layered transition to surrounding context.
+- Private outdoor projections (balconies/terraces) face the internal courtyards and external landscape, creating a layering of private–semi‑public–public outdoor space.
+
+III. Overall Spatial Impression
+The plan uses a clear spine-and-branch logic: a main linear connector links a series of repetitive residential wings that create a network of semi-enclosed courtyards and a central communal plaza. The arrangement emphasizes permeable, landscaped open space between clustered blocks and prioritizes pedestrian circulation and shared outdoor areas.
+
+IV. Design Intent Reading
+The drawings communicate a design strategy focused on community and connectivity: modular apartment clusters are organized to maximize shared social spaces (central plaza and interstitial courtyards) while preserving privacy through articulated unit projections and 
+terraces. The spine-and-branch ordering suggests efficient circulation and legible access, while the surrounding landscaping and staggered blocks aim to integrate the development into the existing urban fabric, improve daylighting and views, and create a sequence of public → semi‑public → private outdoor realms.

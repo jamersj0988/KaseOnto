@@ -1,0 +1,70 @@
+Taikang Home Su Yuan Phase 1
+
+
+Lead Design Firm: Tongji Architectural Design and Research Institute (Group) Co., Ltd. Original Design Studio
+Email Contact: zmz3388@126.com
+Principal Architects: Zhang Ming, Zhang Zi, Qin Shu
+Architectural Schematic Design and Preliminary Design Team: Li Xuefeng, Du Wenbin, Chen Yin, Liu Jingyi, Wang Yuqing
+Structural Design Consultant: AND Structural (Wang Rui, Zhang Zhun)
+Location: West of Xueyuan Road, Xianlin Sub-City, Qixia District, Nanjing, Jiangsu, China
+Site Area: 50,676.1 square meters
+Built Area: 74,141.9 square meters
+Construction Firm: Nanjing Taikang Home Elderly Care Services Co., Ltd.
+Detailed Design Firms:
+Jiangsu Province Architectural Design & Research Institute Co., Ltd. (Construction Drawing Design)
+Shenzhen Zhengzhong Design Co., Ltd. (Interior Design of Activity Center)
+Golden Mantis Building Decoration Engineering Co., Ltd. (Interior Design of Living Buildings)
+EDSA (Landscape Design)
+Beijing Guangshi Proroma Lighting Design Co., Ltd. (Lighting Consultant)
+
+
+
+
+
+China is currently facing the challenge of an aging population, with the proportion of elderly people steadily increasing. We are transitioning from an aging society to one that is deeply aging, which places higher demands on the elderly care service industry in terms of both scale and quality. Based on China’s social and cultural characteristics, our elderly care models mainly include family care, community care, and institutional care, with a ratio of approximately 90:7:3. The scale and quality of institutional care are gradually increasing.
+Taikang Home is a high-quality commercial elderly care institution established by Taikang Group, combining insurance and elderly care industry. It is nationally distributed and focuses on the integration of medical and elderly care services. Among various elderly care models, Taikang Home’s elderly care model is unique, emphasizing providing high-quality living environments, medical care, and enriching recreational activities for the elderly to enjoy their later years in comfort.
+The completed design of Taikang Home Su Yuan Phase 1 is located in the Taikang Xianlin Gulou Hospital area in the Xianxia District of Nanjing. It is backed by Ling Mountain and offers convenient medical facilities, transportation systems, and a comfortable natural environment. Before starting the design, we learned that a significant proportion of the project’s customers are middle to upper-class knowledge workers. Therefore, after the first site survey, we proposed the concept of “Returning to the Garden and Settling Down.”
+Although Taikang Home Su Yuan Phase 1 primarily serves as an elderly care community, we initially set the goal to create a non-institutionalized environment. In simple terms, we aimed to avoid a hotel-like atmosphere and instead create a warm and homely feeling. This emphasis on warmth is not only reflected in the spatial design but also in the emotional experience. Therefore, we focused on breaking down the “big” into “small,” seeking to convey a sense of intimacy, comfort, and softness so that each resident can find their own scale and sense of belonging.
+In terms of overall planning, we adopted a “cluster” layout approach. Each cluster is of a moderate size, ensuring essential public facilities while avoiding the discomfort of excessive scale. The interior space design within each cluster takes into account the living habits and psychological needs of the elderly, providing various appropriately scaled spaces for communication, relaxation, and entertainment, allowing each resident to find their “small world.”
+In the architectural design, we also aimed for scale regression. Unlike many other elderly care buildings that prioritize iconic effects, we emphasized the relationship between the building and its inhabitants, focusing on detail handling. We carefully balanced the relationship between building volume size and volume area, keeping the building height generally within 4 floors or less. We also designed multiple layers of ground-level transformations to further reduce the perceived height of the building. The west-side living area incorporates volume shifting to create a more delicate spatial experience, while the façade joints are meticulously designed to reflect vertical volume dynamics, reducing the sense of volume. In the east-side living area, we integrated traditional wooden structure features into the design of the sunshade system, preserving local cultural memories while minimizing the building’s volume perception.
+Loneliness is a common negative emotion in elderly life, and helping seniors overcome loneliness is a significant consideration in our spatial design. We introduced the concept of an internalized marketplace to create a street market-like living scene within the elderly care community, with a strong focus on creating public activity spaces.
+Different from the typical approach of designing a standalone building for public activity space within the community, we started from the spatial structure of villages and designed the “activity center” as a long internal street lane. This space connects various unit clusters and serves as the convergence point for all flows. It includes essential functions such as entrances, four-season flower halls, and dining areas, as well as activities like calligraphy, chess, swimming, fitness, and hairdressing. This design not only consolidates diverse activity functions but also enhances spontaneous interaction opportunities, even supporting the development of collective activities and helping introverted seniors rediscover the sense of social life.
+“Place” is not just a physical space but also a carrier of emotions and stories. We hope that “Taikang Home Su Yuan” is not just a place to live but also a place that resonates emotionally with people, offering solace for the soul. In Su Yuan, we designed a diverse set of public activity spaces where the elderly can find like-minded companions and enjoy their time together.
+With the concept of place extension in mind, we designed the public activity spaces as an organic whole, with activity rooms, libraries, and relaxation areas spreading between the living buildings to meet the various needs of the elderly. For example, those who enjoy playing chess can find opponents in a dedicated chess room, while those who love reading can immerse themselves in the quiet library.
+Furthermore, the extended public activity spaces connect people’s experiences of indoor spaces and the internal gardens to the natural surroundings of Ling Mountain and the nearby environment. The roof of the public activity space is designed as a rooftop garden, where residents can wander under the surrounding mountains and experience the ambiance of “picking chrysanthemums beside the eastern fence, leisurely gazing at the southern hills,” as described by Tao Yuanming. The structural system of the public activity space is designed as a tree-like column structure with a grid beam system. The overlapping roof structures create semi-outdoor transitional spaces and rich indoor-outdoor interactive interfaces, along with natural light introduced through some column tops. All of this allows the entire elderly care community to engage in a dialogue with distant mountains and nearby landscapes, anchoring the place within the entire site.
+
+========================================
+
+I. Vocabulary Extraction
+- Primary public hall / lobby: Four Seasons Hall (1), Entrance Lobby (17)
+- Auditoriums / lecture halls: TED Lecture Halls (2)
+- Multipurpose halls / rooms: Multipurpose Hall (18), Multifunction Classroom (13), Multifunction Activity Room (14), Multifunction Teaching / Activity spaces (4,13,14)
+- Dining / retail: Self-service Restaurant / Cafeteria (12), Supermarket (3)
+- Library (15)
+- Offices / administration: Offices (16), Butler / Management Office (5)
+- Recreation & fitness cluster: Swimming Pool (10) with adjacent First Aid (11), Ping-pong Room (7), Group Training Room (8), Rehabilitation / Workshop (9)
+- Reception / concierge: Resident Reception Hall (6)
+- Vertical / service elements: Stairwells, Elevator cores, Restrooms / changing rooms, Mechanical / service rooms (implied)
+- Circulation components: Main corridors / spine, secondary corridors, entrance plazas / external circulation
+- Outdoor / semi-outdoor elements: Courtyards / terraces / external connecting axes (dashed sightlines/connection lines between pavilions)
+- Support spaces: Storage, small service rooms adjacent to major program areas (implied near pool, kitchens, etc.)
+
+II. Spatial Relationship Descriptions
+- Central organizing space: The large Four Seasons Hall (1) sits at the plan’s core, with major functions (cafeteria 12, TED halls 2, supermarket 3, reception 6) connected directly or via short corridors, making it a central hub for circulation and gathering.       
+- Program clustering: Recreational and health functions (pool 10, first aid 11, ping-pong 7, training 8, rehab 9) are grouped together in one wing for operational efficiency and shared support spaces (changing rooms, medical).
+- Cultural/educational cluster: Library (15), multifunction classrooms (13,14) and activity rooms (4) are located in a contiguous wing, forming a quieter zone for study and workshops separated from louder recreational areas.
+- Service adjacency: Offices and management (5,16) are adjacent to reception and the main hall, enabling oversight and easy access to public areas.
+- Pavilion separation and axis: Entrance lobby and large multipurpose halls (17,18) are located in a separate pavilion to the southeast, linked to the main block by a clear diagonal visual/axis (dashed lines) and circulation route — creating a semi-independent event wing.
+- Layering of publicness: There is a clear layering from most public (entrances, major halls, supermarket) → semi-public (activity rooms, dining, library) → administrative/private (offices), organized along a linear corridor/spine.
+- Vertical cores and amenities are positioned to serve clusters efficiently (elevators/stairs near central hall and near the separate pavilion).
+- Shared usage: Central hall and reception act as nodes for wayfinding and shared use; adjacent multipurpose rooms can be serviced from the same circulation and support areas.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan is organized around a dominant central hall that functions as the social and circulation hub, with programmatic clusters radiating along a primary linear spine. A secondary pavilion connected by a deliberate diagonal axis houses larger event spaces, producing a hierarchy of public to private zones and clear separation of noisy recreational functions from quieter cultural/administrative areas.
+
+IV. Design Intent Reading
+- Create a civic/community hub: Emphasis on a large central gathering hall and adjacent reception/dining/retail suggests an intent to foster social interaction and flexible public programming.
+- Programmatic clustering for efficiency: Grouping like functions (recreation, cultural, administrative) indicates an intention to concentrate support services, minimize cross-circulation, and simplify supervision and logistics.
+- Hierarchy and clear wayfinding: The use of a primary spine, distinct entrance lobbies, and a separate pavilion for major events implies a strategy to make access legible and to manage different user flows (daily users vs. event attendees).
+- Safety and operational logic: Locating first aid and service spaces near high-risk or high-use areas (pool, event halls) shows practical operational and safety considerations.
+- Visual/axial relationships: The diagonal connection to the separate pavilion and the positioning of courtyards/terraces suggest deliberate visual axes and indoor–outdoor relationships to orient users and create a civic sequence of spaces.

@@ -1,0 +1,63 @@
+Sakuragien—a nursing home for seniors. Geriatric architecture in cherry blossoms
+
+Name:	Sakuragien - Aomori elderly home.
+Function:	Nursing home for seniors
+Location:	Japan, Mutsu
+Studio:	waiwai,
+Chief architect:	Kazuma Yamao
+Design team:	waiwai, Naoyuki Shirakawa Atelier.
+Realization:
+
+2020
+
+Site area:	15,000 m²
+Building area:	5,770 m²
+
+Sakura Home, a project by waiwai, completed in collaboration with Naoyuki Shirakawa Atelier, is a modern nursing home in Mutsu, Aomori Prefecture, Japan that combines innovative technologies with traditional elements of Japanese architecture. The remodeling of the 40-year-old facility meets the needs of modern senior care with a focus on ergonomics, safety and sustainability. The architects ensured optimal use of daylight, common space and connection to nature. A central layout reminiscent of five sakura petals provides both functionality, harmoniously combining modernity with Japanese tradition.
+
+space revitalization and ergonomic solutions
+The Sakura Home center was the result of a major remodeling of an existing building that has been in operation for some forty years. The previous structure, while multi-bedroom and meeting basic needs, needed to be modernized to meet modern standards of care and improve conditions for both residents and staff.
+
+the psychology of space in the design of nursing homes for seniors
+A key design consideration is to take into account the work and convenience of the caregiving staff, thereby increasing the efficiency and quality of care provided. During the day, one caregiver is responsible for ten residents, while at night the number increases to twenty. Proper design of the space allows staff to better manage their time and respond more smoothly to residents' needs, resulting in a higher level of comfort and safety.
+
+
+A central architectural solution of the project is to optimize traffic and accessibility. Each pair of living units has been connected to a central nursing station, making it much easier for staff to reach patients quickly when needed. As a result , one staff member is able to efficiently serve two units with a total of twenty residents. This ergonomic approach to space planning is crucial in ensuring a high standard of care at the facility.
+
+radial space layout—modern nursing home design on a cherry blossom plan
+The architectural plan is based on a radial layout, the shape of which resembles five flower petals. This form is not only responsible for the functionality of the building, but also refers symbolically to the "sakura "—the traditional cherry blossom, which has been a symbol of transience and beauty in Japanese culture for centuries. This symbolism further enriches the identity of the building, which serves as a place of support and dignified old age for residents.
+
+wabi-sabi in senior home designs—beauty in simplicity
+The entire project is being carried out in cooperation with the renowned Naoyuki Shirakawa Atelier, whose experience in creating friendly, humanistic spaces fits perfectly with the philosophy of this project. This gives Sakura Home the opportunity to become not only a modern care center, but also a place that combines functionality with aesthetics and respect for culture and nature.
+
+
+a new approach to spaces for seniors—a reversal of stereotypes in architecture?
+The Sakura Home project, created by Naoyuki Shirakawa Atelier, provides inspiration for Poland's challenges in modernizing care for seniors. With the growing demand for quality services, it is crucial to create spaces that combine functionality with comfort and aesthetics. Integration with nature, sustainable architectural solutions and modern technologies such as intelligent management systems can significantly improve the quality of life for residents in Polish nursing homes. Drawing on the experience of the likes of Sakura Home, we can create places that support seniors' active participation in social life and provide them with a sense of security.
+
+========================================
+
+
+**I. Vocabulary Extraction:**
+*   Patient/Residential Units (with beds and private bathrooms)
+*   Internal Corridors (within each radiating wing)
+*   Central Circulation Core (housing stairs, elevators, and potentially shared services)
+*   Common Lounges/Dining Areas (located at the wider ends of the radiating wings)
+*   Semi-private Courtyards/Gardens (formed in the spaces between the radiating wings)
+*   Landscaped Grounds/Gardens (surrounding the entire building)
+*   Circular Access Road/Driveway (encircling the main building structure)
+*   Parking Areas (located at the periphery of the site)
+*   Main Entrances (at the ends of the central core)
+*   Service/Utility Rooms (implied within the central core and wings)
+
+**II. Spatial Relationship Descriptions:**
+*   **Radial Organization:** Six distinct "petal" wings, each containing multiple units and a common lounge, radiate outwards from an elongated central core.
+*   **Hierarchical Circulation:** Each petal features an internal corridor that serves the individual units and connects to the central core, which acts as the primary hub for vertical circulation (stairs, elevators) and main horizontal distribution.
+*   **Clustering of Units:** Units are grouped into six semi-autonomous clusters, each forming a "petal" with its own dedicated common area, promoting a sense of smaller communities within the larger complex.
+*   **Integration with Nature:** The building is deeply embedded within extensive landscaped gardens, with the radiating wings creating semi-private courtyards that offer direct access or views to green spaces from the common areas and potentially some units.
+*   **Perimeter Access:** A circular access road encircles the entire building, providing vehicular access to various points and connecting to parking areas located further out.
+
+**III. Overall Spatial Impression:**
+The design presents a highly organic, decentralized, and nature-integrated complex, structured around a central spine with radiating residential or care units. It creates a series of intimate clusters while maintaining overall connectivity and a strong visual and physical link to the surrounding landscape.
+
+**IV. Design Intent Reading:**
+The design aims to create a healing or residential environment that prioritizes connection to nature, fosters smaller community groupings, and provides ample natural light and views. The organic, non-linear form likely seeks to de-institutionalize the building, promoting a sense of well-being and comfort for its occupants.

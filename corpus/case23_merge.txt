@@ -1,0 +1,54 @@
+Elderly Healthcare Building / Brullet Pineda Arquitectes
+
+Healthcare
+•
+Salt, Spain
+Architects: Brullet Pineda Arquitectes
+Area: 
+12413 m²
+Year: 
+2009
+Category: Healthcare
+Architecture: Alfonso de Luna, M. Àngels Manchado, Maria Francesca Cirrincione
+Technical Architecture: ENNE-GESTIÓ ACTIVA DE PROYECTOS, S.L. (Inma Casado, Albert Bonaventura)
+Structure: Manuel Arguijo
+Instalations: Grupo JG
+Execution: Bartomeu Pérez Albarrán y Narcís Frigolé Valls
+Quality Control: VIAS y Construcciones S.A.
+Construction: VIAS y Construcciones S.A.
+Property: IAS (Instituto de Asistencia Sanitaria)
+Architects In Charge: Brullet Pineda Arquitectes, Manuel Brullet i Tenas, Albert de Pineda i Alvarez
+City: Salt
+Country: Spain
+
+Text description provided by the architects. Due to well-defined surrounding context in which this complex is located, the Healthcare building has had to adapt and respect the urban parameters, trying to integrate with the existing context, and moreover, the new Healthcare centre building tries to make use of the complex’s organization and functioning, using not only the electrical and mechanical facilities, but also tunnels that connect the complex facilities as a whole. Thus, even though it is visually composed of separate buildings, they are all related in order to maximize each others needs and help the users and the working staff transit from one building to another.The Healthcare residence consists of three wards with only a ground floor and a basement for general services. In order to have light and a natural atmosphere in all interior spaces, large patios have been created. The home’s functional organization has all the residential areas distributed around a central core made up of general support zones and next to these areas are the administration areas and resident’s therapy units.The interior layout helps the users to recognize at any time, spaces in which they live and allow them to get their bearings within the building: natural light from the skylights and from the interior patios, the views of the outside, strengthen and comfort the healthcare workers and users of the center. The corridors are mainly horizontal and they join all the services through internal patios: this way the floor is clearly defined and the corridors are always marked by the entry of natural light.In addition, each unit has its own identifying color, which is clearly evident on the interior wood finishes. Moreover, the center is divided in four colors, for the elderly to quickly get the bearings when looking for their room or any other common area.
+
+========================================
+
+
+**I. Vocabulary Extraction:**
+*   Residential Blocks (three distinct U-shaped buildings)
+*   Individual Units/Rooms (within residential blocks)
+*   Internal Corridors
+*   Communal Lounges/Shared Activity Areas (within residential blocks)
+*   Central Amenity/Service Building
+*   Dining Halls/Cafeteria
+*   Offices/Administrative Spaces
+*   Stairwells
+*   Extensive Green Spaces/Gardens
+*   Trees/Landscaping
+*   Pedestrian Pathways (paved and informal)
+*   Outdoor Terraces/Patios
+*   Perimeter Roads/Access Routes
+*   Courtyards (internal to residential blocks)
+*   Linear Accommodation Block (bottom right)
+
+**II. Spatial Relationship Descriptions:**
+The design features three distinct residential blocks arranged linearly along the western edge of the site, each containing multiple units clustered around internal corridors and central communal lounges. These blocks are 
+separated by generous green spaces, creating a series of semi-private outdoor areas. A large, central amenity building is positioned to the east, acting as a hub for communal activities like dining and administration. This amenity building is connected to the residential blocks via pathways and shared ground planes, suggesting easy access for residents. A significant green spine runs north-south, serving as a buffer and recreational area between the residential and amenity zones. Another linear accommodation block is situated at the bottom right, separated by a landscaped path. The overall layout demonstrates a clear layering of private (units), semi-private (block lounges, immediate green spaces), and public (central amenity, main pathways) spaces.
+
+**III. Overall Spatial Impression:**
+The design conveys a campus-like, integrated community environment, characterized by a clear functional zoning between living and communal activities, all set within a lush, accessible green landscape. It projects an impression of order, tranquility, and a strong connection to nature.
+
+**IV. Design Intent Reading:**
+The design intends to foster a supportive and interactive community, likely for a specific user group such as seniors or students, by balancing individual privacy with ample opportunities for social engagement. The generous green spaces and well-defined circulation paths aim to promote well-being, accessibility, and a sense of belonging, while the central amenity block serves as a focal point for shared experiences and services. The arrangement suggests a desire to create a cohesive yet permeable environment that encourages both independence and communal living.

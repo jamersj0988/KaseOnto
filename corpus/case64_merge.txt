@@ -1,0 +1,45 @@
+Kauklahti Senior Centre
+Espoo, Finland
+Kauklahti Living and Dwelling Centre for the Elderly is the first built example of a new service-home concept. The centre offers local senior citizens a public living room with various services; meals, exercise and pastime activities. The dwellings are for the elderly who need 24/7 care. The environment is designed to be easy to use in order to encourage residents’ autonomy. The rooms look like homes despite the many assistive devices.
+
+The dwellings are clustered around a light-filled and spacious living room with a balcony and a kitchen. The corridors are minimized to make both physical and social accessibility easy for the residents. The ground floor contains the service centre; a restaurant, a gym with a sauna and communal rooms for recreational activities, as well as a winter garden.
+
+The cluster concept assists in situating this large building into the small scale of the neighbourhood and the rocky terrain. The building consists of three cubic volumes and a connecting circulation joint with the main staircase and lifts. The colours refer to the colours of the surrounding housing.
+
+The uneven terrain was demanding, however, it provided opportunities for landscaping. Due to the slope, residents have access to courtyards from different floors of the building and semi-underground spaces get natural lighting.
+
+The project contains various advanced techniques; for the residents as well as for the building. For example, rooms have a smart floor system for unobtrusive monitoring, security checks and alerts. The energy solutions are based on using geothermal energy in an innovative way. The building obtains 50% of its energy for heating and cooling from a renewable source, resulting in low carbon emissions. Making use of innovative, affordable, and efficient structural solutions also contribute to reducing maintenance costs.
+
+========================================
+
+I. Vocabulary Extraction
+- Residential units / apartments (repeated unit modules)
+- Bedrooms (private sleeping rooms within units)
+- Living / kitchenette areas (small open-plan living + kitchen zones)
+- Bathrooms / WCs (compact wet rooms inside each unit)
+- Corridors / internal circulation corridors (linear hallways serving units)
+- Central circulation core (elevator(s) and stairwell cluster)
+- Secondary staircases (wing-level stairs)
+- Connecting bridge / walkway (link between wings and central core)
+- Balconies / external terraces (small outdoor projections at wing façades)
+- Service/utility spaces (small shafts/rooms adjacent to cores)
+- Entrance lobbies / communal thresholds (central shared entry zones in each wing)
+- External façades with perimeter windows (units oriented to exterior)
+
+II. Spatial Relationship Descriptions
+- The plan is organized as three distinct wings (clusters of units) that radiate from and connect to a central core — the elevator/stair cluster — via short corridors and a linking walkway.
+- Units are arranged along the perimeter of each wing, with corridors running down the wing centers; this places private rooms to the outside for daylight and ventilation while corridors form a semi-public interior spine.
+- Each wing contains a central, slightly larger common/living zone flanked by repetitive unit modules, so individual units cluster around a localized communal space within the wing.
+- Vertical circulation is concentrated at the central hub and supplemented by secondary stair locations within the wings, making circulation hierarchical: central core (public/vertical) → wing corridor (semi-public) → apartment entrance (private).
+- Balconies and terraces are positioned on the outer faces of wings, linking private units to exterior space and visually breaking the building mass; the bridging walkway creates explicit physical and visual connections between otherwise separated volumes.
+- Service and utility shafts are clustered adjacent to the cores and unit bathrooms, allowing shared plumbing/MEP runs and efficient servicing across repeated units.
+
+III. Overall Spatial Impression (1–2 sentences)
+The drawing shows a hub-and-spoke residential layout with three angled wings of repeated apartment modules radiating from a centralized vertical circulation core, producing distinct clusters that balance privacy (perimeter-facing units) with connectivity (central elevators/stairs and linking bridge). The plan emphasizes modular repetition, perimeter daylighting, and a clear circulation hierarchy from public core to private units.
+
+IV. Design Intent Reading
+- Efficiency and repeatability: the repeated unit modules and clustered service shafts indicate an intention for efficient construction, standardized layouts, and economical servicing (plumbing/electrical).
+- Privacy and daylighting: placing units on the perimeter with corridors internal suggests an intent to maximize natural light and external views for living/bedroom spaces while keeping circulation compact.
+- Community + connectivity: central core and intermediate communal spaces inside each wing, plus the linking walkway, imply an aim to foster social interaction among residents while maintaining discrete household domains.
+- Spatial articulation and site response: the angled wings and inserted terraces create small semi-exterior pockets and varied sightlines — likely intended to improve privacy between units, capture specific orientations/views, and break down the building mass.      
+- Clear hierarchy of movement: concentration of vertical circulation in a central hub with secondary wing stairs shows a deliberate organization to prioritize accessibility and wayfinding.

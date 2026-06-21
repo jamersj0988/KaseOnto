@@ -1,0 +1,54 @@
+Senior home in Hejia Village
+
+Project type:A rchitecture Design
+Design:Youmu Architects
+Contact e-mail: info@youmuarchitect.com
+Design year:2023.10
+Completion Year:2024.10
+Leader designer & TeamJianbo Lin/Jiatong Yang/Shengyu Qian
+Construction Drawing Team:Yunping Fang/Linhai Wan/Chaochao Yao/Xiaosheng Zhu/Chang Jin/Pengtao Wang
+Project Coordinator: Shi Dong
+Project location:Hejia village,Zhuantang Street,Xihu district,Hangzhou,Zhejiang
+Gross built area: 230㎡
+
+This project is a senior home in Hejia Village. Hejia Village is located in the southwest of Hangzhou, in the canyon area among the Longwu tea mountains. The villagers are mainly engaged in tea planting and production. The Home for the Elderly is a small public space that provides leisure, recreation and health services for the elderly in the village. The project site was originally a villager’s residential land, located in a dense cluster of residential houses. It is bordered by the secondary road of the village in the north, adjoining villagers’ houses in the east and south, and a small road connecting the secondary road with the main road of the village in the west.
+
+As the main building type around the site, the rural residence is the main landing point of the design study. The design hopes to realize the expression of ruralness and publicity by following, translating and reconstructing the composition, elements and space of the rural houses, as well as creating a sense of “home” for the elderly.
+Compared to the original ecological rural areas, the spatial environment of Hejia Village does not provide symbolic images of vernacular architecture and lacks distinctive construction traditions and building techniques. Identifying the spatial realities that represent the characteristics of the environment in this ambiguous rural spatial context has become the main design challenge and breakthrough for the project.
+The village houses along the street around the site are mostly characterized by the spatial combination of “low-rise auxiliary house + multi-storey main building”. The auxiliary house is the product of the villagers’ production and life style, and its main function is the storage, processing and sale of tea leaves; nowadays, with the change of the economic mode, some of them have also evolved into multi-functional spaces such as resting and meeting guests. The design follows the form combination of “auxiliary house + main building”, embedding the space of the auxiliary house which was originally juxtaposed with the main residence into the side of the main building against the street, continuing the street interface, dissolving the tense relationship with the road, and forming a transitional semi-public space. The image of the auxiliary house is taken as an independent column supported between the thin boards extending towards the street and the foundation surrounded by the seats, and when the sliding glass door is fully opened, it is presented as a public pavilion and gathering place, constituting a daily background for pedestrians and the elderly to stay and gather.
+The main image of the home for the elderly comes from the localization and reorganization of the surrounding rural residential elements. The combination of solid building walls and heavy sloping roofs creates a front image that is familiar to the villagers who visit the house, while the sloping down of the walls from the corner position, disconnected from the roofs, strengthens the momentum of the street corners, and opens up a huge gap to the south of the second floor space, creating a sense of sculpture and volume that transcends the scale of the house.The selected sloped roof adopts the light and airy form of tea leaves, tilting from the street corner towards the neighboring house, creating a gentle site coverage. The base of the ground floor, the long windows at the corners, and the slightly curved front façade all come from the imitation of the village house in dealing with architectural scale and topographical relationship, trying to capture the delicate balance between the complete image of the public building and the daily scale of the village house in a simple way.The interior is primarily based on white walls and light-colored oak, creating a warm and cozy atmosphere for users through the use of warm-toned surfaces that wrap around the space.
+The interior of rural houses is often structured as “corridor-room”, forming a sequence of increasing privacy from the outside to the inside and from the bottom to the top. The design tries to borrow and distort this sequence to form a familiar but strange public house. On the first floor, the three interfaces of curved, slanted and straight walls are connected by holes, forming a sequence of open, semi-open and closed “rooms”, which creates a sequence of functional spaces with an increasing sense of privacy for the elderly to meet each other after meals, to watch movies, and to play chess and cards. The staircase turns from the corner of the first floor and leads upward through an opening to the soaring and bright second floor. On the second floor, the health center and children’s activity room are connected by a bridge, creating a visual interaction with the first floor from the height, creating an open feeling of “under the same roof”. The interior is primarily based on white walls and light-colored oak, with warm-toned surfaces creating a sense of spatial enclosure, providing users with a cozy atmosphere reminiscent of home.
+The project aims to break through the symbolic and typified framework of rural design by identifying, extracting, and reconstructing the authentic local architectural reality. It seeks to bring a strange yet familiar face to the gradually characterless rural environment, creating a fresh yet intimate “home” for the elderly in Hejia Village.
+
+
+========================================
+
+I. Vocabulary Extraction
+- Main entrance and secondary (service) entrance
+- Entry porch / exterior platform
+- Large open hall / lobby (central public space)
+- Service counter / bar with stools
+- Seating clusters (tables and chairs) in open hall
+- Two enclosed rooms/compartments with seating (labelled 04)
+- Restroom(s) / WC
+- Small utility / storage room(s)
+- Staircase (vertical circulation)
+- Angled partition / display or shelving element (diagonal enclosure in plan)
+- Internal partitions and doors
+- Circulation aisles and sightlines
+- Windows / exterior walls (indicated perimeter)
+
+II. Spatial Relationship Descriptions
+- The main entrance opens directly into a large central hall (02) that functions as the primary public/assembly space; a small exterior platform (01) precedes this approach.
+- An angled partition/enclosure (03) near the entry creates a buffer between the entrance and the main seating area, channeling movement and shaping sightlines through the hall.
+- A service counter/bar is positioned along the right side of the hall with stools facing into the space, forming a service zone adjacent to circulation and visually separating operations from dining.
+- Two enclosed seating rooms (04) sit at the plan’s top, paired side-by-side and accessed from the central hall through double doors; they are clustered together as semi-private dining/meeting spaces.
+- Restroom (05) and a small back room/utility space (06) are grouped on the right, adjacent to the service counter and near the staircase (07), creating a compact service/core zone.
+- A secondary entrance at the left side ties directly into the hall and a nearby small room (08), suggesting alternate access for staff or deliveries and minimizing cross-flow with the main public entrance.
+- Furniture placement establishes circulation lanes through the hall toward the enclosed rooms, counter, and stairs; the layout encourages movement from entrances toward peripheral functions (private rooms, restroom, stairs).
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan organizes an open central social space framed by a compact service core and paired private rooms, using an angled partition to modulate arrival and guide movement. The layout prioritizes clear public circulation and visual connectivity while clustering back-of-house functions for operational efficiency.
+
+IV. Design Intent Reading
+The design appears intended to balance openness and privacy: the large central hall fosters social interaction and flexibility of seating, while the two enclosed rooms provide quieter, more controlled environments. The angled partition functions as a deliberate circulation and visual device—orienting visitors, framing views of the space, and creating a staged entry sequence. Grouping restroom, storage, and stairs adjacent to the service counter signals an intent to consolidate support functions for efficient service and to keep service flows separate from primary customer circulation; the secondary entrance supports staff/delivery access without disrupting the main guest experience.

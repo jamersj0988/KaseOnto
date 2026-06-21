@@ -1,0 +1,36 @@
+Gaspoltshofen / Gärtner+Neururer
+
+Asylum
+•
+Gaspoltshofen, Austria
+Architects: Gärtner+Neururer
+Year: 
+2011
+Photographs:Andrew Phelps, Klaus Costadedoi
+
+Text description provided by the architects. This home for the elderly is situated in a small upper austrian village. The building volume is split in three bodys, to adapt to the adjoining appartment buildings. The entrance and the living areas are facing the center of the village and the church. The core of the building, including the main circulation and the hallways are a concrete construction, while the rooms are made out of prefabricated wooden elements with a wood shingle facade.
+Located on the groundfloor are the public and service functions, while the rooms are split up in three groups of dwellings in the storeys above. The living areas and the nursing service areas function as a connecting element between the nursing wards.
+
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   Corridors/Hallways (extensive linear circulation paths)
+*   Rooms/Units (various sizes of enclosed spaces, potentially offices, classrooms, or residential units)
+*   Stairwells (multiple locations for vertical circulation)
+*   Courtyards/Atria (central large void, and several smaller internal voids/open spaces)
+*   Entrances/Exits (indicated by door swings)
+*   Open Plan Areas (larger, less partitioned spaces, potentially for communal or flexible use)
+*   Columns/Piers (indicated by black dots, suggesting structural support or colonnades)
+*   Service Cores (smaller clusters of rooms, likely restrooms or utility areas, often adjacent to stairwells)
+*   Perimeter Walkways/Terraces (indicated by dotted lines surrounding some parts of the structure)
+*   Lobbies/Waiting Areas (larger spaces at key junctions of corridors)
+
+**II. Spatial Relationship Descriptions:**
+The building is primarily organized around a strong, linear central spine, from which several wings branch off. Individual rooms are typically arranged in a modular fashion, lining both sides of extensive corridors, promoting a clear sense of order and access. A prominent large central courtyard, along with several smaller internal voids, is strategically integrated into the plan, ensuring natural light and ventilation penetrate deep into the building's interior. Stairwells are positioned at critical junctions or ends of these corridors, facilitating efficient vertical connectivity across different levels. This arrangement creates a hierarchy of spaces, moving from public circulation (corridors and courtyards) to more private enclosed units, with clear adjacencies between rooms and shared common paths.
+
+**III. Overall Spatial Impression:**
+The building presents a highly organized, grid-like, and modular plan characterized by an elaborate system of linear corridors that interconnect numerous individual spaces around a series of internal courtyards. Its branching form and emphasis on internal voids suggest a design focused on maximizing natural light, ventilation, and efficient circulation within a complex, multi-functional structure.
+
+**IV. Design Intent Reading:**
+The design intent appears to be centered on creating a highly functional and adaptable building, likely for institutional, educational, or office use, that can accommodate a large number of occupants and diverse programmatic needs. The extensive circulation system and modular room arrangement suggest a priority for clear navigation, accessibility, and potential for flexible spatial reconfiguration. The integration of multiple courtyards underscores an intention to provide a pleasant internal environment with ample daylight and a connection to the outdoors, potentially fostering a sense of community or facilitating informal interactions within these semi-private outdoor spaces.

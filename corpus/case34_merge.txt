@@ -1,0 +1,53 @@
+Julia von Bodelschwingh Care House / kontektum architektur
+
+Retirement
+•
+Berlin, Germany
+Architects: kontektum architektur
+Area: 
+6715 m²
+Year: 
+2024
+Photographs:Philipp Obkircher
+Manufacturers:  AGROB BUCHTAL, HEWI, LIGNOTREND, Montana Building Systems Ltd.
+Lead Architects: Andreas Maria Lang
+Landscape Architects: gm013 landschaftsarchitektur
+Structure Engineers: Ingenleurbüro Marzahn & Rentzsch
+HVAC engineers: HDH Berlin GmbH
+MEP Engineers: HDH Berlin GmbH
+Lighting Designers: LICHT LICHT Studio Dinnebler
+Contractors: Prehn Bauprojektmanagement GmbH, August Reiners Bauunternehmung GmbH
+
+Text description provided by the architects. The "Julia von Bodelschwingh House," located at Georg-Kolbe-Hain in Berlin-Westend, is a senior residence featuring 72 rooms and 13 barrier-free serviced apartments. Developed for the Gabriele Fink Stiftung and operated by the Hoffnungstaler Stiftung Lobetal, the building was designed by kontektum architektur to meet the needs of both foundations while blending seamlessly into its surroundings. The design focuses on the specific needs of elderly residents and their caregivers, creating a supportive and comfortable environment.
+The building bridges the height difference between the Malteser Hospital to the south and the residential buildings to the north, integrating harmoniously with the urban fabric. Situated behind the old stone wall along the western property boundary, it preserves the historic entrance from Pillkaller Allee. The structure is nestled into a sloping site, surrounded by pine trees and a newly designed, park-like landscape with a curved pathway.
+The project consists of three sections. The five-story main building on Pillkaller Allee aligns with the height of the hospital building and includes a spacious two-story entrance hall, the "Foyer am Birkenhain," which serves as a gathering space for residents' meetings and celebrations. The foyer, clad in wooden acoustic panels with shelly limestone flooring, creates an elegant yet intimate atmosphere. Administrative offices are located on the ground floor, with an interior window providing a view into the foyer. The upper floors house 13 barrier-free apartments, each featuring large glazed facades and continuous balconies, overlooking the park and Pillkaller Allee. The top floor includes a communal space and a roof terrace.
+The senior residence occupies two rear, northwest-oriented transverse sections of the building, each three stories high, in alignment with nearby residential buildings. The wide corridors accommodate residents using walking aids and expand in areas with real wood veneer entrances to the one-room apartments. Each floor contains 12 resident rooms, each with a private, barrier-free bathroom. Large windows ensure that even bedridden residents enjoy views of the outdoors. Connecting the two wings is a central communal living area, which includes large south-facing terraces and open kitchens, where residents gather for meals and activities. Additional amenities at the junction with the main building include a care bath, an in-house hairdresser, and therapy rooms for wellness activities. The basement, embedded in the sloping terrain, houses the building's service rooms and infrastructure, optimizing space for residents on the main floors.
+The facade features horizontal cornice bands made of precast concrete, visually uniting the building."Open" facade areas include windows, balconies, and loggias, while "closed" sections are finished with a rear-ventilated metal facade. This design reflects elements of the surrounding buildings, enhancing the structure's integration into the environment. The barrier-free apartments in the main building face the park and Georg-Kolbe-Hain, offering residents direct access to the landscape. In the rear sections, communal areas with south-facing terraces provide spaces for residents to gather. A rooftop terrace offers views over the park toward the Corbusierhaus.
+
+========================================
+
+I. Vocabulary Extraction:
+*   **Residential/Office Units:** Multiple distinct, typically rectangular enclosures, often grouped in pairs or fours, with individual entrances from corridors.
+*   **Corridors:** Extensive linear internal circulation paths connecting different parts of the building.
+*   **Stairwells:** Several locations for vertical circulation, often accompanied by an implied elevator shaft.
+*   **Courtyards/Gardens:** A large, irregularly shaped central courtyard and a smaller, more rectilinear one to the left, integrated within the building footprint.
+*   **Building Wings:** Distinct blocks of units extending from a central spine.
+*   **Entrances:** Multiple access points connecting the interior circulation to the exterior.
+*   **Terraces/Patios:** Small private outdoor spaces indicated by dotted lines, particularly in the long left wing.
+*   **Vehicular/Pedestrian Paths:** A curved driveway/path leading around the building and connecting to a potential parking area.
+*   **Landscaping/Trees:** Shaded tree outlines and contour lines indicating planted areas or existing vegetation around the site.
+*   **Boundary/Site Edge:** The irregular line defining the property or development area.
+
+II. Spatial Relationship Descriptions:
+*   The building complex is organized as a branched structure, with different wings extending from a central circulation spine, which is primarily a long corridor.
+*   A prominent, irregularly shaped central courtyard serves as a major internal open space, providing light and views to the surrounding corridors and units.
+*   Residential/office units are clustered in modules around vertical circulation cores (stairwells and elevators) and along the main corridors, maximizing access and natural light for individual spaces.
+*   The long, slender wing on the western side features units with private terraces, suggesting a direct engagement with the surrounding landscape or a more independent access model.
+*   The entire complex is situated within a landscaped setting, with peripheral trees and internal courtyards blurring the boundary between built form and nature.
+*   Vehicular access is separated from main pedestrian flow, with a winding driveway leading to the facility and distinct pedestrian paths around the building.
+
+III. Overall Spatial Impression:
+The building presents as an expansive, low-rise complex that embraces its natural surroundings through an intricate internal courtyard system and perimeter landscaping. Its spatial logic combines a strong linear organizational spine with distinct, clustered unit blocks, creating a permeable and accessible environment.
+
+IV. Design Intent Reading:
+The design aims to foster a sense of community or collective living/working through a central, shared green space, while also providing varied levels of privacy and direct access to nature for individual units. The efficient, modular arrangement of units combined with a distributed circulation system suggests a focus on functionality, accessibility, and integrating the built environment harmoniously with the landscape.

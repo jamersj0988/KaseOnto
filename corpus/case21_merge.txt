@@ -1,0 +1,42 @@
+Housing for the Elderly / Óscar Miguel Ares Álvarez
+
+Architects: Óscar Miguel Ares Álvarez
+Area: 
+2000 m²
+Year: 
+2016
+Photographs:Jesús J. Ruiz Alonso / Pedro Iván Ramos Martín
+Manufacturers:  CONEDAVI, EULEN, REGINO FRANCO
+Category: Retirement
+Technical Architect: Javier Palomero Alonso
+Collaborators: Bárbara Arranz González, Jesús J. Ruiz Alonso, Dorota Tokarska
+City: Valladolid
+Country: Spain
+
+Text description provided by the architects. The housing for the elderly in Adeamayor de San Martin (Valladolid) can not be understood without its context. Located on the border of a saline hidden wetland (Salgüeros de Aldeamayor) the aridity of the terrain and the infinite horizontality of the Spanish agricultural esplanade - dotted with small masses of pine trees - dominates the landscape, conditioning the implementation of any structure or artifact. In turn, our approaches were held by insistent ideas: provide our elderly with kind environment which promote to be in touch with nature, with the sun, but also enhancing the close relation between inhabitants of the building; the neighborly relations among chairs in the front door of the houses that are so recognizable in the rural areas of Castilla y León.On the arid plain of the Castilla y León landscape we have placed a building formed by white concrete blocks paired in a striated way, marking an intense but subtle border with the ground.The exterior is abstract and hard, as the environment. A seemingly insurmountable barrier, a shell to protect the interior that becomes kind, warm and complex. The external severe geometry contrasts with the inner complexity. The rooms are generated as small cells that clump together organically around the courtyard, creating interstitials and areas of relation, both to the courtyard itself as the interior. The perimeter corridor becomes a place rich in nuances and spaces in the manner of a small town where people can speak in front of the door of their room-houses fleeing the classic configuration of such centers more close to lugubrious hospitals than to kind and welcoming buildings. We wanted places that would allow the close relationship between inhabitants; the neighborly relations among chairs in the front door of the houses that are so recognizable in the rural areas of Castilla y León. More than a residence, the project aims to search for be a real home, so that psychological factors had to be essential in the project approach.These cells make up the internal connecting paths of the building and coexist with public areas: activity room, fitness room, medical consultations and the large room where has been to create a careful spatiality natural lighting to create a peaceful and seductive atmosphere.
+The whole work has been governed by the use of simple and cost-effective materials, without fanfare. Geometry, spatiality, light and careful treatment color and textures to get a warm and cozy interior protected by an abstract and rhythmic limit to the exterior.
+
+========================================
+
+
+I. Vocabulary Extraction:
+*   Individual Units/Rooms (likely bedrooms or small living spaces)
+*   Corridors/Circulation Paths
+*   Internal Courtyards/Garden Spaces
+*   Trees/Planting (within courtyards)
+*   Shared Facilities/Common Areas (larger, less subdivided spaces, particularly on the right and bottom)
+*   Service Rooms (e.g., a block of small, identical rooms, possibly shared bathrooms or utility rooms)
+*   Exterior Walls
+*   Interior Walls
+*   Entrances/Exits (indicated by breaks in the perimeter and steps)
+*   Furniture (beds, tables, chairs implied within units)
+*   Outdoor Paved Areas/Terraces (on the right side)
+
+II. Spatial Relationship Descriptions:
+The individual units are clustered into irregular blocks, which are then interspersed with a series of internal courtyards of varying sizes and shapes. A network of corridors serves as the primary circulation, connecting these unit clusters and leading through the courtyards to larger common areas. Many units appear to be directly adjacent to or face these internal courtyards, suggesting a strong relationship between private living spaces and semi-public green areas. The overall layout demonstrates a porous structure where built mass and open space are intricately interwoven, creating a layered experience from private rooms to shared outdoor spaces and larger communal facilities.
+
+III. Overall Spatial Impression:
+The design presents a low-rise, cellular complex characterized by a fragmented massing of individual units organized around a series of internal courtyards. This creates a highly permeable and interconnected environment that balances private accommodation with accessible shared green spaces and communal facilities.
+
+IV. Design Intent Reading:
+The design appears to prioritize access to natural light, ventilation, and green spaces for individual residents, likely aiming to create a humane and community-oriented living environment. The fragmented layout and numerous courtyards suggest an intention to break down the scale of a potentially large building, fostering a sense of intimacy and promoting social interaction within a structured yet organic setting, possibly for a residential care facility, student housing, or a similar communal living program.

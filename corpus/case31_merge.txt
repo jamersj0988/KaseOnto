@@ -1,0 +1,55 @@
+House for the Elderly in Palaudàries / Codina Prat Valls l Arquitectes Associats
+
+Community, Sustainability
+•
+Barcelona, Spain
+Architects: Codina Prat Valls l Arquitectes Associats
+Area: 
+5231 ft²
+Year: 
+2019
+Manufacturers:  Carpintería, Cubierta chapa metálica, Instalaciones, Paneles madera
+Category: Community, Sustainability
+Design Team: Codina Prat Valls I Arquitectes Associats
+Construction: C.P.M.
+Structural Calculation: Bis Structures
+Engineering: PGI
+City: Barcelona
+Country: Spain
+
+Text description provided by the architects. The Casal has been designed from CPVA in close collaboration with the municipal technicians and the Association of Pensioners and Pensioners of Palaudarias, giving rise to a facility that responds fully to the demands of the users and the demands of the promoter, without leaving On the other hand the architectural sensitivity and the environment where it is located.
+The building is located on an island of municipal facilities where there is also a Nursery School and a Civic Center, at the foot of the Palaudàries highway. It has a single floor of 490 m2 built and has: the main hall, with access from the road, and a large multipurpose room with possibility of operation as 1 room, 2 or 3 independent depending on the use, with facade in the inner space of the island, where there is the courtyard of the nursery school. On one side of the main access, with a facade on the street, there is a kitchen, with its warehouse and an attached warehouse, and the exit to a terrace where it is planned to install a barbecue. On the other side of the main entrance, also with façade on the street, there are the rest of the rooms and services, which are two offices, a hairdresser's shop and two general toilets.
+The project has successfully tackled two challenges, the first to build a building with energy rating A (maximum energy efficiency), and the second to do the project with the BIM methodology (Bulding Information Modeling).
+The maximum energy efficiency has been achieved by orienting the building well, increasing the thermal insulation by 200% and installing high-energy installations in air conditioning (aerothermia) and lighting (LED).
+The BIM methodology consisting of creating a 3D digital model of the building, integrating Architecture, Structure and Installations, has allowed to achieve an efficient collaboration and communication between the different technicians in the design phase, one Comprehensive technical and economic control in the construction phase, and a 3D digital model of the building that is faithful to the constructed reality that will allow it to manage and maintain the property throughout its useful life.
+In the most architectural aspect, an innovative system of structure of contralaminated wood panels has been incorporated which integrates the structure and the defining enclosures of space in the same element, which is also the final finish, achieving a great warmth and comfort for the users.
+The building is organized through these structural wooden panels, which define all the spaces and the volume of the cover, designed with different heights and slopes according to the functionality of the uses. Thus, in the halls of activity there is more height, and the areas of circulation, offices and services are lower.
+The use of natural materials such as wood in the structure and windows, recycled materials such as wooden shades and prefabricated construction systems has made the impact and emissions significantly reduced throughout its entire life cycle .
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   **Office spaces:** Individual rooms equipped with desks and chairs for focused work.
+*   **Meeting rooms / Conference rooms:** Spaces with larger tables, possibly for group discussions (suggested by the larger table in one office-like room).
+*   **Restrooms / Washrooms:** Clearly delineated areas with multiple toilet stalls and sinks (and urinals in one section), indicating gender-separated or multi-stall facilities.
+*   **Corridor / Hallway:** A central circulation spine connecting various functional areas.
+*   **Dining halls / Cafeteria areas:** Large open spaces furnished with multiple tables and chairs, designed for eating and group gatherings.
+*   **Service room / Storage:** An enclosed area adjacent to a dining hall, likely for kitchen functions, storage, or utility.
+*   **Entrances / Exits:** Points of ingress/egress to the building and between different rooms.
+*   **Walls:** Load-bearing and partition walls defining spaces.
+*   **Doors:** Entry and exit points for rooms.
+*   **Windows (implied):** Indicated by dashed lines along the exterior walls, suggesting natural light and ventilation points.
+
+**II. Spatial Relationship Descriptions:**
+*   A prominent **central corridor** acts as the primary connective element, running through the middle of the floor plan and linking all major functional zones.
+*   **Private/semi-private work areas** (offices and meeting rooms) are clustered linearly along one side of the central corridor, providing a more contained environment.
+*   A **central restroom core** is strategically positioned along the main corridor, making it easily accessible from both the office cluster and the communal dining areas.
+*   **Large communal dining halls** occupy the opposite side of the corridor, designed as open spaces for gathering and interaction. These two large rooms appear to be separable or distinct, yet share access from the same main circulation.
+*   A **service room/storage area** is directly adjacent and connected to one of the dining halls, indicating a functional relationship for food preparation or supplies.
+*   The layout demonstrates a clear **separation of public and private functions**, with a buffer zone provided by the corridor and restrooms between the more private office spaces and the more public dining areas.
+
+**III. Overall Spatial Impression:**
+The overall spatial impression is one of clear functional zoning and efficient circulation. The design prioritizes a linear organization along a central spine, effectively separating distinct user experiences and activities into well-defined areas.
+
+**IV. Design Intent Reading:**
+The design intent appears to focus on creating a highly functional and organized space, likely for an office building with communal dining facilities or a similar institutional setting. The clear separation of work areas from dining areas suggests a desire to minimize disruption and provide distinct environments for different activities. The central corridor facilitates easy navigation and access, while the clustering of restrooms offers convenient shared facilities. The layout also hints at considerations for service and logistics, particularly with the dedicated service room adjacent to a dining hall.

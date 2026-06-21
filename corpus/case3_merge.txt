@@ -1,0 +1,48 @@
+Retirement, Healthcare Interiors
+•
+Rikuzentakata, Japan
+Architects: DOG, The University of Tokyo Architectural Planning & Design Lab
+Area: 
+983 m²
+Year: 
+2019
+Photographs:Nao Takahashi
+Manufacturers:  Vectorworks, ADVAN, Adobe, IOC Flooring, Panasonic, SHIKOKU CHEMICALS, Trimble Navigation, Union, YKK AP Asia
+Builder: Hasegawa Construction Company Limited
+Landscape Designer: Inada Landscape Design Office, Takio Inada
+Products used in this Project
+BIM Design Software - Vectorworks Architect
+Vectorworks
+
+BIM Design Software - Vectorworks Architect
+Landscape Design Software – Vectorworks Landmark
+Vectorworks
+
+Landscape Design Software – Vectorworks Landmark
+Category: Retirement, Healthcare Interiors
+Architect In Charge: Toshio Otsuki, Ryutaro Saito
+Architect: The University of Tokyo Architectural Planning & Design Lab, DOG
+Structural Engineer: Haruo Sato, Sato sekkei
+City: Rikuzentakata
+Country: Japan
+
+Text description provided by the architects. This is a plan for housing for the elderly with services, which is run by the social welfare corporation “Kojukai” in Rikuzentakata City, which mainly targets elderly people affected by the tsunami. Immediately after the disaster, there was a demand for utilization of the approximately 2 ha of hillside land acquired by the corporation.And as the first step to form a new welfare base here, rental housing for the elderly with care, which is lacking in the disaster area, was planned. The theme is “creation of various places”, and for that purpose, we have introduced architectural planning and landscape planning methods such as “Southern side corridor” and “Seed bank”, and the technical theme is “Minimization of land development”.
+
+Save this picture!After acquiring the hill site, the implementation design was started this time based on the master plan that the University of Tokyo Architectural Planning Laboratory formed through workshops. In this way, this project is unique in that it is a housing reconstruction project based on collaboration between the private sector and university.Next, in contrast to the usual facility plan for the elderly, various living spaces are formed inside and outside, with the living room on the north side and the south corridor on the common space. Also, through the seed bank, we showed the ideal way of a development plan to restore the original scenery aiming at small-scale construction work and revitalization of natural vegetation.
+
+========================================
+
+
+**I. Vocabulary Extraction:**
+*   **Internal Spaces:** Room (individual units), Common Room, Serving Room, Warehouse, Kitchen, Dining Kitchen, Front Office, Changing Room, Bathroom, WC, North Corridor, South Corridor, Entrance Hall.
+*   **External Spaces/Elements:** Parking Space (for cars), Bicycle Space, Garden, Sand Bank, Grass Area, Slope Deck, Plaza, Outdoor Seating, Trees/Landscaping, Pathways/Roads, Pizza Kiln, Steps/Stairs.
+*   **Circulation/Infrastructure:** Main Entrance, Ramps (slope deck), Roads (surrounding the site).
+
+**II. Spatial Relationship Descriptions:**
+The architectural elements are organized around a central, expansive landscaped courtyard or plaza, forming a 'U' or 'C' shaped building complex. Individual "room" units are arranged linearly along internal corridors (North and South Corridors), which serve as primary circulation spines. These corridors connect the private rooms to centrally located communal facilities such as the Common Room, Serving Room, Warehouse, and Entrance Hall. The Kitchen and Dining Kitchen are strategically placed at the ends or within the wings, facilitating service to multiple units or common dining areas. The central plaza acts as a significant shared outdoor space, directly accessible from the building wings and featuring various amenities like outdoor seating, a pizza kiln, and landscaped areas (sand banks, grass, trees). Parking facilities are located at the northern edge, providing direct access to the main entrance, while bicycle parking is situated on the eastern side. The entire complex is deeply integrated with its surrounding natural topography through winding pathways, varied landscaping, and slope decks, creating a layered experience between built and natural environments.
+
+**III. Overall Spatial Impression:**
+The design presents a cohesive residential or communal facility centered around a large, richly landscaped outdoor plaza. It strategically balances private living units with extensive shared indoor and outdoor amenities, fostering a strong sense of community and connection to nature.
+
+**IV. Design Intent Reading:**
+The design communicates a clear intent to create a vibrant community hub that prioritizes both individual comfort and collective interaction. The central courtyard acts as the social heart, encouraging residents to gather and engage with each other and the natural environment. The integration of diverse outdoor spaces, from formal plazas to informal sand banks and grass areas, suggests a focus on well-being and providing varied recreational opportunities. The linear arrangement of rooms along corridors, coupled with strategically placed common facilities, indicates an efficient and functional layout, likely for a dormitory, care facility, or resort, aiming to provide a harmonious living experience deeply connected to its landscape.

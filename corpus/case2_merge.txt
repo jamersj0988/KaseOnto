@@ -1,0 +1,58 @@
+Retirement, Housing
+•
+Huningue, France
+Architects: Dominique Coulon & associés
+Area: 
+3932 m²
+Year: 
+2018
+Photographs:Eugeni Pons
+Manufacturers:  Atlas Schindler, ALSASOL, BURGER, CF CUISINE, FREGONESE, GALOPIN, GIAMBERINI & GUY, HUBER ELECTRICITE, IDE VERDE, LA SOLUTION ALU, LES PEINTURES REUNIES, LIEBERMANN, MADER, MEYER, PAUL HERRBACH, REGIO NETTOYAGE, ROMAN, SCHERBERICH, SINGER, SOMEGYPS, +1
+HQE specialist: Artelia
+Category: Retirement, Housing
+Design Team: Dominique Coulon, Olivier Nicollas, Gautier Duthoit, Olivier Poulat.
+Architects Assistants : Javier Gigosos-Ruipérez, Diego Bastos-Romero
+Client: Ville de Huningue
+Competition : Gautier Duthoit
+Construction Site Supervision: Olivier Poulat
+Cost Estimator  : E3 économie
+Acoustics : Euro sound project
+Landscape : Bruno Kubler
+Mechanical Engineer: Artelia
+Plumbing Engineer: Artelia
+Structural Engineer: Batiserf Ingénierie
+Fire Safety System: Artelia
+Budget : 4 000 000 €
+City: Huningue
+Country: France
+
+
+Text description provided by the architects. This housing for elderly people is located on the banks of the Rhine. The exceptional situation of the site allowed us to turn the common areas and the hall towards the river: the residents can enjoy the choreography of passing boats. The programme consists of twenty-five fifty-square-meter homes, a restaurant in three sections, a computer room, a hobby workshop, a vegetable garden and a petanque field.The staircase stands at the centre of the building, rendering it unavoidable. In combination with the wide central space, it invites mobility. Upstairs, the patio brings light from the south into the heart of the building. The white volume inside seems suspended; it deconstructs the empty space and lends a certain strangeness to the whole.Red concrete, terracotta and wood produce a benevolent atmosphere. Outside, the building is enveloped in brick on all sides. We selected a craft brick that is non-standard, irregular and  occasionally misshapen. The walls catch the light; by emphasising its rustic port setting, the building connects itself to the history of the Rhine.
+
+========================================
+
+
+**I. Vocabulary Extraction:**
+*   Hall (0.01)
+*   Administration and Reception (0.02)
+*   Activity Room (0.03)
+*   Living Room (0.04)
+*   Staff Room (0.05)
+*   Computer Room (0.06)
+*   Multi-activity Room (0.07)
+*   Terrace overlooking the Rhine (0.08)
+*   Residential Units (implied by the layout adjacent to 0.07)
+*   Corridors/Circulation Paths
+*   Stairwells
+*   Outdoor Gardens/Courtyards (with paths and trees)
+*   Entrances/Exits
+*   Outdoor Seating Areas
+
+**II. Spatial Relationship Descriptions:**
+The building's layout is organized around a central, organically shaped hall (0.01) which acts as a primary circulation hub, connecting various functional zones. Communal spaces such as the activity room (0.03) and living room (0.04) are clustered together and directly accessible from this central hall, promoting social interaction. A linear wing containing the multi-activity room (0.07) and what appear to be individual residential units extends from the main body, providing a more private zone. Service areas like administration and reception (0.02) and the staff room (0.05) are strategically placed near entrances and circulation paths, ensuring operational efficiency while maintaining a degree of separation from core communal areas. The building extensively integrates with its outdoor surroundings, featuring multiple garden areas and a significant terrace (0.08) directly accessible from the hall and living room, blurring the lines between indoor and outdoor living.
+
+**III. Overall Spatial Impression:**
+The design presents a dynamic and fluid central core for communal activities, contrasted with more rectilinear wings for residential and administrative functions. It creates a clear hierarchy of spaces, balancing opportunities for social engagement with provisions for privacy and efficient service delivery, all while maintaining a strong connection to the surrounding landscape.
+
+**IV. Design Intent Reading:**
+The design intends to foster a vibrant and supportive community for elderly residents by prioritizing accessible and engaging communal spaces at its heart. The integration of diverse outdoor areas and a prominent terrace suggests a focus on well-being, connection to nature, and opportunities for both active and passive recreation, aiming to create a comfortable and stimulating living environment.   

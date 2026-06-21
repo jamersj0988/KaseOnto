@@ -1,0 +1,60 @@
+Kaze No Machi Miyabira / C+A Coelacanth and Associates + Met Architects
+
+Day Care
+•
+Shobara, Japan
+Architects: C+A Coelacanth and Associates
+Area: 
+4603 m²
+Year: 
+2014
+Photographs:Hiroshi Ueda
+Mechanical & Electrical Engineer: PES
+Structural Engineer: Fujio and Associates
+Constructor: Toda Corporation
+Category: Day Care
+Design Team: CAn - C+A Nagoya
+City: Shobara
+Country: Japan
+
+Text description provided by the architects. This is the elderly care facility located in Shobara City, Hiroshima. All the time, the client hopes that this facility can be a wooden warmly house which family and the surrounding residents can visit casually. There are many promenades, alleys and gardens opened to public inside this site.
+Separating buildings of 5 for special elderly nursing and short staying, 2 for day care, and 1 for administration are constructed. In order to make staffs' moving simply between buildings, the designer locates the administration building in the center of the site. Besides, the dinning area is located beside the north side road where carrying the food ingredients into the dinning area is very convenient.
+The buildings for special elderly nursing and short staying occupy the biggest area of the site. Three "co-units" are combined to make one "unit" in which 10 people can live. Each "co-unit" is composed of a small living room and three or four rooms which surround it. In addition, considering the need of night care, each two "units" are connected by service desk and kitchen and bathroom space. Besides, each private room is divided into 2 areas, bedroom of 9 m² and multipurpose room of 6 m². According to the investigation of the living habits of the surrounding residents, the bedroom is named "back room", and the multipurpose room is named "room between spaces".
+The method of separating room between spaces from the traditional bedroom space is figured out by the designer through the careful investigation of the life habits of the surrounding residents. Thus the individual privacy of the back room is improved and the open activity space is created, which maintain the diversity of the elderly people's life and their communication with external environment. In addition, the characteristic of this project is that if the partition board between the rooms is open, the small unit can form a nursing environment which contains many beds. Therefore the staffs can see everything inside each room.
+The buildings for special elderly nursing and short staying which are consisted of private back rooms and open rooms between spaces make the elderly people and the surrounding residents feel the family reunion atmosphere. The room between spaces can also be used as gallery space for the elderly people to have a rest, a space for entertaining the visitors and family reunion and so on. It can also function as the entrance in Japanese traditional architecture. The comprehensive space design and the considerate nursing service is a new attempt of the clients.
+It is believed that in a near future, this project will be like the common residential area, blending into the surrounding environment and becoming a beautiful local scenery.
+
+========================================
+
+I. Vocabulary Extraction:
+*   Unit (residential dwelling)
+*   Bedroom
+*   Living Room
+*   Dining Room
+*   Kitchen
+*   Bathroom
+*   Toilet
+*   Store (storage room)
+*   Laundry
+*   Pantry
+*   Den
+*   Balcony
+*   Terrace/Patio (implied outdoor areas adjacent to units)
+*   Garden (private outdoor spaces per unit)
+*   Pathway/Walkway (connecting units)
+*   Corridor/Hallway (internal to units)
+*   Stair (indicated for "2nd Beds" in some units)
+*   Entrance/Foyer
+*   Shelves (built-in)
+*   Doors
+*   Windows
+*   Communal Open Space (implied green areas between clusters)
+
+II. Spatial Relationship Descriptions:
+Multiple residential units are clustered together, often sharing walls or being in close proximity, creating a sense of interconnectedness. Each unit typically features a living/dining/kitchen area as a semi-open social core, with bedrooms and bathrooms arranged for privacy. Private outdoor spaces, such as gardens or patios, are directly adjacent to and extend from the main living areas of individual units, fostering an indoor-outdoor living experience. These clusters are interwoven with a network of pedestrian pathways, suggesting a walkable environment where units are connected to common areas and external access points.
+
+III. Overall Spatial Impression:
+The layout depicts a dense residential development characterized by a modular arrangement of individual and semi-detached units. It emphasizes a balance between private dwelling spaces and integrated outdoor access, connected by a structured circulation network.    
+
+IV. Design Intent Reading:
+The design communicates an intent to create a community-oriented living environment that prioritizes pedestrian access and interaction, while also providing individual units with ample privacy and direct engagement with green spaces. The repetition and clustering of unit types suggest a strategy for efficient land use and construction, aiming to offer a variety of housing options within a coherent, interconnected neighborhood fabric.

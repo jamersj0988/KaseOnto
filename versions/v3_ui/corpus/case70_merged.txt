@@ -1,0 +1,54 @@
+Tres Puentes
+
+Location: East 138th Street and 3rd Avenue, Mott Haven, The Bronx
+Client: West Side Federation for Senior and Supportive Housing
+Architects/designers: Redtop Architects/Shakespeare, Gordon, Vlado: Architects PLLC
+Design team: Amy Shakespeare, Virginia Kindred, Nicole Vlado, Ashima Chitre, Ana Sucena, Sean Kennedy
+Engineers: Silman, Dagher Engineering, AKRF, FNA Associates, IROS Elevator,
+Landscape Architect: Joanna Pertz Landscape Architecture
+Lighting Designer: SGVA
+Project sector: Affordable housing
+Budget: East Building: $23.7 million, West Building: $50 million
+Square footage/units: East Building 51,940 sf/56 units; West Building 121,970 sf/118 units
+Project completion date: 2020
+
+Named after the three neighboring bridges connecting the South Bronx to Manhattan, Tres Puentes added two new ground-up buildings to the Mott Haven site of the existing Borinquen Court, originally constructed in 1981. The new eight and eleven story structures are attached at ground level to this existing six story building, which the architects renovated in 2014.
+Combined into a campus, these three buildings transform the nearly two-acre site into a vibrant and unique home for hundreds of seniors. Their welcoming designs energize both East 138th Street and Third Avenue by lining the once vacant street wall with entrances to the site’s senior center, health clinic, and pharmacy, serving the project’s residents and connecting to the larger community.
+In 2010, when the West Side Federation for Senior and Supportive Housing (WSFSSH) took ownership of the Borinquen Court site, they saw an opportunity to expand upon the strength of the existing building’s community to bring more residents and resources to the large and underused site. The architects began their study of the lot’s potential, while working on their renovations to the aging building, recognizing early in the process that any new construction would require approval by City Planning to relieve the site of decades old restrictions that mandated a “tower in the park” use of the site. Close collaboration with the city’s planners in the years that followed allowed the project to be a case study for zoning updates already in the making that would support more affordable housing throughout the five boroughs, with a focus on housing for independent seniors – a growing and thriving population of New York City.
+Such changes to the zoning would allow for parking lots to be transformed into housing, and for senior housing buildings to have a greater mass and height than previously allowed, as well as more street wall articulation. This is especially celebrated at the Tres Puentes site, which is located between two entrances to the nearest subway station. Taller buildings for seniors are also encouraged with the new zoning, which Tres Puentes uses to bring many new apartments to the site, while also respecting the varied scale of the neighboring buildings. This is most dynamically expressed where the west building steps down in height from the busy corner of Third Avenue and East 138th Street towards the three-story houses to its north.
+This project adds 174 affordable apartments for independent seniors to the 145 already on site. Each is designed to support the various and changing needs of the residents, allowing them to age with grace and independence with amenities in their apartments and community spaces. These design features are enhanced by on-site services provided by WSFSSH and their partners, which include case management, medical and mental health care, and educational and socialization opportunities. The architecture of Tres Puentes also encourages wellness through active design, as the residents of each building are invited to move through indoor and outdoor paths in all three buildings, to various shared community rooms, offices, and outdoor gardens.
+The materials used at Tres Puentes include the elegant brickwork of their street facades, like many of its historic townhouse and NYCHA neighbors, while the facades towards the site’s gardens are clad in copper and navy-blue corrugated steel panels—a nod to the industrial Mott Haven.
+
+========================================
+
+I. Vocabulary Extraction
+- Building footprints / principal massing (large central block and smaller peripheral blocks)
+- Units / rooms (clustered suites in the peripheral blocks)
+- Corridors / internal circulation corridors
+- Stairwells and elevator/service cores
+- Courtyard / central open space
+- Plazas / paved forecourt areas
+- Pathways / pedestrian connections between blocks
+- Landscape elements: trees, planted buffer zones
+- Street edge / sidewalk and adjacent property footprints
+- Roof overhang or dashed roofline (indicated on the left block)
+- Entrances / lobbies (entry points facing the courtyard and street)
+- Scale bar and north arrow (drawing annotations)
+
+II. Spatial Relationship Descriptions
+- A continuous large central building mass runs roughly east–west across the site, creating a spine that separates two clusters of smaller programmatic volumes at the east and west ends.
+- Smaller blocks on the left (west) and right (east) are positioned at the site edges and are connected to the central mass by pedestrian paths and short circulation links; these peripheral blocks contain clustered units organized around internal corridors and service cores.
+- A shared courtyard/open space is located between the central mass and the peripheral blocks, providing landscaped semi‑private amenity space and visual separation between volumes.
+- Trees and planted buffers cluster along the north edge and within the central open space, framing pathways and softening the interface between buildings and the street.
+- Entrances and circulation nodes are concentrated where peripheral blocks meet the courtyard and the street, creating layered access: public street → semi‑public courtyard/plaza → private units.
+- The dashed-line roof/detail on the west block indicates an overhang/upper‑level outline, creating an additional layered edge or sheltered outdoor space adjacent to the plaza.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan organizes smaller residential/programmatic volumes around a dominant central block, using a landscaped courtyard as a mediating semi‑public space. The configuration emphasizes layered transitions from public street to semi‑public courtyard to private interiors, with clear circulation nodes and clustered service cores.
+
+IV. Design Intent Reading
+- To mediate scale and context: the large central mass anchors the site while smaller peripheral volumes reduce human scale at the street corners and create distinct building entries.
+- To encourage social interaction and daylighting: the landscaped central courtyard and plazas function as communal gathering/amenity spaces and bring light and views into adjacent units.
+- To create clear, efficient circulation: clustered corridors and service cores keep vertical circulation compact and provide direct access from the courtyard and street.
+- To articulate sheltered and transitional exterior spaces: roof overhangs and defined forecourts provide sheltered outdoor areas and strengthen the transition between public and private zones.
+- To integrate landscape with circulation: tree clusters and pathways frame movement across the site and soften the building edges, promoting a pedestrian‑oriented site experience.

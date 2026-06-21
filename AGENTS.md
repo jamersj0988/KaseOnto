@@ -10,10 +10,13 @@
 - 入口檔案是 `index.html`。
 - 主要互動邏輯在 `app.js`。
 - 樣式在 `styles.css`。
-- Corpus 文字目前從 `./corpus/case53_merged.txt` 載入。
-- Entity list 目前從 `./entity_list/entity_ids_case53.txt` 載入。
+- 根目錄舊版仍可直接讀 `./corpus/` 與 `./entity_list/` 的單檔資料；`versions/v3_ui/` 則改由單一 `data/cases.json` 決定 corpus / entity 檔案來源。
 - `versions/v1_current_ui/` 是目前 UI 的 v1 基準快照；根目錄仍是目前主要工作版本。
 - `versions/v2_working/` 是 ontology browser 改版工作區，使用白色 click-based radial graph class view。
+- `versions/v3_ui/` 是目前主要 UI 工作區；之後若沒有額外指定，前端調整優先以這個版本為準。
+- `versions/v3_ui/` 的資料載入改成單一 `data/cases.json` 架構；每個 case 直接在 `cases.json` 內宣告 `original` / `translation` 的 corpus 與 entity 路徑，新增 case 時優先延續這個格式，不要再把路徑寫死在 `app.js`。
+- `versions/v3_ui/` 的 bilingual term 模型是「同一筆 term 共享一組 extracted / populated 狀態，只帶 `original` / `translation` 兩種 label」；切換 Corpus Preview 的原文 / 中文翻譯只切顯示語言，不可把 term 清單拆成中英兩組。
+- `versions/v3_ui/` 現在與 checker 一樣採用「開頁先填基本資料」gate：`app.js` 會在 `init()` 前呼叫 `openProfileDialog()`，並先把表單收斂成只有「狀態」與「年分／年級」兩個必填欄位；gate 內另有 `Import` 按鈕可直接載入既有結果檔並關閉 gate，方便只想續改 JSON 的使用者；資料暫存於 `sessionStorage.kaseontoUserProfile`，匯出 JSON 也會附上 `reviewerProfile`。
 - `ontology checker/` 是 ontology structural QA app，目前維持原生 HTML、CSS、JavaScript，介面風格貼近 v1。
 - 目前沒有前端框架、打包工具或建置流程，使用原生 HTML、CSS、JavaScript。
 - 因為 app 使用 `fetch()` 讀取本機文字檔，測試時應透過本機 web server 啟動，而不是直接開啟 `index.html`。例如：

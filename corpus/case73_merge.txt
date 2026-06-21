@@ -1,0 +1,62 @@
+Taikang Home Su Garden Phase II
+
+Design Team: Tongji University Architecture Design & Research Institute (Group) Co., Ltd., Original Design Studio
+Email Contact: zmz3388@vip.163.com
+Lead Architects: Zhang Ming, Zhang Zi, Qin Shu
+Design Team: Li Xuefeng, Ding Xin, Lin Xiao, Wang Yutong (Intern)
+Project Location: Xianlin Suburban Area, Qixia District, Nanjing, East side of Xuezi Road.
+Land Area: 13,161.1 square meters
+Building Area: 25,537.16 square meters
+Developer: Nanjing Taikang Home Elderly Care Service Co., Ltd.
+Design Units:
+Jiangsu Provincial Architectural Design & Research Institute Co., Ltd. (Construction Drawings Design)
+Shenzhen Zhengzhong Design Co., Ltd. (Activity Center Interior Design)
+Jin Tanglang Architecture Decoration Engineering Co., Ltd. (Living Building Interior Design)
+EDSA (Landscape Design)
+Beijing Guangshi Pro Lighting Design Co., Ltd. (Lighting Consultant)
+
+In the current social context, with the growing severity of population aging, elderly care has become a widely discussed topic across various sectors. Among many elderly care models, Taikang Home has emerged as a standout in the field of high-quality commercial elderly care institutions due to its unique business model and core philosophy. As an innovative practice by Taikang Group integrating the insurance and elderly care industries, Taikang Home not only has a broad presence across the country but also distinguishes itself with its focus on the integration of medical care and elderly care. It is dedicated to creating a paradise for the elderly, offering a high-quality living environment, professional medical care, and a variety of recreational activities.
+Taikang Home Su Garden Phase II is another project launched under this guiding philosophy. The project is located in the Xianlin area of Nanjing, near the Taikang (Nanjing) International Medical Center and Taikang Xianlin Gulou Hospital, benefiting from a superior geographic location. Su Garden Phase II not only relies on advanced medical resources but also features a unique design that aims to provide more personalized and professional care services for the elderly.
+The design of Su Garden Phase II continues the core philosophy of Su Garden Phase I, which is to create a pleasant architectural space and a homelike, warm atmosphere, thus achieving the goal of deinstitutionalization. Unlike Phase I, which focuses on independent living, Phase II is mainly focused on care-based elderly care functions, including about 250 specialized nursing units and 84 memory care units. Therefore, the project adopts a large courtyard layout, aiming to provide secure, professional care services while allowing the elderly to feel the warmth and freedom of home.
+
+In terms of overall layout, Su Garden Phase II places the main entrance and core shared facilities at the center, aligned with the entrance to the medical center. This design breaks away from the completely enclosed courtyard, cleverly creating two secondary areas that can be independently managed: a professional care area and a memory care area. This layout not only ensures the independence and safety of different functional areas but also facilitates management and service. At the same time, the single-story height of the core public spaces, the organization of the rooftop garden, and the shifting relationships between internal masses together create a rich and diverse internal spatial experience, providing the elderly with varied activity and social spaces.
+To avoid an oppressive feeling from overly continuous and large volumes, the project breaks down the entire circular mass into a shifting combination of 12 blocks. Four central volumes are cleverly set as public service desks and rest areas, which not only serve functional purposes but also act as “watchtowers,” providing views over the other six blocks. This design enriches the building’s spatial layers, enhancing transparency and interactivity. The shifting volumes, together with the ground-level public service modules, create a settlement-like spatial experience, allowing the elderly to find a sense of belonging and warmth. This layout also effectively avoids long corridors, creating a more rhythmic, street-like internal space experience.
+In terms of aesthetic planning, Su Garden Phase II is equally meticulous. The project is situated near mountains and water, offering beautiful natural scenery. To harmonize with the surrounding environment, the project adopts a sloping roof design, using a continuous folded roof form to reflect the traditional architectural style of Nanjing. This design not only highlights regional cultural characteristics but also complements the surrounding mountainous landscape. Moreover, the orientation of the inner courtyard is carefully designed to guide views toward distant peaks, allowing the elderly to enjoy high-quality elderly care services while appreciating the beauty of nature, bringing joy and relaxation to both body and mind.
+The launch of Taikang Home Su Garden Phase II represents another bold exploration and innovation in the elderly care industry. We hope to provide the elderly with a safe, professional, and warm care environment, and through thoughtful design and planning, allow them to enjoy high-quality life while feeling the warmth and freedom of home.
+
+
+========================================
+
+I. Vocabulary Extraction
+- Residential units / apartments (repeated module units)
+- Internal corridors / circulation corridors
+- Stairwells (exit stairs) and stair cores
+- Elevator core / lift shaft
+- Central service/core area (mechanical/vertical service shafts)
+- Courtyards / light wells / open internal voids
+- Wings / building blocks (articulated building arms)
+- Balconies / loggias (unit projections)
+- Entrances / lobbies (primary access nodes at cores)
+- Utility / service rooms (small rooms adjacent to cores)
+- Structural grid / columns and dimension lines
+- Exterior façades and building envelope
+- Fire escape routes / egress paths (implied by stair locations)
+
+II. Spatial Relationship Descriptions
+- The plan arranges repeated apartment units along linear corridors within multiple articulated wings, so units are predominantly perimeter-facing and organized in rows.
+- Wings cluster around several interior voids/courtyards; these courtyards provide light and ventilation to inward-facing units and break up the massing.
+- Vertical circulation (stairwells and an elevator core) is concentrated at nodal points where wings meet or along main corridors, creating a hierarchy of primary access points.
+- Shared service cores and utility shafts are centrally located within clusters, minimizing long service runs and grouping mechanical/vertical elements together.
+- There is a layered arrangement from public to private: main cores/lobbies → shared corridors → individual units, with balconies providing a semi-private intermediate layer facing either exterior or courtyard spaces.
+- The wings are angled and offset from one another, creating staggered adjacencies and small outdoor interstitial spaces rather than a single continuous façade.
+
+III. Overall Spatial Impression (1–2 sentences)
+The drawing shows a modular, high-density residential plan composed of articulated wings organized around multiple light courts, with a clear circulation hierarchy centering on vertical cores. The layout balances efficient repetition of apartment modules with voids 
+and offsets that introduce daylight, ventilation, and semi-private outdoor spaces.
+
+IV. Design Intent Reading
+- Maximize unit count and efficiency by repeating a standardized apartment module along linear corridors while keeping services concentrated in cores.
+- Improve daylighting and cross-ventilation for interior units by introducing multiple courtyards/light wells and offsetting wings rather than a solid block.
+- Provide clear, legible vertical circulation and fire egress through well-placed stair/elevator cores at strategic junctions of the plan.
+- Create semi-private communal spaces and varied views by angling wings and integrating balconies/loggias, making exterior space more articulated and sheltered.
+- Respond to site or program constraints with a fragmented/stepped massing strategy that breaks the building into smaller readable volumes rather than a monolithic footprint.

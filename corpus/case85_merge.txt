@@ -1,0 +1,72 @@
+Oude Dijk Housing / Shift Architecture Urbanism
+
+Apartments
+•
+Tilburg, The Netherlands
+Architects: Shift architecture urbanism
+Area: 
+5075 m²
+Year: 
+2020
+Photographs:Riccardo De Vecchi
+Manufacturers:  Wienerberger, Mosa
+Lead Architects: Harm Timmermans
+structural Engineer: Goudstikker de Vries
+Construction: Van Gisbergen
+Landscape: MTD landscape architects
+Category: Apartments
+Team: Harm Timmermans, Pieter Heymans, Thijs van Bijsterveldt, Oana Rades, Zoé Renaud, Hans Hoogenboom, Raymond van den Broek
+Advisor Masonry: Harrie Vekemans
+Contractor: J.A. Van Gisbergen
+Program / Use / Building Function: Elderly Housing
+Client: Van der Weegen Bouwontwikkeling
+Advisor Installations: Visietech
+City: Tilburg
+Country: The Netherlands
+
+Text description provided by the architects. The first housing project for the monastery complex Oude Dijk in Tilburg, home to the congregation of the Sisters of Charity, has been completed. It is part of the first step in the transformation of the monumental complex in the city center of Tilburg, currently still populated by 120 Sisters. The master plan by Shift aims at realizing elderly and care homes for the aging Sisters and safeguarding the monasterial qualities of the site while at the same time opening the introverted complex towards the city, both physically and in terms of (new) residents. The first apartment building for 36 Sisters connects to the city, the monumental motherhouse and chapel, the monastery garden, and the adjacent nursing home. Its sober and subtly differentiated architecture in brick is informed by the rich historical context without becoming pastiche or retro.
+The urban scheme for the site is based on the typology of the courtyard found in the historic development of the monastery since 1843. New and old buildings together form a collection of new courts around the monastery garden, each with its own character, function, level of enclosure, and mix of inhabitants.
+The new volumes conform to the size and height of the existing buildings. Their shape prioritizes the pure form of the courts and gardens over the primary form of the buildings. As a consequence, the buildings are not to be recognized as solitary volumes, but rather as walls that define a variety of distinctive outside spaces.
+The program of first phase of the re-development of the site consists of a nursing home with 24 units for Sisters within the existing monument and a new apartment building with 36 elderly homes and 4 communal spaces for sisters with limited care needs.
+The new apartment building connects to the city, the motherhouse, the garden, and the adjacent nursing home. Its linear volume forms a clear boundary for the garden and creates two new courts: a closed court and an open court. The closed court serves as a safe outside space for Sisters with a psychogeriatric disorder in the nursing home. The open court serves as an entrance area for the nursing home and the apartment building.
+Both the communal circulation space and the apartments open up generously toward the outside. This enables residents to experience the outside spaces the building defines and the historic ensemble it is part of. One feels like being part of the bigger whole and the larger community from within the building. The double-sided and double-high entrance links the building to both the city and the garden.  From the single-loaded part of the corridor, one looks back towards the existing monument and into the enclosed courtyard. The connective nature of the building is further enhanced by the prolongation of this corridor on the ground floor, linking the apartment building to the monumental chapel and motherhouse of the congregation.
+The sober and subtly differentiated architecture in brick is informed by the rich historical context without becoming pastiche or retro. Each facade reacts in its own way to the outside space it defines and the part of the monument it relates to. What all facades have in common is the use of traditional masonry in water-struck bricks with light-grey pointing that enforces the effects of the diverse masonry bonds.
+The vertically oriented city façade relates to the classical façade of the adjacent monument. The garden façade has been designed as an inhabited garden wall that combines transparency with materiality and solidity. Recessed windows and loggias make the building not claim the garden, while the apartments still open up generously towards the green. The closed courtyard façade adopts the rhythm of the brickwork pilaster of the monument. On the ground floor, these pilasters are filled in with large recessed windows, creating the effect of an arcade. On the upper levels, the windows are flush with the brick, creating deep window sills in the interior corridors that function as benches.
+The interior corridor widens up at the front doors of the apartments. The niches it creates break the monotony of the corridor and provide all apartments with an entrance area. The walls of the corridor are made of standard concrete blocks masonry. Their porous texture contrasts with the abstract niches in stucco and solves the acoustics of the space.
+The demand for a completely mobile-bed-accessible building has resulted in an apartment typology without corridors. The standard three-room apartment consists of three bays in which the middle bay functions as a central living- and dining room from which all the other spaces are reached. 
+
+========================================
+
+I. Vocabulary Extraction
+- Linear corridor / circulation spine (highlighted hatch)
+- Cross-corridor nodes / junction lobbies
+- Residential units / apartments (repeated module)
+- Stairwells / vertical cores (at least two)
+- Service/utility cores (small rooms adjacent to corridors)
+- Entrances / lobbies (at connections to main building and to site paths)
+- Balconies / terraces or loggias (small rectangular outdoor projections facing east)
+- Adjoining larger building block / courtyard (U-shaped existing building to the west)
+- Internal courtyard / semi-private garden (within the larger building footprint)
+- External landscape / park with trees and paths (to the east and south)
+- Parking area (northwest)
+- Site paths / pedestrian routes (connecting building to park and parking)
+- Landscape features / rectilinear lawn or water feature (rectangular element in park)
+
+II. Spatial Relationship Descriptions
+- A long, continuous corridor (central spine) runs north–south and organizes the entire wing; short cross-corridor segments create nodal junctions where circulation widens.
+- Residential units are arranged linearly along the corridor in a repeated modular pattern; units occupy both sides of the corridor such that one side faces the internal courtyard/building and the other side faces the park (east).
+- Terraces/balconies are consistently located on the park-facing side, establishing a direct visual and physical relationship between private living spaces and the external landscape.
+- The new wing connects directly into the larger, existing building on its west side, linking internal courtyard spaces to the new apartments and making the wing an extension of the primary building block.
+- Stairwells/vertical cores are located at strategic points (ends and junctions) to provide vertical escape and service access; service/utility rooms cluster near those cores and junctions.
+- Pedestrian paths from the park and parking align with the corridor entrances, creating clear access routes and permeability between the public landscape and the building interior.
+- The building/wing and the external park are layered: existing building and courtyard to the west, the linear apartment wing as an intermediate layer, and the open park landscape to the east, with terraces mediating between private and public outdoor spaces.       
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan reads as a disciplined, linear insertion that extends an existing building toward a landscaped park, using a continuous central spine to organize a series of repeated apartment modules. The design emphasizes direct orientation and access to the external green space while keeping internal connectivity to the main building and its courtyard.
+
+IV. Design Intent Reading
+- Integrate new housing with the existing complex: the wing is physically tied into the larger building to extend program and circulation rather than stand alone.
+- Maximize relationship to landscape: repeated placement of terraces and park-facing unit façades suggests an intention to give residents direct views and access to the park, prioritizing daylight and landscape exposure.
+- Efficient, modular organization: repetition of unit modules along a single spine indicates a desire for economical circulation and straightforward servicing (stair cores, utilities) while maintaining regular rhythm and clarity.
+- Hierarchical permeability: main pedestrian paths, corridor nodes, and entrances align to join public, semi-public, and private realms (park → terrace → apartment → internal courtyard), promoting both community interaction and graduated privacy.
+- Emphasis on nodal social spaces: widened corridor junctions and connections to the courtyard/main building imply intentional common/meeting points rather than isolated units.

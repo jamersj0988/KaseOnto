@@ -1,0 +1,44 @@
+St John's House Nursing Home
+
+Dublin, Ireland
+Firm
+FKL architects
+Type Government + Health › Aging Facility
+STATUS Built
+YEAR 2021
+SIZE 3000 sqft - 5000 sqft
+BUDGET $5M - 10M
+
+The Concept of the building, based on a logical layout, is of a two storey bedroom block resting on the ground floor shared facilities.
+The new “Y” shaped block forms a sheltered secure courtyard at the centre of the plan and organises the external space into two gardens to the north and west that combine with the adjoining mature gardens to maximise the access to light and greenery for both residents and neighbours.
+An existing 1970’s single storey building over parking is demolished, the ground floor slab is retained to form a new elevated secure garden deck accessible to all of the residents.
+The new accommodation attached to the rear of the existing building forms an internal courtyard, refocusing the existing chapel as the centre of the community from its former position surrounded by services. The chapel courtyard is enclosed by a cloister forming a sheltered promenade linking the old building and new structure.
+A large assembly room open to the courtyard acts as a focus for daily activity and a space for seasonal events. The roof provides a terrace above that serves all residents and adds a secondary promenade.
+The individual elements of the program are articulated using contrasting colours. This is intended to heighten a sense of place and facilitate wayfinding and the legibility of the layout for those with cognitive impairment. This attitude to colour is carried throughout the interior and becomes apparent in specific locations on the exterior. This use of colour is informed by current best practice within the care community and for dementia design.
+The colours for the bedroom block are drawn from colours within the varied tones of the brickwork of St. Johns. The colour changes subtly between facades so that North and East faces are lighter and South and West a deeper shade. The lightest elevation will face Merrion Village to the North to maximise the daylight available. As sunlight falls on darker shades they will appear lighter and match more closely to adjoining lighter shades.
+Supporting elements at Ground Floor Level are treated as part of the landscape and take on that materiality, fairfaced block for supporting elements, stone where people come into contact with the building and concrete for landscape elements separate from the building form.
+The landscape is designed to stimulate the range of senses of the residents through scent, colour, texture, sound and taste - herbs, vegetables and fruit are grown and consumed by residents. Each garden has an individual character through the use of hard landscaping
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   Residential Units/Rooms (with private bathrooms)
+*   Corridors/Circulation Spine
+*   Central Courtyard/Atrium
+*   Stairwells
+*   Elevator Shafts (inferred from square service cores)
+*   Common Areas/Lounge Spaces (wider sections along corridors)
+*   Main Entrance/Lobby Area
+*   Outdoor Paved Areas/Walkways
+*   Trees/Landscaping
+*   Terraces/Sloped Ramps (within the courtyard and at entrances)
+*   Surrounding Building Massing (adjacent structures indicated by dark blocks)
+
+**II. Spatial Relationship Descriptions:**
+The residential units are primarily organized along linear corridors that branch off a central circulation spine. This spine, in turn, is directly connected to and wraps around a prominent, multi-level central courtyard. The courtyard acts as a vital communal hub, fostering visual connections between different parts of the building and providing direct outdoor access from adjacent common areas. There is a clear distinction between the more private individual units and the semi-public corridors and courtyard, with the latter serving as the main connecting and gathering space. Vertical circulation is distributed through multiple stairwells and elevator shafts, strategically placed along the main spine to ensure accessibility across the different levels of the complex.
+
+**III. Overall Spatial Impression:**
+The building exhibits a strong, organized layout centered around a large internal courtyard, suggesting a design that prioritizes communal living and natural light. It employs a clear spatial hierarchy, distinguishing private dwelling units from shared circulation and gathering spaces, all while maintaining a continuous flow and connection to the central outdoor element.
+
+**IV. Design Intent Reading:**
+The design intent appears to be centered on creating a vibrant, community-oriented living environment with a strong connection to nature. The central courtyard serves as a primary social condenser and a source of natural light and ventilation, promoting a sense of well-being and interaction among residents. The clear and logical organization of spaces also suggests an emphasis on intuitive wayfinding and accessibility within the complex.

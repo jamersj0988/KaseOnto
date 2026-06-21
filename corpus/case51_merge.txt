@@ -1,0 +1,70 @@
+Retirement Home of the Franciscan Sisters in Vienna / Schenker Salvi Weber Architekten
+
+Healthcare Architecture, Healthcare, Retirement
+•
+Vienna, Austria
+Architects: Schenker Salvi Weber Architekten
+Area: 
+10800 m²
+Year: 
+2020
+Photographs:David Schreyer
+Strcutural engineering: Tragwerkplanung Freller ZT
+Project Management: Bauwert Köstenberger
+Building Services Engineering: Technisches Büro Herbst
+Light Design: Designbüro Christian Ploderer
+Interior Design: Wilhelm Scheruebl
+Electrical Planning: Ingenieurbüro Tauss
+Landscape Architecture: DnD landschaftsplanung
+Category: Healthcare Architecture, Healthcare, Retirement
+Design Team: Eva Andrasova, Hannah Niemand, Christian Rübenacker, Michael Salvi, Andres Schenker, Pia Schmidt, Rostislav Stoklasek, Tina Tobisch, Katalin Tóth, Zsófia Varga, Thomas Weber, Philipp Wemmer
+Building Physics And Acoustics: IBO – Österreichisches Institut für Bauen und Ökologie GmbH
+Fire Safety: IMS Brandschutz
+Visualizations: Miss 3
+Model Building: Modellwerkstatt Gerhard Stocker
+City: Vienna
+Country: Austria
+
+Text description provided by the architects. Located near the Lainzer Tiergarten in Vienna's 13th district, the San Damiano house, run by the religious community "Franciscan Sisters of Christian Charity," is privately operated and publicly funded. The challenge was to best utilize the complex hillside property with a beautiful view over Vienna and create diverse spatial atmospheres and exciting visual axes.
+The goal was to create a homely and cheerful atmosphere for the residents, featuring bright rooms that foster social interaction and spaces for privacy and retreat. This was achieved without relying on typical design elements from the care and hospital sectors. Despite the limited budget, high architectural quality was maintained, providing an exemplary living environment for less affluent seniors in Austria.
+Four square, four-story volumes with loggias and gray wooden facades, connected into a large form like a chain and staggered lengthwise and crosswise into the terrain, create a "constructed landscape." It harmoniously blends into the surroundings, creating open and protected spaces, diverse levels, paths, and visual axes to the park and across the city.
+The building combines a reinforced concrete shell structure with prefabricated wooden exterior walls. The wooden facade, made of pre-weathered and planed spruce with panels offset by five or ten centimeters per floor, protects the building like "bark." It oscillates between bronze and silver-gray and subtly weaves the windows into the building structure. Horizontal and vertical rods dramatize the exterior wall.
+Despite the complex construction task, the functional and scale-appropriate layout solutions and very clear access routes determine the character of the building. Easy orientation and short distances are important, especially for older people, but also for their caregivers. This allows the seniors a more autonomous daily life and the staff more effective workflows and a good overview. Many residents have a high level of care needs. In their single rooms with low window sills, they can look out into the greenery even while lying in bed. On request, residents, such as couples, can flexibly combine their rooms into a two-room unit.
+The rooms on all floors are oriented towards a spacious, central living kitchen where residents can meet, play cards, chat, and eat together, "which is very well received," says Friederike Elisabeth Hacker. Each apartment is equipped with a barrier-free shower and toilet. The personal living environment can be individually designed. The sisters' rooms are located at the vertical access points. Warm colors, tactile materials, carpets, and wood create a harmonious and homely atmosphere where older people feel comfortable. Access to the park is barrier-free for all living groups.
+
+========================================
+
+I. Vocabulary Extraction
+- Long linear corridor / main circulation spine
+- Secondary corridors / service corridors
+- Clustered rooms / repeated cell rooms (small offices, classrooms, or dorm units)
+- Large multipurpose hall / lecture/auditorium (top-right)
+- Atrium / internal courtyard with planted bed (central L-joint)
+- Stepped seating / terraced platform within atrium (amphitheater-like)
+- Outdoor terraces / landscaped terraces (right wing)
+- Entrance lobby / reception area (adjacent to parking/left)
+- Parking area (upper-left)
+- Vertical circulation cores: stairwells and elevator shafts (several positions)
+- Toilets / washrooms and small service rooms
+- Support/service rooms: storage, mechanical, and back-of-house rooms
+- Meeting rooms / seminar rooms / informal breakout spaces
+- External circulation / terrace walkways
+
+II. Spatial Relationship Descriptions
+- A primary linear corridor runs along the long arm of the plan, with repeated cell rooms aligned on one or both sides, creating a rib-like organization of private modules around a continuous spine.
+- Secondary corridors branch off the main spine to form smaller clusters of rooms, creating compact, legible neighborhoods of private/function spaces.
+- The L-shaped plan frames a large internal atrium at the inner corner; the atrium is visually and physically connected to adjacent shared spaces and vertical circulation, acting as the social/organizational heart.
+- Public or communal functions (auditorium/multipurpose hall, larger meeting/dining-like rooms) are located at wing ends and near the atrium/terraces, providing direct access to outdoor landscaped terraces.
+- Vertical circulation cores are placed at intervals along the spine and adjacent to the atrium, enabling efficient distribution and clear wayfinding between floors.
+- Service and support rooms are clustered near circulation nodes and the parking/entry zone, separating back-of-house functions from primary user spaces.
+- Outdoor terraces and planted areas are layered outside the more public spaces, creating a progression from enclosed halls to semi-public terraces and landscaped exterior zones.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan uses a strong linear spine and an L-shaped geometry to organize repetitive private units and cluster shared facilities around a central atrium and terraces. Public, communal spaces are concentrated at the atrium and wing termini, giving the layout a clear hierarchy from private modules to collective gathering zones.
+
+IV. Design Intent Reading
+- Emphasis on community and interaction: the central atrium with terraced seating and adjacent communal rooms suggests the design prioritizes informal gathering, presentations, and social exchange.
+- Clear circulation logic and efficient modularity: repeated cell rooms along a continuous corridor indicate a program that benefits from repeatable units (e.g., classrooms, offices, or residence rooms) and straightforward wayfinding.
+- Integration of indoor and outdoor space: terraces and landscaped areas are positioned to extend public functions outward, improving daylight, views, and outdoor activity opportunities.
+- Functional separation and service efficiency: clustering of toilets, storage, and mechanical rooms near cores and the entry/parking area shows intent to keep services compact and minimize disruption to primary spaces.
+- Flexible multi-function zones: larger halls and adjacent smaller meeting rooms imply an intent for adaptability—events, lectures, and informal uses can coexist and flow into outdoor terraces.

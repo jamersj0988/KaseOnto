@@ -1,0 +1,48 @@
+30 Senior Housing / Bastiaan Jongerius Architecten
+Housing
+•
+Edam, The Netherlands
+Architects: Bastiaan Jongerius Architecten
+Area: 
+3500 m²
+Year: 
+2008
+
+Text description provided by the architects. The centre of Edam dates from the 14th century, is situated close to Amsterdam and next to the IJsselmeer in the middle of the Netherlands. The canals are majestic, with elegant buildings and cheese warehouses.
+The architecture of this area is carefully and profoundly detailed. You can see this in the composition, materialization and lots of details. The location of the building is in a district build in the seventies. The buildings in this neighborhood are build in a period of lack of houses.
+Most of them are therefore build and designed fast and with a small budget. A lot of building elements are prefabricated and realized without much craft at all. The program consists in 30 social dwellings. 13 houses for families (95m2) with a garden and 17 apartments for elderly people (85m2) with a private balcony.
+We tried to conform with the architecture in the seventies neighborhood and copy the quality of the architecture situated in the centre of Edam with all its richness.
+
+========================================
+
+I. Vocabulary Extraction
+- Terraced housing units (repetitive, modular dwellings)
+- Linear building blocks (three main block elements: two long parallel rows + one shorter perpendicular/offset block)
+- Central pedestrian spine / communal courtyard / paved plaza
+- Private rear gardens / patios for each unit
+- Front thresholds / individual entrances facing the central spine
+- Parking bays (on-street parking and dedicated parking courts at block ends)
+- Service/vertical cores: stairwells and small lobbies (at ends and between groups of units)
+- Connector / ramp or bridge between blocks (short link at the center)
+- Bicycle / storage bays (small rectangular bays behind/adjacent to units)
+- Trees and planted buffer strips (landscaping along streets and central spine)
+- Property boundary / adjoining plots and streets (Noorderstraat and adjacent roads)
+- Paved circulation surfaces with different hatch patterns (distinguishing pedestrian plaza, drive, planted areas)
+
+II. Spatial Relationship Descriptions
+- The two long rows of terraced units run parallel and face each other across a continuous central pedestrian spine/courtyard, establishing a shared communal axis.
+- A shorter block at the northwest corner is offset and linked to the long blocks by a short connector, creating a partial enclosure and breaking the linear repetition.
+- Individual units are clustered in repeating modules along the blocks; each unit has a front entrance onto the communal spine and a private garden/patio to the opposite side, creating a front (semi-public) / back (private) spatial layering.
+- Parking is located at the perimeters (street parking and dedicated bays), keeping the central spine predominantly pedestrian and landscaped.
+- Vertical circulation (stair cores) is positioned at block ends and intermittently along the shorter block, concentrating shared access points rather than internal corridors for each run.
+- Landscaping (trees and planted buffers) lines the outer streets and parts of the central spine, mediating between public streets and the semi-private communal space.
+- The connector/ramp creates a physical and visual link between blocks, allowing shared circulation and access while maintaining distinct clusters of units.
+
+III. Overall Spatial Impression (1–2 sentences)
+The site is organized around a linear communal spine that prioritizes pedestrian movement and social interaction, with repetitive terraced units facing inward and private gardens to the rear. The arrangement balances collective open space and individual privacy by concentrating parking and servicing at the edges and using a short connector to form a partially enclosed, cohesive housing cluster.
+
+IV. Design Intent Reading
+- Promote community interaction: orienting unit entrances toward a shared pedestrian spine encourages casual encounters and creates a village-like communal courtyard.
+- Efficient modular housing: repeated, narrow unit modules and aligned cores suggest a strategy for construction economy and clear internal organization (likely multi-storey townhouses).
+- Prioritize pedestrians and privacy: parking and vehicular access are kept to the perimeter so the central spine can be mainly pedestrian and landscaped, while private rear gardens provide secluded outdoor space.
+- Spatial hierarchy and enclosure: the shorter linking block and central plaza form a partial enclosure that defines a neighborhood focal space and structures views and movement through the site.

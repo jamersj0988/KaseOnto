@@ -1,0 +1,43 @@
+Frauensteinmatt看护中心，瑞士 
+
+Michael Meier Marius Hug Architekten
+Location: Frauen­steinmatt 1, 6300 Zug
+time: 2011
+
+The contrast between the protected interior and the exterior, the architectural value in a confined space and the associated high quality of living are themes that characterize the Frauensteinmatt retirement center in Zug. By folding the outer walls into the interior of the building, protected outer spaces are created, behind which are the kitchens and, to the side, the living rooms. The versatility of the floor plan by means of a folding wall, as well as roundtrips and niches give the small apartments spatial wealth. In the nursing department, the aforementioned diversity is reflected in the common areas and the entrance hall, which reminds of a hotel lobby. Both in the individual apartments, as well as in the common living areas, the goal is an upscale living quality far from the usual picture of retirement homes. Consequently, the retirement, family and priest’s apartments are basically organized identically. The apartments are spread over three buildings whose orientation is emphasized on all sides by circumferential parapet strips made of concrete. The fact that the houses in the park are placed free-standing completes the picture of upscale living.
+by folding the outer walls into the interior of the building, protected outer spaces are created
+
+
+========================================
+
+I. Vocabulary Extraction
+- Building footprints / clusters (three primary multi‑unit blocks)
+- Individual dwelling units / apartments (unit partitions visible)
+- Internal corridors / circulation galleries
+- Stairwells / vertical cores (small core spaces in each block)
+- Shared semi‑private courtyards / interstitial open spaces between blocks
+- Pedestrian paths / site walkways connecting blocks
+- Vehicular roads / access road (curved major road along the east side)
+- Neighboring single‑family houses (surrounding low‑rise fabric)
+- Terracing / stepped site boundaries (indicated by layered perimeter lines)
+- Retaining edges / boundary walls (site edge geometry)
+- Landscape / open green areas (undeveloped space within and around the cluster)
+- Scale bar and north marker (drawing annotation)
+
+II. Spatial Relationship Descriptions
+- The three multi‑unit blocks are distributed across the site as discrete clusters with open space between them, forming a loose courtyard network rather than one continuous mass.
+- Internal units are arranged around linear or slightly angular circulation corridors; stair/vertical cores punctuate each block and provide access to clusters of apartments.
+- Blocks are staggered and offset from one another, creating semi‑private courtyards and landscaped buffers that mediate between buildings and the surrounding single‑family fabric.
+- A curved high‑capacity route (road or rail) runs along the east edge of the site; the block arrangement provides a spatial buffer and orients primary façades away from this infrastructure.
+- Pedestrian paths connect the blocks and their cores, creating shared circulation and linking public access points to the central interstitial spaces.
+- The site shows terraced or layered edges (contour-like lines) so the buildings appear stepped on the slope; this produces vertical layering of outdoor space and building entrances.
+- The cluster strategy reduces perceived mass by breaking the program into smaller, clustered volumes that better relate to adjacent low‑rise buildings.
+
+III. Overall Spatial Impression (1–2 sentences)
+The site is organized as a composition of three stepped, irregular multi‑unit blocks that create a sequence of semi‑private courtyards and pedestrian routes. The layout responds to existing roads and surrounding single‑family context by fragmenting massing, orienting units toward internal green spaces, and using terracing to follow the site slope.
+
+IV. Design Intent Reading
+- Promote community and semi‑private social interaction by grouping housing around shared interstitial courtyards and connected pedestrian paths rather than isolating towers or a single slab.
+- Reduce scale and integrate with the suburban context by breaking the program into several smaller, articulated volumes that align with site topography and neighboring houses.
+- Mitigate impact of the adjacent curved transport corridor through orientation, spacing, and landscaped buffers, while preserving daylight and multiple aspect views for units.
+- Use stepped/terraced geometry and angled plans to create varied apartment typologies, enhance daylight penetration, and provide more private outdoor thresholds for units.

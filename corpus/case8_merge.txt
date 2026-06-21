@@ -1,0 +1,49 @@
+Elderly Care Campus / Areal Architecten
+
+Asylum
+•
+Mortsel, Belgium
+Architects: Areal Architecten
+Area: 
+15217 m²
+Year: 
+2014
+Photographs:Tim Van de Velde
+Manufacturers:  Hunter Douglas Architectural (Europe), Forbo Flooring Systems, Armstrong Ceilings, Fermacell, Hunter Douglas, Schüco, Vande Moortel
+Structural Engineering: ABT Belgie nv
+Construction: MBG (CFE)
+Category: Asylum
+Technical Studies: VK Engineering
+Client: Sint-Carolus Mayerhof vzw
+Cost: 18200000 euro
+Text: Jurgen Vandewalle
+City: Mortsel
+Country: Belgium
+
+" Nursing homes and other social services are often interpreted according to the same pattern: countless rooms linked together by long corridors . Such a scheme is a victory for the functionality of these buildings , but a defeat for the domesticity of it . In care area Mayerhof the limits of this rational scheme are questioned, while space is created in which a community can grow. Various additions of communal and open areas add to the domesticity of the place. By positioning the nursing home in a figure of eight on the site an infinite circulation that connects all the rooms on every floor with each other arises.In this functional diagram however, places where social interaction arises are inserted . At each corner of the figure open spaces create space for interaction.The linear corridor folds around two large voids, creating various perspectives and a sense of overview in the building. As the program towards the upper floors is diminishing, terraces arise on every floor with an optimal orientation and protected from the wind. Each room gets either view towards these open spaces in the heart of the nursing home or to the green area around the building. The result is a very light volume that is bathed in natural light and space.Besides nursing , three separate volumes provide assisted living , as stately sentinels overlooking the existing nursing home . Large openings with terraces located in a residential area that acts between the nursing home and the surrounding housing . All properties counting two or three facades allowing natural light to invade the living spaces are bundled with a widened corridor that houses the common functions .The new buildings are implanted into the free space on the site around the existing nursing home , which remained in use during the works . After the demolition a green zone is liberated embraced by the new nursing home and assisted living residences. The joint residential area and the underground passage bind the different functions together . Otherwise they set themselves as autonomous parts , but live as integrated components of a unique residential care setting with a focus on lifelong living and care.The choice for three entrances to the site , the construction of streets and indoor spaces and buildings that vary in size and appearance makes this new environment reminiscent of an urban fabric and is way different than the monotonous environments where such programs are mostly housed. The various functions dress in a different architecture . The nursing home is built in a reflective aluminum cladding used as canvas to the sunlight. The assisted living residences have a stately finish in masonry with exposed concrete ring beams.Mayerhof Care Campus acts as a small town where functionality and domesticity merge into a fresh environment where social interaction , security and integration of people with different needs are in the center. A community bound together by a rational structure , a place to grow old with dignity .”
+
+========================================
+
+**I. Vocabulary Extraction:**
+*   Residential units (individual apartments or rooms)
+*   Corridors (single-loaded and double-loaded)
+*   Stairwells / Vertical circulation cores (indicated by arrows)
+*   Courtyards / Atriums (shaded green and grey areas, suggesting open-to-sky or covered communal spaces)
+*   Common areas / Flexible spaces (areas with scattered squares, possibly seating or informal gathering zones)
+*   Large open-plan spaces (e.g., areas with rows of elements, potentially a library, workspace, or lecture hall)
+*   Service rooms (e.g., restrooms, utility closets)
+*   Building blocks / Wings (distinct structural volumes)
+*   Balconies (implied by small protrusions on some residential units)
+
+**II. Spatial Relationship Descriptions:**
+*   The smaller, elongated blocks (left side) demonstrate a linear organization where multiple residential units are accessed directly from a central double-loaded corridor, maximizing the number of units per floor.
+*   The larger, more complex blocks (right side) are organized around central voids or courtyards (green and grey shaded areas), which serve as internal focal points and likely provide light and ventilation to surrounding spaces.
+*   A clear distinction exists between private cellular spaces (residential units) and larger, more public or communal areas (open-plan spaces, courtyards, common areas).
+*   Circulation paths are primarily linear within the residential wings and more distributed around the central courtyards in the larger blocks, with vertical circulation cores strategically placed at ends or central points.
+*   The two main large blocks are connected by an L-shaped interstitial space, suggesting a transitional zone or a shared amenity space that links different functional components of the overall complex.
+
+**III. Overall Spatial Impression:**
+The design presents a large-scale, multi-functional complex that integrates diverse programmatic elements, from private residential units to expansive communal and open-plan spaces. The overall impression is one of structured efficiency, achieved through modularity and clear circulation, balanced with the provision of central communal voids that enhance light, ventilation, and interaction.
+
+**IV. Design Intent Reading:**
+The design aims to create a comprehensive environment that accommodates both individual living and collective activities within a cohesive structure. The use of central courtyards suggests an intent to maximize natural light and ventilation for deep floor plates, foster a sense of community, and provide internal green or open spaces. The clear differentiation and connection between various building blocks indicate a strategy for organizing diverse functions while maintaining an integrated campus or mixed-use development.

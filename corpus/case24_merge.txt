@@ -1,0 +1,41 @@
+Assisted Living for the Elderly in Utebo / Basilio Tobías
+
+Asylum, Residential Architecture
+•
+Utebo, Spain
+Architects: Basilio Tobías
+Area: 
+10 m²
+Year: 
+2012
+
+ext description provided by the architects. The building adopts a longitudinal layout, in line with the proportions of the allocated plot at one end of De Las Fuentes Park, with a setback that corresponds to the main vertical and service cores. At higher levels, these setbacks allow a clear differentiation between the four units that constitute the spaces for private use. On the ground level, the setback determines the position of the main entrance to the residence from the south, differentiated from the entrance to the day center from the west, via an exclusive courtyard.The street which borders the park to the west forces us to concentrate the entrances on the southwest corner of the plot. The ramp to the parking area and the sunken courtyard are laid out parallel to the west facade. To the east, the residence faces the free space that borders the park, allowing the main rooms to be oriented towards this green, longitudinal space, which includes part of the existing trees, subdivided into outdoor enclosures, interconnected but distinct, intended for users of the day center, center staff and users of the residence. A porch runs parallel to the eastern facade, adopting an enclosure system consisting of laminated wood studs that allow an appropriate integration of the center into the environment.The project responds, moreover, to other urban considerations, related to the boundaries of the plot. This preserves the continuity of the southern boundary, where at the westernmost point, the entrance to the day center is located. The various main entrances to the building are proposed on the street that borders the park to the west: the access to the day center, from the southwest corner; the main access to the residence, leading to the lobby and vertical core, and in parallel, and separated by a wooden lattice, the access road to the garage and all other units in the basement.The basement level contains the staff dining room and locker rooms, the kitchen – connected by elevators to the offices and dining rooms of the day center and the residence, on the upper level – the laundry, trash room, maintenance and storage areas. The interior connection with the other levels is primarily through the service core, although two of the stairs, the main staircase and the one on the north end, also reach this level.The building contains different vertical cores. The main core, on the corner produced by the setback, consists of the main staircase and two elevators for the disabled. This core, sectored conveniently, traverses all the upper levels. The service core, consisting of a staircase, two elevators for the disabled and a double entrance elevator that can fit a stretcher, runs through all the levels and is located next to the service area of each level. Besides there two cores, there are two staircases at the north and south ends.On one hand, the linear, offset layout of the plan is adapted to its position in the park, and to the role of the facade of the building as a nuanced background to the park, responding to the diverse characteristics of the surrounding areas and the different needs of the entrances. On the other hand, the trace and the permeable nature of the ground floor allow a calibration and a closer contact with the ground, while the wooden lattice enclosure blurs the separation of the necessary, private exterior areas of the building, with the rest of the park.The facade cladding consists of ceramic tiles 30 x 60 cm in ocher tones. The tiles are fixed to a metal substructure, anchored to the load-bearing structure. They define a trans-ventilated facade that combines ceramic elements with an accurate and refined technology for construction and assembly, to achieve a facade system with an excellent thermal and acoustic behavior. Moreover, the look of the facade will enable a proper insertion of the building, in terms of the general colors of the area. Most of the openings in the public areas and guest rooms are protected by electrically adjustable aluminum shutters, allowing a tight and comfortable control of natural lighting inside the building, serving also as protective elements.
+
+========================================
+
+
+**I. Vocabulary Extraction:**
+*   Residential units (Unidad Residencial Asistida)
+*   Corridor / Circulation spine
+*   Living area (Zona de Estar)
+*   Dining room (Comedor)
+*   Control room (Control)
+*   Stairwells
+*   Linen room (Lenceria)
+*   Service rooms (Of. Sucios, Of. Limpio)
+*   Outdoor terraces / Open spaces (hatched areas)
+*   Structural grid
+*   Furniture (beds, desks, chairs, tables)
+
+**II. Spatial Relationship Descriptions:**
+*   A prominent, linear central corridor acts as the primary circulation spine, providing direct access to numerous residential units arranged symmetrically on both sides.
+*   Common areas, specifically a large living and dining zone, are centrally located along this corridor, serving as a communal hub for residents.
+*   Service functions, including control rooms, linen storage, and clean/dirty offices, are clustered adjacent to the central common areas, facilitating efficient operation and support for the residential units.
+*   Stairwells are strategically placed at the ends of the main residential wings and within the central common area, ensuring multiple points for vertical circulation and emergency egress.
+*   Outdoor terraces or open spaces are integrated along the perimeter, particularly on the left and bottom edges, suggesting opportunities for natural light, ventilation, and outdoor access for some units and common areas.
+
+**III. Overall Spatial Impression:**
+The building presents a highly organized, linear, and functional layout, characteristic of an institutional or assisted living facility, prioritizing efficient circulation and clear zoning between private residential units and shared communal and service areas.
+
+**IV. Design Intent Reading:**
+The design aims to create an efficient and easily navigable environment, balancing the need for individual privacy within the residential units with ample opportunities for communal interaction in the shared living and dining spaces. The clear organization and integration of service areas suggest a strong focus on operational efficiency, accessibility, and supervision, tailored to the specific requirements of an assisted living or care facility.

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KaseOnto Corpus Viewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <dialog id="profile-dialog" class="profile-dialog" aria-labelledby="profile-dialog-title">
+      <form id="profile-form" class="profile-dialog-panel" novalidate>
+        <div class="profile-dialog-heading">
+          <div>
+            <p class="eyebrow">User Profile</p>
+            <h2 id="profile-dialog-title">基本資料填寫</h2>
+          </div>
+        </div>
+        <p class="profile-dialog-copy">請先填寫基本資料，這些資料只會用於後續分析，不會公開或提供給第三方。</p>
+        <div class="profile-form-grid">
+          <label class="profile-field">
+            <span>姓名</span>
+            <input id="profile-name" name="name" type="text" autocomplete="name" />
+            <small>選填</small>
+          </label>
+          <label class="profile-field">
+            <span>學號</span>
+            <input id="profile-student-id" name="studentId" type="text" autocomplete="off" />
+            <small>選填</small>
+          </label>
+          <label class="profile-field">
+            <span>學歷</span>
+            <select id="profile-education" name="education" required>
+              <option value="">請選擇</option>
+              <option value="大學">大學</option>
+              <option value="碩士">碩士</option>
+              <option value="博士">博士</option>
+              <option value="其他">其他</option>
+            </select>
+            <small>必填</small>
+          </label>
+          <label class="profile-field">
+            <span>年級</span>
+            <input id="profile-grade" name="grade" type="text" autocomplete="off" required />
+            <small>必填</small>
+          </label>
+        </div>
+        <p id="profile-error" class="profile-error" role="alert"></p>
+        <div class="profile-dialog-actions">
+          <button id="profile-submit" class="secondary-action" type="button">開始使用</button>
+        </div>
+      </form>
+    </dialog>
+
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-main">
+            <div class="brand-mark">K</div>
+            <div>
+              <h1>KaseOnto</h1>
+              <p>Case Knowledge population workspace</p>
+            </div>
+            <button id="manual-guide" class="manual-guide-button" type="button" title="Open guide" aria-label="Open guide">
+              <span aria-hidden="true">📖</span>
+            </button>
+          </div>
+          <div class="compact-review document-summary" aria-label="Document summary">
+            <div class="compact-review-title">
+              <span>Text and Entity Review</span>
+              <small><i></i>Ready</small>
+            </div>
+            <div class="document-file">
+              <span class="file-icon">TXT</span>
+              <span>
+                <strong id="file-name">case53_merged.txt</strong>
+                <small id="file-meta">Preparing document</small>
+              </span>
+            </div>
+            <div class="compact-stats">
+              <span>Entities <strong id="entity-count">0</strong></span>
+              <span>Populated <strong id="populated-count">0</strong></span>
+            </div>
+          </div>
+          <div class="compact-review case-result-card" aria-label="Case and result actions">
+            <div class="compact-review-title">
+              <span>Case & Results</span>
+              <small>DATA / JSON</small>
+            </div>
+            <div class="case-result-body">
+              <label class="case-picker">
+                <span>Current case</span>
+                <select id="case-select" aria-label="Select case">
+                  <option value="">Loading cases...</option>
+                </select>
+              </label>
+              <div class="result-actions" aria-label="Result actions">
+                <button id="export-results" class="secondary-action" type="button">Export</button>
+                <button id="load-results" class="secondary-action" type="button">Import</button>
+                <input id="results-file" type="file" accept="application/json,.json" hidden />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="panel entity-panel compact-entity-panel" aria-labelledby="entity-title">
+          <div class="panel-heading">
+            <div class="entity-tabs" role="tablist" aria-label="Entity list tabs">
+              <button
+                id="entity-title"
+                class="entity-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-tab="extracted"
+              >
+                Extracted Terms
+              </button>
+              <button
+                class="entity-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-tab="populated"
+              >
+                Populated Terms
+              </button>
+            </div>
+            <div class="entity-head-actions">
+              <small id="corpus-status">Loading</small>
+              <input id="entity-search" type="search" placeholder="Search terms" aria-label="Search entities" />
+            </div>
+          </div>
+          <div id="entity-list" class="entity-list"></div>
+          <div id="empty-terms" class="empty-terms" hidden>Populated Terms is empty for now.</div>
+        </section>
+
+        <div class="review-grid">
+          <section class="reader-card" aria-labelledby="corpus-title">
+            <div class="reader-toolbar">
+              <div class="reader-title-group">
+                <p class="eyebrow">Case document</p>
+                <h2 id="corpus-title">Corpus Window</h2>
+                <div class="corpus-tabs" role="tablist" aria-label="Corpus view tabs">
+                  <button
+                    class="corpus-tab is-active"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    data-corpus-tab="original"
+                  >
+                    原文
+                  </button>
+                  <button
+                    class="corpus-tab"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    data-corpus-tab="translation"
+                  >
+                    中文翻譯
+                  </button>
+                </div>
+              </div>
+              <div class="reader-actions">
+                <button id="decrease-font" class="icon-button" type="button" title="縮小文字">A-</button>
+                <button id="increase-font" class="icon-button" type="button" title="放大文字">A+</button>
+              </div>
+            </div>
+            <article id="corpus-text" class="corpus-text" tabindex="0">正在載入 corpus 文字...</article>
+          </section>
+
+          <section class="ontology-card" aria-labelledby="ontology-title">
+            <div class="ontology-toolbar">
+              <div class="ontology-title-group">
+                <p class="eyebrow">Ontology</p>
+                <h2 id="ontology-title">Ontology Browser</h2>
+              </div>
+              <div class="ontology-selection" aria-label="Term to ontology mapping">
+                <div class="mapping-item">
+                  <span>Selected Term</span>
+                  <strong id="selected-term-label">None</strong>
+                </div>
+                <div class="mapping-item">
+                  <span>Selected Class</span>
+                  <strong id="selected-class-label">None</strong>
+                </div>
+              </div>
+              <input
+                id="ontology-search"
+                type="search"
+                placeholder="Search classes"
+                aria-label="Search ontology classes"
+              />
+            </div>
+            <div id="ontology-status" class="ontology-status">Loading ontology...</div>
+            <div id="ontology-tree" class="ontology-tree" role="tree" aria-label="Ontology hierarchy"></div>
+          </section>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <section class="panel workspace-note" aria-label="Workspace note">
+          <p class="eyebrow">Review area</p>
+          <h2>Term lists beside the reader</h2>
+          <p>Use the left-side tabs to switch term lists while reading the corpus text below it.</p>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="manual-dialog" class="manual-dialog" aria-labelledby="manual-dialog-title">
+
+
+      
+      <section class="manual-dialog-panel">
+        <div class="manual-dialog-heading">
+          <div>
+            <p class="eyebrow">Introduction of Ontology</p>
+            <h2 id="manual-dialog-title">甚麼是本體?</h2>
+          </div>
+          <button id="manual-close" class="manual-close-button" type="button" aria-label="Close guide dialog">×</button>
+        </div>
+        <div class="manual-dialog-body">
+          <section>
+            <h3>What is Ontology?</h3>
+            <p class="ontology-help-text">
+              Ontology 是一種用來整理與定義概念、關係與屬性的知識結構，幫助人和系統用一致的方式理解同一個世界。
+            </p>
+
+            <div class="ontology-example">
+              <strong class="ontology-example-title">Example: </strong>
+              <ul class="ontology-example-list">
+                <li>subclass(概念上/下位關係): Bedroom(臥室) 是一種 Room(房間) 。</li>
+                <li>part of(概念之間「部分/包含」關係): Window(窗) 是 Wall(牆) 的一部分。</li>
+                <li>feature attribute(概念的特徵屬性): Orientation(方位面向) 是 Room(房間) 的特徵屬性。</li>
+                <li>data attribute: Room Area(房間的面積) = 12 m²。</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h3>Kase Ontology 本體介紹</h3>
+            <p class="ontology-help-text">
+              Kase Ontology 是專為建築案例資訊建模的本體，最上層的概念幫含一下五個面向:
+            </p>
+            <ul>
+              <li><em>building</em> 表示建築相關的類別，例如空間、構件、材料或建築型態。</li>
+              <li><em>participant</em> 表示參與者或角色類別。</li>
+              <li><em>event</em> 表示事件、活動或行為類別。</li>
+              <li><em>issue</em> 表示問題、議題或設計考量。</li>
+              <li><em>site</em> 表示基地、環境或場域條件。</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Kase Ontology Relation type</h3>
+            <ul>
+              <li><em>has feature</em> 表示 children 是 parent 的特徵或屬性。</li>
+              <li><em>has subclass</em> 表示 children 是 parent 的子類別。</li>
+              <li><em>has data</em> 表示 children 是 parent 的資料屬性。</li>
+              <li><em>has part</em> 表示 children 是 parent 的組成部分。</li>
+            </ul>
+          </section>
+
+        <div class="manual-dialog-heading">
+          <div>
+            <p class="eyebrow">Guide</p>
+            <h2 id="manual-dialog-title">介面說明</h2>
+          </div>
+          <button id="manual-close" class="manual-close-button" type="button" aria-label="Close guide dialog">×</button>
+        </div>
+        <div class="manual-dialog-body">
+          <section>
+            <h3>Corpus Window</h3>
+            <ul>
+              <li>視窗為當前<em>Case</em>完整敘述內容，以及被框選的待<em>「分類實體」</em>。</li>
+              <li><em>「分類實體」</em>可以透過滑鼠選取，並在<em>Ontology Browser</em>視窗進行分類。</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Extracted Terms & Populated Terms</h3>
+            <ul>
+              <li><em>「Extracted Terms」</em> 會顯示所有「待分類實體」。</li>
+              <li><em>「Populated Terms」</em>會顯示所有「已分類實體」。</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Ontology Browser</h3>
+            <ul>
+            
+              <li> 完整本體操作面板，當選定「待分類實體」即可進行概念分類。 </li>
+              <li> 點選「概念」後即會出現「Save」按鈕，點擊即可完成該實體分類。 </li>
+              <li> 「+」為向下展開概念內容，「-」為返回上層概念內容。 </li>
+            </ul>
+          </section>
+          
+        <div class="manual-dialog-heading">
+          <div>
+            <p class="eyebrow">Task</p>
+            <h2 id="manual-dialog-title">任務說明</h2>
+          <ul>
+              <li> 總共有3個case需要請您幫忙進行「實體分類。」 </li>
+              <li> 當所有實體被分類完成，即可點選右上角的「Export」按鍵存檔。 </li>
+            </ul>
+
+          </div>
+          
+        
+      </section>
+    </dialog>
+
+    <script src="./embedded-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
