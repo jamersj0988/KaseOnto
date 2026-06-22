@@ -1,0 +1,55 @@
+Armstrong Place Senior Housing / David Baker + Partners
+
+Apartments
+•
+San Francisco, United States
+Architects: David Baker + Partners
+: David Baker & Partners
+Area: 
+131800 m²
+Year: 
+2011
+Photographs:Brian Rose
+
+Text description provided by the architects. This complex development fills a formerly industrial city block with an innovative housing mix: Affordable urban townhomes to keep growing families in the city and family housing adjacent to senior apartments to prevent seniors from living in isolation.
+Leading a trend of transit-oriented development along the district’s main business corridor, the development lies just a block from a stop of a new light-rail line, a park, and a health center. The senior building, with 116 affordable rental units, serves as the anchor for the development, housing neighborhood-serving retail space and services and presenting an iconic tower at the corner that signals a sense of place.
+To reflect the historically African-American population of the neighborhood, design details were drawn from traditional African textiles and symbols. Textile-inspired paint and window arrangements combine to wrap the public face of the building in an interlocking “quilt” of color and pattern. The courtyard is ringed by a wall inset with Ashanti tribal symbols representing security, wisdom, power, love, unity, and hope.
+Based on income, the rents range from $0 to $635/month, with qualifying income levels below 50% AMI and some units reserved for formerly homeless seniors. The building is LEED NC Registered, with a goal of Gold. It features many complementary green strategies, including storm-water management, solar arrays that heat domestic water and light the common spaces, and healthy interiors and materials.
+The senior apartments overlook the park, the courtyard, or a landscaped mews that runs between the building and the family townhouse development. The mews, an extension of the city street grid, provides direct access to the surrounding neighborhood and serves as a walking path away from the main arterial roadway.
+In the family development, two mirrored sections of stacked townhouses flank a large open public courtyard above one level of parking, lobby, and community spaces. While staying connected to the city streets through private stoops and balconies, the townhouses surround the central courtyard, which features vegetable gardens, outdoor seating, and a picnic and play structure. Each side also features a smaller private courtyard with planters and picnic tables.
+Of the 124 family townhomes, half feature three and four bedrooms, allowing people to stay as families grow. Many larger units are designed for aging in place, with stairs wide enough to accommodate wheelchair lifts and accessible living quarters on the entry level. These for-sale townhomes range from $175,000 to $345,000 and are available to families earning between 60 and 100% AMI.
+
+========================================
+
+I. Vocabulary Extraction
+- Central courtyard / landscaped courtyard
+- Perimeter residential units (apartment units)
+- Double-loaded corridor / continuous internal circulation corridor (ring)
+- Stairwells (vertical stair cores)
+- Elevator cores (lift shafts)
+- Service/plant or utility rooms (small enclosed spaces near cores)
+- Entrance lobbies / main entries (at circulation nodes)
+- Balconies / small projections (some units appear to have outward-facing terraces)
+- External planting / street trees (around the building perimeter)
+- Internal landscaping / paved plaza and planting within courtyard
+- Light wells / openings to courtyard (units face inward toward courtyard)
+- Corner/angled facade (rounded corner unit cluster)
+
+II. Spatial Relationship Descriptions
+- Units are arranged along the building perimeter and facing either the outer street or the interior courtyard, forming a continuous ring of accommodation.
+- A continuous internal corridor (highlighted in beige) loops around the courtyard, connecting all units and vertical circulation cores; units are generally double-loaded along this corridor.
+- Vertical circulation (stair and elevator cores) is located at strategic nodes along the corridor so access is distributed and breaks the corridor into manageable segments.
+- The central courtyard is directly accessible from the corridor and acts as the organizational heart — it is visually and physically connected to interior circulation and provides shared outdoor amenity.
+- Service/utility spaces cluster near the cores, keeping building services compact and adjacent to vertical circulation.
+- Outer-facing units relate to the street and surrounding trees, while inner-facing units enjoy direct adjacency to the landscaped courtyard — creating layered public (street) → semi-public (corridor) → semi-private (courtyard/terrace) → private (unit) relationships.
+- A distinctive angled/rounded corner groups several units in a slightly different geometry, indicating response to site boundary and street alignment.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan is a perimeter block organized around a landscaped central courtyard, with a continuous ring corridor providing efficient, distributed access to repeated residential units and vertical cores. The design layers public, communal, and private spaces to concentrate social amenity at the center while maximizing daylight and views for perimeter and courtyard-facing apartments.
+
+IV. Design Intent Reading
+- Promote community and shared amenity: the inward-facing courtyard and direct visual/physical connections from the corridor suggest an intent to create a communal social space and microclimate within the block.
+- Efficiency and repetition: modular, double-loaded units and regularly spaced cores indicate a focus on efficient circulation and economy of floor plan for housing.
+- Daylight/ventilation strategy: units oriented to both the exterior and the central courtyard imply an attempt to provide daylight and cross/stack ventilation to a high proportion of units.
+- Site-responsive massing: the angled/rounded corner and placement of cores respond to site geometry and entry points, balancing street presence with an enclosed communal interior.
+- Hierarchy of privacy: spatial layering from street to courtyard organizes gradations of public to private life, enhancing security and creating semi-private outdoor amenity for residents.

@@ -14,9 +14,44 @@ function toAppRelativeKey(absolutePath) {
   return `./${path.relative(projectRoot, absolutePath).replace(/\\/g, "/")}`;
 }
 
+function fillCaseTemplateValue(value, caseNumber) {
+  // cases.json 可用 {case} 當數字變數，build embedded 時需先展開成實際檔案路徑。
+  return typeof value === "string" ? value.replaceAll("{case}", String(caseNumber)) : value;
+}
+
+function buildCaseOptionFromTemplate(template, caseNumber) {
+  // 將簡短 caseNumbers/template 格式轉成 app 原本使用的完整 case option 結構。
+  return {
+    id: fillCaseTemplateValue(template.id || "case{case}", caseNumber),
+    label: fillCaseTemplateValue(template.label || "Case {case}", caseNumber),
+    languages: {
+      original: {
+        corpus: fillCaseTemplateValue(template.languages?.original?.corpus, caseNumber),
+        entities: fillCaseTemplateValue(template.languages?.original?.entities, caseNumber),
+      },
+      translation: {
+        corpus: fillCaseTemplateValue(template.languages?.translation?.corpus, caseNumber),
+        entities: fillCaseTemplateValue(template.languages?.translation?.entities, caseNumber),
+      },
+    },
+  };
+}
+
+function expandCasesConfig(casesConfig) {
+  // 保留舊 array 格式，也支援新的 caseNumbers/template 簡寫格式。
+  if (Array.isArray(casesConfig)) {
+    return casesConfig;
+  }
+
+  const caseNumbers = Array.isArray(casesConfig?.caseNumbers) ? casesConfig.caseNumbers : [];
+  const template = casesConfig?.template || {};
+
+  return caseNumbers.map((caseNumber) => buildCaseOptionFromTemplate(template, caseNumber));
+}
+
 async function loadCaseAssetPaths() {
   const casesJsonText = await fs.readFile(casesIndexPath, "utf8");
-  const cases = JSON.parse(casesJsonText);
+  const cases = expandCasesConfig(JSON.parse(casesJsonText));
   const caseIndexDir = path.dirname(casesIndexPath);
   const assetPaths = new Set([casesIndexPath, ontologyPath]);
 

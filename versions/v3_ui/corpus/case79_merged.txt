@@ -1,0 +1,66 @@
+New Village Care Residence / DoepelStrijkers
+
+Housing
+•
+Arnhem, The Netherlands
+Architects: DoepelStrijkers
+Area: 
+5000 m²
+Year: 
+2020
+Photographs:APA foto, DoepelStrijkers
+Manufacturers:  GRAPHISOFT, Hunter Douglas Architectural (Europe), Alucobond, Kingspan Unidek Sips, Knauf, Wineo
+Construction: IMD, Rotterdam
+Contractor: Tricon bouw, Velp
+Project Management: vb&t projectmanagement B.V. Eindhoven, Lijn Ontwikkeling Boxtel, An Archi B.V. Zoetermeer
+Interior Builder: Vense Projecten B.V., Apeldoorn
+Category: Housing
+Design Team: Duzan Doepel, Eline Strijkers with Kasper Zoet, Guido Duba, Mikolai Brus, Riekie Brokking, Jaap van Dijk and Joeri Bellaard
+Clients: Arnhem, Siza
+Installations: Groen & Aldenkamp Woerden, Woerden
+Advisor Installations: Woerden, Peter Prins
+Facade: Kingspan Unidek SIPS / Alucobond
+Façade: Alucobond, Kingspan Unidek SIPS
+City: Arnhem
+Country: The Netherlands
+
+Text description provided by the architects. Siza was our client of the first new building for the so-called Nieuwe Dorp. We won a pitch 3 years ago in which they asked for the solution for a building with a disruptive solution for a caring environment. It should include 36 care homes and a large academy in which innovations in care could be tested in order to keep updating the 36 homes. The existing village, in which Mies Bouwman guided the famous fundraising campaign via TV, was built by Van de Broek and Bakema and no longer met the demand. Too low, too small, and also outdated in terms of required technology. She wanted a learning environment that prepared the temporary users of the village for a return to their own familiar living environment as soon as possible.
+The urban setting of the first village was characterized by a hilly landscape with stacked houses that are accessible on 2 levels. We found that the residents tried to make their own front door recognizable with personal objects. People with a congenital brain defect (NAH patients) find it difficult to orient themselves, cannot find their own home properly, and quickly get lost. We wanted to create an architecture where the architecture form would arise from the analysis of the users with their specific required usage requirements.
+So the building was designed from the inside out. We wanted the building to give people back control of their own lives. In addition, we wanted to create a future-proof, circular, and healthy building based on the principles of Active House. Overarching it should be a Healing Environment. The building should, therefore, have clear orientation points, a strong relationship with the outside with lots of daylight. To promote group formation and interaction, we proposed a maximum group size per floor of 7/8 people. Each floor had to have a communal terrace and a corridor zone large enough to stay there. With this structure, it would be possible to seek privacy that is desired but also be stimulated enough to be among the people. Something that benefits the users, who also have to recover psychologically.
+We looked at which building typology suits this well and crossed a standard gallery block with terrace houses. On one side this resulted in a terraced landscape facing south. On the other side to a large open space the academy, on the north. The shift on 2 sides creates a natural distance or strong connection between the houses and the academy. The corridor zone for the houses high in the building has a strong relationship with the outside and a view of the Amsterdam road. This zone is quiet for people starting their rehabilitation. The low-rise houses are more strongly linked to the Academy so that there is intensive involvement with the Academy. These people actively participate in improvements in care. The architecture is thus the carrier of the care process in the building.
+
+========================================
+
+I. Vocabulary extraction
+- Entrance / head entrance
+- Residents' access / circulation lobby
+- Vertical core: stair and elevator
+- Linear corridor serving a row of units
+- Repeating residential units (modular rooms)
+- Internal courtyard / patio / terrace (rectangular open void with planters)
+- Communal kitchen / pantry
+- Common / shared spaces (reception, lounges, presentation area)
+- Academy / lab / presentation rooms (educational/workspaces on lower levels)
+- Storage / service rooms
+- Terraced/stepped plan form (slanted outer façade and stepped upper volumes)
+- External stairs (side access)
+- Small balconies/voids indicated adjacent to courtyard (light wells / private outdoor projections)
+
+II. Spatial relationship descriptions
+- The building plan is organized as a long, slanted bar with a single-loaded corridor: a row of identical residential units lines the outer face while the corridor and service/core run along the inner side facing the courtyard.
+- The vertical core (stair/elevator) sits toward the narrow end and anchors vertical circulation, connecting public functions on the lower floors to the repeated private units above.
+- A rectangular internal courtyard/terrace (labeled 11) is located mid-building and is directly accessible/visible from the corridor and some common spaces — it acts as a shared outdoor amenity and light/ventilation source for interior rooms.
+- Public and semi-public programs (reception, academy/lab, presentation, communal kitchen) are concentrated on the ground and first floors close to the main entrance and core, creating a clear public-to-private transition vertically and horizontally.
+- Storage and service rooms cluster near the core and access points, minimizing service runs and keeping the unit strip free for occupiable space.
+- Upper floors repeat the same unit layout (stacking), producing a stacked modular system that frames the courtyard and preserves solar access to the units.
+- The slanted outer geometry creates staggered terraces/roof setbacks on higher floors, producing layered outdoor spaces and carved massing along the long façade.
+
+III. Overall spatial impression (1–2 sentences)
+The drawings show a compact, linear residential block that separates public educational/communal uses at its base from a repetitive stack of private units above, organized around an internal courtyard. The plan emphasizes efficient modular repetition, direct vertical access, and a communal void that brings light and shared amenity into the building’s center.
+
+IV. Design intent reading
+- Promote community and interaction: clustering reception, communal kitchen, presentation/academy spaces near the entrance and an interior courtyard suggests an intent to foster shared activities and social exchange among residents/users.
+- Efficiency and standardization: the repetitive, single-loaded unit layout and stacked floor plans indicate a desire for economical, easily replicable housing modules.
+- Daylighting and cross-ventilation strategy: the internal courtyard/terrace and the single-loaded organization appear intended to maximize daylight and natural ventilation into the narrow units.
+- Clear programmatic layering: public/educational functions are intentionally located on lower levels for accessibility, while private living units occupy the upper repetitive volumes for privacy and containment.
+- Responsive massing: the slanted plan and stepped upper floors suggest an architectural response to site constraints (orientation or setback) and a move to create terraces and better solar exposure.

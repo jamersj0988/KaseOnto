@@ -15,12 +15,19 @@
 - `versions/v2_working/` 是 ontology browser 改版工作區，使用白色 click-based radial graph class view。
 - `versions/v3_ui/` 是目前主要 UI 工作區；之後若沒有額外指定，前端調整優先以這個版本為準。
 - `versions/v3_ui/` 的資料載入改成單一 `data/cases.json` 架構；每個 case 直接在 `cases.json` 內宣告 `original` / `translation` 的 corpus 與 entity 路徑，新增 case 時優先延續這個格式，不要再把路徑寫死在 `app.js`。
+- `versions/v3_ui/data/cases.json` 也支援簡短模板格式：用 `caseNumbers` 填數字清單，並在 `template` 裡用 `{case}` 產生 `id`、`label`、corpus/entity 路徑；`app.js`、`tools/build-embedded-data.mjs` 與 `entity_list/check_entity_alignment.py` 都會先展開這個格式。
 - `versions/v3_ui/` 的 bilingual term 模型是「同一筆 term 共享一組 extracted / populated 狀態，只帶 `original` / `translation` 兩種 label」；切換 Corpus Preview 的原文 / 中文翻譯只切顯示語言，不可把 term 清單拆成中英兩組。
+- `versions/v3_ui/` 的中英文 entity 配對以中文 entity 內括號英文（例如 `中文(English)`）為主鍵；英文 entity 檔維持 term 清單主順序，括號英文找不到時才退回同行 fallback，中文檔多出的 entity 會保留成 `translation-term-*` 供人工檢查。
 - `versions/v3_ui/` 現在與 checker 一樣採用「開頁先填基本資料」gate：`app.js` 會在 `init()` 前呼叫 `openProfileDialog()`，並先把表單收斂成只有「狀態」與「年分／年級」兩個必填欄位；gate 內另有 `Import` 按鈕可直接載入既有結果檔並關閉 gate，方便只想續改 JSON 的使用者；資料暫存於 `sessionStorage.kaseontoUserProfile`，匯出 JSON 也會附上 `reviewerProfile`。
 - `ontology checker/` 是 ontology structural QA app，目前維持原生 HTML、CSS、JavaScript，介面風格貼近 v1。
 - 目前沒有前端框架、打包工具或建置流程，使用原生 HTML、CSS、JavaScript。
 - 因為 app 使用 `fetch()` 讀取本機文字檔，測試時應透過本機 web server 啟動，而不是直接開啟 `index.html`。例如：
   `python -m http.server 8000`。
+- `versions/v3_ui/index.html` 會載入 `embedded-data.js` 供 `file://` 直接開啟時使用；若修改 `versions/v3_ui/data/cases.json` 或其引用的 corpus/entity 檔案，且需要支援直接開 HTML，需執行：
+  `node versions/v3_ui/tools/build-embedded-data.mjs`。
+- 想直接開啟 v3 UI 時，可雙擊 `versions/v3_ui/執行啟動檔.bat`；它會以自身所在資料夾為根目錄，有 Node.js 時先重建 `embedded-data.js`，沒有 Node.js 時直接用現有 embedded 快照開 `index.html`，因此傳給不裝 Node 的使用者前需先由開發端重建好 `embedded-data.js`。
+- `versions/v3_ui/entity_list/check_entity_alignment.py` 可檢查 `cases.json` 內各 case 的中英文 entity 是否能用中文括號英文完成配對；執行：
+  `python versions/v3_ui/entity_list/check_entity_alignment.py`。
 
 ## 動態記憶更新規則
 

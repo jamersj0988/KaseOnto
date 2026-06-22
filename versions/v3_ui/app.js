@@ -126,6 +126,41 @@ function getActiveCaseOption(caseId) {
   return availableCases.find((item) => item.id === caseId) || null;
 }
 
+function fillCaseTemplateValue(value, caseNumber) {
+  // cases.json 的 template 欄位可用 {case} 當數字變數，讓新增 case 時只改一個數字清單。
+  return typeof value === "string" ? value.replaceAll("{case}", String(caseNumber)) : value;
+}
+
+function buildCaseOptionFromTemplate(template, caseNumber) {
+  // 將簡短 caseNumbers/template 格式展開成 app 既有的完整 case option 結構。
+  return {
+    id: fillCaseTemplateValue(template.id || "case{case}", caseNumber),
+    label: fillCaseTemplateValue(template.label || "Case {case}", caseNumber),
+    languages: {
+      original: {
+        corpus: fillCaseTemplateValue(template.languages?.original?.corpus, caseNumber),
+        entities: fillCaseTemplateValue(template.languages?.original?.entities, caseNumber),
+      },
+      translation: {
+        corpus: fillCaseTemplateValue(template.languages?.translation?.corpus, caseNumber),
+        entities: fillCaseTemplateValue(template.languages?.translation?.entities, caseNumber),
+      },
+    },
+  };
+}
+
+function expandCasesConfig(casesConfig) {
+  // 保留舊的 array 格式，同時支援新的 caseNumbers/template 簡寫格式。
+  if (Array.isArray(casesConfig)) {
+    return casesConfig;
+  }
+
+  const caseNumbers = Array.isArray(casesConfig?.caseNumbers) ? casesConfig.caseNumbers : [];
+  const template = casesConfig?.template || {};
+
+  return caseNumbers.map((caseNumber) => buildCaseOptionFromTemplate(template, caseNumber));
+}
+
 function resolveCaseAssetPath(relativePath) {
   // case 資料檔路徑統一相對於 cases.json 本身，之後只改一份索引檔就能新增或調整 case。
   return new URL(relativePath, new URL(casesIndexPath, window.location.href)).toString();
@@ -215,6 +250,128 @@ function buildCaseTerms(originalEntityText, translationEntityText, caseId) {
       },
     });
   }
+
+  return terms;
+}
+
+function parseBracketPairedTranslationLabel(label) {
+  // 中文 entity 以「中文(English)」為主要格式；括號內英文是中英文 term 對齊的主鍵。
+  const trimmed = String(label || "").trim();
+  let depth = 0;
+  let bracketStart = -1;
+
+  // 從結尾反向找最後一組完整括號，避免中文 label 內的「（補充說明）」被誤當成英文 key。
+  for (let index = trimmed.length - 1; index >= 0; index -= 1) {
+    const character = trimmed[index];
+
+    if (character === ")" || character === "）") {
+      depth += 1;
+    } else if (character === "(" || character === "（") {
+      depth -= 1;
+
+      if (depth === 0) {
+        bracketStart = index;
+        break;
+      }
+    }
+  }
+
+  if (bracketStart === -1 || depth !== 0) {
+    return {
+      displayLabel: trimmed,
+      originalLabel: "",
+    };
+  }
+
+  return {
+    displayLabel: trimmed,
+    originalLabel: trimmed.slice(bracketStart + 1, -1).trim(),
+  };
+}
+
+function normalizeEntityPairingKey(label) {
+  // 配對 key 只負責資料對齊；統一 dash、大小寫與連續空白，避免格式小差異造成找不到。
+  return String(label || "")
+    .trim()
+    .replace(/[\u2010-\u2015\u2212]/g, "-")
+    .replace(/\s+/g, " ")
+    .toLowerCase();
+}
+
+function buildCaseTermsByBracket(originalEntityText, translationEntityText, caseId) {
+  // term 清單維持英文 entity 檔的順序；中文 entity 優先用括號內英文配對，避免缺行造成後續整批錯位。
+  const originalLines = parseEntityLines(originalEntityText);
+  const translationEntries = parseEntityLines(translationEntityText).map((line, index) => ({
+    index,
+    ...parseBracketPairedTranslationLabel(line),
+  }));
+  const translationsByOriginalLabel = new Map();
+  const usedTranslationIndexes = new Set();
+  const terms = [];
+
+  translationEntries.forEach((entry) => {
+    const key = normalizeEntityPairingKey(entry.originalLabel);
+    if (!key) {
+      return;
+    }
+
+    if (!translationsByOriginalLabel.has(key)) {
+      translationsByOriginalLabel.set(key, []);
+    }
+
+    translationsByOriginalLabel.get(key).push(entry);
+  });
+
+  originalLines.forEach((line, index) => {
+    const originalLabel = String(line || "").trim();
+    const key = normalizeEntityPairingKey(originalLabel);
+    const matchedQueue = translationsByOriginalLabel.get(key) || [];
+    let translationInfo = matchedQueue.find((entry) => !usedTranslationIndexes.has(entry.index));
+
+    // 如果中文行完全沒有括號英文，才退回同行配對；有括號但不匹配時要保留為未配對，避免錯綁。
+    if (!translationInfo) {
+      const sameLineTranslation = translationEntries[index];
+      if (
+        sameLineTranslation &&
+        !sameLineTranslation.originalLabel &&
+        !usedTranslationIndexes.has(sameLineTranslation.index)
+      ) {
+        translationInfo = sameLineTranslation;
+      }
+    }
+
+    if (translationInfo) {
+      usedTranslationIndexes.add(translationInfo.index);
+    }
+
+    terms.push({
+      id: `${caseId}:term-${index}`,
+      labels: {
+        original: originalLabel,
+        translation: translationInfo?.displayLabel || originalLabel,
+      },
+    });
+  });
+
+  translationEntries.forEach((entry) => {
+    if (usedTranslationIndexes.has(entry.index)) {
+      return;
+    }
+
+    const canonicalOriginalLabel = entry.originalLabel || entry.displayLabel;
+    if (!canonicalOriginalLabel && !entry.displayLabel) {
+      return;
+    }
+
+    // 中文檔多出的 entity 不直接丟棄，保留成 translation-only term 供人工檢查與 populate。
+    terms.push({
+      id: `${caseId}:translation-term-${entry.index}`,
+      labels: {
+        original: canonicalOriginalLabel,
+        translation: entry.displayLabel || canonicalOriginalLabel,
+      },
+    });
+  });
 
   return terms;
 }
@@ -1387,7 +1544,7 @@ async function loadCaseData(caseOption) {
     loadText(translationCorpusUrl),
     loadText(translationEntitiesUrl),
   ]);
-  const sharedTerms = buildCaseTerms(originalEntities, translationEntities, caseOption.id);
+  const sharedTerms = buildCaseTermsByBracket(originalEntities, translationEntities, caseOption.id);
   const caseData = {
     id: caseOption.id,
     label: caseOption.label || caseOption.id,
@@ -1462,7 +1619,7 @@ async function setActiveCase(caseId) {
 
 async function init() {
   try {
-    availableCases = await loadJson(casesIndexPath);
+    availableCases = expandCasesConfig(await loadJson(casesIndexPath));
     populateCaseSelect();
   } catch (error) {
     els.corpusStatus.textContent = "Error";
