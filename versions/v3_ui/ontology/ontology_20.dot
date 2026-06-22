@@ -34,7 +34,6 @@ digraph "architecture design case ontology"{
 "program" -> "functional zone" [label="sense"]
 "program" -> "program area" [label="data attribute"]
 
-
 "site" -> "context" [label="feature attribute"]
 "site" -> "topography" [label="feature attribute"]
 "site" -> "climate" [label="feature attribute"]

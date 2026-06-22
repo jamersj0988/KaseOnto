@@ -8,6 +8,7 @@ const projectRoot = path.resolve(__dirname, "..");
 
 const casesIndexPath = path.join(projectRoot, "data", "cases.json");
 const ontologyPath = path.join(projectRoot, "ontology", "ontology_20.dot");
+const ontologyDisplayPath = path.join(projectRoot, "ontology", "ontology_20_ch.dot");
 const outputPath = path.join(projectRoot, "embedded-data.js");
 
 function toAppRelativeKey(absolutePath) {
@@ -53,7 +54,8 @@ async function loadCaseAssetPaths() {
   const casesJsonText = await fs.readFile(casesIndexPath, "utf8");
   const cases = expandCasesConfig(JSON.parse(casesJsonText));
   const caseIndexDir = path.dirname(casesIndexPath);
-  const assetPaths = new Set([casesIndexPath, ontologyPath]);
+  // 中文註解：直接開 HTML 時，英文 ontology 結構與中文顯示 mapping 都要一起內嵌，Browser 才能顯示 bilingual label。
+  const assetPaths = new Set([casesIndexPath, ontologyPath, ontologyDisplayPath]);
 
   for (const caseOption of cases) {
     const original = caseOption.languages?.original || {};

@@ -1,5 +1,6 @@
 const casesIndexPath = "./data/cases.json";
 const ontologyPath = "./ontology/ontology_20.dot";
+const ontologyDisplayPath = "./ontology/ontology_20_ch.dot";
 const embeddedTextAssets = window.__KASEONTO_EMBEDDED_TEXT__ || null;
 
 const els = {
@@ -71,6 +72,53 @@ const ontologyRelationOrder = new Map([
   ["feature attribute", 3],
   ["data attribute", 4],
 ]);
+
+function parseOntologyNodeLabel(rawLabel) {
+  // 中文註解：ontology ch 檔若使用 `English(中文)`，這裡把穩定英文 id 與畫面顯示 label 拆開保存。
+  const openParenIndex = rawLabel.indexOf("(");
+  if (openParenIndex <= 0) {
+    return { id: rawLabel, label: rawLabel };
+  }
+
+  return {
+    id: rawLabel.slice(0, openParenIndex).trim(),
+    label: rawLabel,
+  };
+}
+
+function getOntologyDisplayLabel(nodeId) {
+  // 中文註解：UI 一律走顯示 label；找不到對應時才退回英文 id，避免舊資料或例外節點直接壞掉。
+  return ontology?.labelsById.get(nodeId) || nodeId;
+}
+
+function resolveOntologyNodeId(nodeValue) {
+  // 中文註解：匯入舊 JSON 或混合格式時，優先解析回英文 id，讓內部狀態維持單一 key。
+  if (!nodeValue) {
+    return "";
+  }
+
+  if (ontology?.nodes.has(nodeValue)) {
+    return nodeValue;
+  }
+
+  const normalizedValue = String(nodeValue).trim();
+  if (!normalizedValue) {
+    return "";
+  }
+
+  const parsed = parseOntologyNodeLabel(normalizedValue);
+  if (ontology?.nodes.has(parsed.id)) {
+    return parsed.id;
+  }
+
+  for (const [nodeId, nodeLabel] of ontology?.labelsById || []) {
+    if (nodeLabel === normalizedValue) {
+      return nodeId;
+    }
+  }
+
+  return normalizedValue;
+}
 
 function formatNumber(value) {
   return new Intl.NumberFormat("en-US").format(value);
@@ -638,21 +686,26 @@ function parseOntologyDot(dotText) {
   const nodes = new Set();
   const childrenByParent = new Map();
   const parentByChild = new Map();
+  const labelsById = new Map();
   let match;
 
   while ((match = edgePattern.exec(dotText))) {
-    const [, parent, child, relation] = match;
-    nodes.add(parent);
-    nodes.add(child);
+    const [, rawParent, rawChild, relation] = match;
+    const parent = parseOntologyNodeLabel(rawParent);
+    const child = parseOntologyNodeLabel(rawChild);
+    nodes.add(parent.id);
+    nodes.add(child.id);
+    labelsById.set(parent.id, parent.label);
+    labelsById.set(child.id, child.label);
 
-    if (!childrenByParent.has(parent)) {
-      childrenByParent.set(parent, []);
+    if (!childrenByParent.has(parent.id)) {
+      childrenByParent.set(parent.id, []);
     }
 
-    childrenByParent.get(parent).push({ name: child, relation });
+    childrenByParent.get(parent.id).push({ name: child.id, relation });
 
-    if (!parentByChild.has(child)) {
-      parentByChild.set(child, parent);
+    if (!parentByChild.has(child.id)) {
+      parentByChild.set(child.id, parent.id);
     }
   }
 
@@ -660,12 +713,34 @@ function parseOntologyDot(dotText) {
     children.sort((a, b) => {
       const relationDiff =
         (ontologyRelationOrder.get(a.relation) ?? 99) - (ontologyRelationOrder.get(b.relation) ?? 99);
-      return relationDiff || a.name.localeCompare(b.name);
+      return (
+        relationDiff ||
+        (labelsById.get(a.name) || a.name).localeCompare(labelsById.get(b.name) || b.name, undefined, {
+          sensitivity: "base",
+        })
+      );
     });
   }
 
   const root = [...nodes].find((node) => !parentByChild.has(node)) || null;
-  return { nodes, childrenByParent, parentByChild, root };
+  return { nodes, childrenByParent, parentByChild, labelsById, root };
+}
+
+function parseOntologyDisplayLabels(dotText) {
+  // 中文註解：這裡只把 ch dot 當成顯示 mapping 來源，不參與 ontology 結構與內部英文 id 的判定。
+  const edgePattern = /"([^"]+)"\s*->\s*"([^"]+)"\s*\[label="([^"]+)"\]/g;
+  const labelsById = new Map();
+  let match;
+
+  while ((match = edgePattern.exec(dotText))) {
+    const [, rawParent, rawChild] = match;
+    const parent = parseOntologyNodeLabel(rawParent);
+    const child = parseOntologyNodeLabel(rawChild);
+    labelsById.set(parent.id, parent.label);
+    labelsById.set(child.id, child.label);
+  }
+
+  return labelsById;
 }
 
 function getOntologyAncestors(nodeName) {
@@ -689,7 +764,8 @@ function getVisibleOntologyNodes() {
   const normalizedFilter = ontologyFilter.toLowerCase();
 
   for (const node of ontology.nodes) {
-    if (!node.toLowerCase().includes(normalizedFilter)) {
+    const searchableText = `${node} ${getOntologyDisplayLabel(node)}`.toLowerCase();
+    if (!searchableText.includes(normalizedFilter)) {
       continue;
     }
 
@@ -740,7 +816,10 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
   } = options;
   const children = ontology.childrenByParent.get(nodeName) || [];
   const isExpanded = ontologyFilter || forceExpanded;
-  const isMatched = ontologyFilter && nodeName.toLowerCase().includes(ontologyFilter.toLowerCase());
+  const displayLabel = getOntologyDisplayLabel(nodeName);
+  const isMatched =
+    ontologyFilter &&
+    `${nodeName} ${displayLabel}`.toLowerCase().includes(ontologyFilter.toLowerCase());
 
   const wrapper = document.createElement("div");
   wrapper.className = "ontology-node";
@@ -771,7 +850,7 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
   const caret = document.createElement("button");
   caret.className = "ontology-caret";
   caret.type = "button";
-  caret.setAttribute("aria-label", `${isExpanded ? "Collapse" : "Open"} ${nodeName}`);
+  caret.setAttribute("aria-label", `${isExpanded ? "Collapse" : "Open"} ${displayLabel}`);
   caret.textContent = caretSymbol || (isExpanded ? "-" : "+");
   caret.classList.toggle("is-collapse", caret.textContent === "-");
 
@@ -786,7 +865,7 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
 
   const label = document.createElement("span");
   label.className = "ontology-label";
-  label.textContent = nodeName;
+  label.textContent = displayLabel;
 
   row.append(caret, label);
 
@@ -802,7 +881,7 @@ function createOntologyNode(nodeName, relation, depth, options = {}) {
   saveButton.type = "button";
   saveButton.textContent = "Save";
   saveButton.disabled = !activeEntityId;
-  saveButton.setAttribute("aria-label", `Save selected term as ${nodeName}`);
+  saveButton.setAttribute("aria-label", `Save selected term as ${displayLabel}`);
   saveButton.addEventListener("click", (event) => {
     event.stopPropagation();
     activeOntologyNode = nodeName;
@@ -1121,7 +1200,8 @@ async function restoreResults(payload) {
   const populatedIds = new Set();
 
   populatedTerms.forEach((item) => {
-    if (!item?.ontologyClass || !ontology?.nodes.has(item.ontologyClass)) {
+    const ontologyClassId = resolveOntologyNodeId(item?.ontologyClass);
+    if (!ontologyClassId || !ontology?.nodes.has(ontologyClassId)) {
       return;
     }
 
@@ -1134,8 +1214,8 @@ async function restoreResults(payload) {
     populatedIds.add(existing.id);
     nextPopulated.push({
       ...existing,
-      ontologyClass: item.ontologyClass,
-      branchClass: getOntologyBranchClass(item.ontologyClass),
+      ontologyClass: ontologyClassId,
+      branchClass: getOntologyBranchClass(ontologyClassId),
     });
   });
 
@@ -1197,7 +1277,8 @@ function updateMappingPanel() {
   const hasClass = Boolean(activeOntologyNode);
 
   els.selectedTermLabel.textContent = selectedEntity ? getEntityLabel(selectedEntity) : "None";
-  els.selectedClassLabel.textContent = hasClass ? activeOntologyNode : "None";
+  // 中文註解：右側 mapping panel 顯示 ontology label，但真正存下去的仍是英文 id。
+  els.selectedClassLabel.textContent = hasClass ? getOntologyDisplayLabel(activeOntologyNode) : "None";
   els.ontologyTree
     .querySelectorAll(".ontology-row-save")
     .forEach((button) => {
@@ -1396,7 +1477,8 @@ function renderEntities(filter = "") {
 
     chip.title = counterpartLabel ? `${displayLabel}\n${counterpartLabel}` : displayLabel;
     if (entity.ontologyClass) {
-      chip.title = `${chip.title}\nPopulated as ${entity.ontologyClass}`;
+      // 中文註解：term tooltip 顯示 ontology label，避免使用者看到內部英文 id 誤以為沒套到中文 ontology。
+      chip.title = `${chip.title}\nPopulated as ${getOntologyDisplayLabel(entity.ontologyClass)}`;
     }
 
     if (normalizedFilter) {
@@ -1631,6 +1713,19 @@ async function init() {
   try {
     const ontologyText = await loadText(ontologyPath);
     ontology = parseOntologyDot(ontologyText);
+    try {
+      // 中文註解：browser 顯示文字額外從 ch dot 載入；就算這份 mapping 缺失，也要保留英文 ontology 可正常使用。
+      const ontologyDisplayText = await loadText(ontologyDisplayPath);
+      const displayLabels = parseOntologyDisplayLabels(ontologyDisplayText);
+      ontology.labelsById = new Map(
+        [...ontology.labelsById.entries()].map(([nodeId, fallbackLabel]) => [
+          nodeId,
+          displayLabels.get(nodeId) || fallbackLabel,
+        ]),
+      );
+    } catch (displayError) {
+      console.warn("Could not load ontology display mapping. Falling back to English ontology labels.", displayError);
+    }
     ontologyFocusNode = ontology.root;
     activeOntologyNode = ontology.root;
     hasClickedOntologyClass = false;
