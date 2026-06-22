@@ -482,11 +482,12 @@ function configureProfileFields() {
   }
 
   if (els.profileDialog?.querySelector("#profile-dialog-title")) {
-    els.profileDialog.querySelector("#profile-dialog-title").textContent = "基本資料填寫";
+    els.profileDialog.querySelector("#profile-dialog-title").textContent = "專案簡介與基本資料";
   }
 
-  if (els.profileDialog?.querySelector(".profile-dialog-copy")) {
-    els.profileDialog.querySelector(".profile-dialog-copy").textContent =
+  if (els.profileDialog?.querySelector(".profile-form-note")) {
+    // 只更新基本資料提示，保留 index.html 內的專案說明文字。
+    els.profileDialog.querySelector(".profile-form-note").textContent =
       "請先填寫基本資料，這些資料只會用於後續分析，不會公開或提供給第三方。";
   }
 
@@ -663,6 +664,43 @@ function buildFlexibleTermPattern(entity) {
     `\\b${modifierPattern}\\b\\s*,(?:(?![.;:\\n]).){0,120}?\\b(?:and|or)\\b(?:(?![.;:\\n]).){0,80}?\\b${headPattern}\\b`,
     "giu",
   );
+}
+
+function getBracketPrefixLabel(label) {
+  // 中文註解：中文 corpus 比對先保留完整「中文(English)」，若找不到，再退回括號前的中文主詞。
+  const trimmed = String(label || "").trim();
+  if (!trimmed || !/[)）]$/.test(trimmed)) {
+    return "";
+  }
+
+  let depth = 0;
+  for (let index = trimmed.length - 1; index >= 0; index -= 1) {
+    const character = trimmed[index];
+
+    if (character === ")" || character === "）") {
+      depth += 1;
+    } else if (character === "(" || character === "（") {
+      depth -= 1;
+
+      if (depth === 0) {
+        return trimmed.slice(0, index).trim();
+      }
+    }
+  }
+
+  return "";
+}
+
+function getFallbackEntityLabels(entity) {
+  // 中文註解：fallback 只加入括號前中文，避免過度 fuzzy matching 造成 corpus 文字被誤框。
+  const label = getEntityLabel(entity);
+  const prefixLabel = getBracketPrefixLabel(label);
+
+  if (!prefixLabel || normalizeSearchText(prefixLabel) === normalizeSearchText(label)) {
+    return [];
+  }
+
+  return [prefixLabel];
 }
 
 function addMatchIfOpen(matches, occupied, start, end, entity) {
@@ -1136,10 +1174,30 @@ function buildResultsPayload() {
   };
 }
 
+function sanitizeFileNamePart(value, fallback) {
+  // Windows 檔名不能包含部分符號，匯出前先清掉，避免不同瀏覽器或系統存檔失敗。
+  const cleanValue = String(value || "")
+    .trim()
+    .replace(/[<>:"/\\|?*]+/g, "")
+    .replace(/\s+/g, "");
+
+  return cleanValue || fallback;
+}
+
+function buildResultsFileName() {
+  // 存檔檔名使用「狀態 + 年分／年級 + case 編號」，讓檔案一看就知道來源。
+  const profile = reviewerProfile || {};
+  const status = sanitizeFileNamePart(profile.education || els.profileEducationInput?.value, "未填狀態");
+  const year = sanitizeFileNamePart(profile.grade || els.profileGradeInput?.value, "未填年分");
+  const caseNumber = sanitizeFileNamePart(String(activeCaseId || "").replace(/^case/i, ""), "unknown");
+
+  return `${status}${year}_case${caseNumber}.json`;
+}
+
 async function exportResults() {
   const payload = buildResultsPayload();
   const json = JSON.stringify(payload, null, 2);
-  const suggestedName = `kaseonto-populated-${new Date().toISOString().slice(0, 10)}.json`;
+  const suggestedName = buildResultsFileName();
 
   if ("showSaveFilePicker" in window) {
     const handle = await window.showSaveFilePicker({
@@ -1387,6 +1445,30 @@ function buildEntityMatches(text) {
       }
 
       index = lowerText.indexOf(needle, index + needle.length);
+    }
+  }
+
+  for (const entity of sortedEntities) {
+    if (exactMatchedEntityIds.has(entity.id)) {
+      continue;
+    }
+
+    for (const fallbackLabel of getFallbackEntityLabels(entity)) {
+      const needle = normalizeSearchText(fallbackLabel);
+      if (!needle) {
+        continue;
+      }
+
+      let index = lowerText.indexOf(needle);
+      while (index !== -1) {
+        const end = index + needle.length;
+
+        if (addMatchIfOpen(matches, occupied, index, end, entity)) {
+          exactMatchedEntityIds.add(entity.id);
+        }
+
+        index = lowerText.indexOf(needle, index + needle.length);
+      }
     }
   }
 

@@ -12,10 +12,10 @@
         <div class="profile-dialog-heading">
           <div>
             <p class="eyebrow">User Profile</p>
-            <h2 id="profile-dialog-title">基本資料填寫</h2>
+            <h2 id="profile-dialog-title">專案簡介</h2>
           </div>
         </div>
-        <p class="profile-dialog-copy">請先填寫基本資料，這些資料只會用於後續分析，不會公開或提供給第三方。</p>
+        <p class="profile-dialog-copy profile-project-copy">感謝您接受本專案的邀請，本次資料蒐集為國科會計畫《再探建築案例式設計：結合大型語言模型及多模態模型方法的研究》作為分析使用，目的在於蒐集具建築專業背景之相關人士，對案例中的資訊進行本體填充之結果，以評估大型語言模型分析建築案例資訊的能力。</p>
         <div class="profile-form-grid">
           <label class="profile-field">
             <span>姓名</span>
@@ -44,6 +44,7 @@
             <small>必填</small>
           </label>
         </div>
+        <p class="profile-dialog-copy profile-form-note">請先填寫基本資料，這些資料只會用於後續分析，不會公開或提供給第三方。</p>
         <p id="profile-error" class="profile-error" role="alert"></p>
         <div class="profile-dialog-actions">
           <button id="profile-submit" class="secondary-action" type="button">開始使用</button>
@@ -94,8 +95,8 @@
                 </select>
               </label>
               <div class="result-actions" aria-label="Result actions">
-                <button id="export-results" class="secondary-action" type="button">Export</button>
-                <button id="load-results" class="secondary-action" type="button">Import</button>
+                <button id="export-results" class="secondary-action" type="button">Export(匯出存檔)</button>
+                <button id="load-results" class="secondary-action" type="button">Import(匯入存檔)</button>
                 <input id="results-file" type="file" accept="application/json,.json" hidden />
               </div>
             </div>

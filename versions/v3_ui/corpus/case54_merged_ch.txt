@@ -1,0 +1,75 @@
+養老院 / Atelier du Pont(Nursing Home / Atelier du Pont)
+退休養老(Retirement)
+•
+法國巴黎(Paris, France)
+建築師(Architects)：Atelier du Pont(Atelier du Pont)
+面積(Area)：
+6177 平方公尺(6177 m²)
+年份(Year)：
+2015(2015)
+攝影(Photographs)：Takuji Shimmura(Takuji Shimmura)
+景觀設計師(Landscape Designer)：Atelier Jours(Atelier Jours)
+結構工程(Structure Engineering)：Kephren(Kephren)
+永續工程(Sustainable Engineering)：Plan02(Plan02)
+類別(Category)：退休養老(Retirement)
+建築專案經理(Architects Project Managers)：Luc Pinsard(Luc Pinsard)、Ariane Rouveyrol(Ariane Rouveyrol)
+室內設計專案經理(Interior Design Project Manager)：Aline Defert(Aline Defert)
+合作(In Collaboration With)：Jean Bocabeille(Jean Bocabeille)
+業主(Clients)：Orpea(Orpea)
+都市再開發公司(Urban Redevelopment Company)：SPLA Paris Batignolles Aménagement(SPLA Paris Batignolles Aménagement)
+流體工程(Fluids Engineering)：Alto Ingénierie(Alto Ingénierie)
+營建經濟(Construction Economics)：Mazet & Associés(Mazet & Associés)
+造價(Cost)：13,700,000 歐元（稅前）(13,700,000 € (pre-tax))
+家具、設備與廚房造價(Cost Of Furniture, Fittings And Kitchen)：2,800,000 歐元（稅前）(2,800,000 € (pre-tax))
+城市(City)：巴黎(Paris)
+國家(Country)：法國(France)
+
+由建築師提供的文字描述(Text description provided by the architects)。克利希-巴蒂尼奧勒生態街區(Clichy-Batignolles ecodistrict)原本是一處鐵路飛地(railway enclave)，如今正重新奪回這片被遺忘的巴黎土地(Parisian ground)。這項大型市政計畫(municipal project)被設想為對高度住宅需求(housing)的回應，同時也為一座耐久的(durable)、混合使用(mixed-use)的21世紀城市(21st century city)鋪路。大量資料必須被整合，以便為一個多機能街區(multi-program block)提出智慧解決方案，內容包含養老院(nursing home)、社會住宅(social housing)、私人住宅(private housing)、宗教中心(religious center)與零售商業(retail businesses)。
+
+這些機能配置(programs)透過富有成效的共存，憑藉其高品質(quality)與象徵意義(symbolic significance)，促成城市(city)的成長(growth)。該專案(project)透過為整個街區(block)建立集體策略(collective strategies)，對都市密度(urban density)與新的環境要求(environmental requirements)所帶來的挑戰，提出了強而有力的建築回應(architectural response)。
+
+養老院(nursing home)位於街區中心(center of the block)，使其居民(residents)能夠生活在「城市(city)」核心(heart of the city)，並受益於其活力(vitality)。脊狀立面(spiny facade)朝向多重方向(multiple directions)，並具有許多斜向視野(diagonal views)，但同時仍維持空間(spaces)的親密感(intimacy)。
+
+有別於傳統且老式的高齡住宅複合體配置(traditional, old-fashioned setup for senior housing complexes)，此專案(project)被作為一個整體來設計：既作為一棟建築物(building)，也同時從其室內(interior)與家具(furniture)層面進行設計。
+
+這些房間(rooms)無論面向城市(city)或露台庭院(patio)，都擁有戶外空間(outdoor space)，而頂層(top floor)則設有具高舒適度(high confort)的臥室(bedrooms)。日常生活的核心(cornerstone of everyday life)是養老院餐廳(home’s restaurant)，其策略性位置(strategic position)呼應城市空間(space of the city)與城市節奏(pace of the city)這兩項關鍵功能(vital functions)。
+
+========================================
+
+I. 詞彙擷取(Vocabulary Extraction)
+
+公園／公共公園(Parc / public park)（馬丁路德金公園(Parc Martin Luther King)）
+臨街面(Street frontage)（René Blum街(Rue René Blum)）
+建築覆蓋範圍／三角形基地邊界(Building footprint / triangular site boundary)
+主入口／廣場(Main entrance / plaza)
+大廳／接待區／中央社交空間(Lobby / reception / central social space)
+開放式公共／休憩區(Open-plan communal/lounge areas)
+私人單元／房間(Private units/rooms)（沿北側與東南側邊緣重複排列的房間(row of repeated rooms along the north and southeast edges)）
+內部庭院／植栽中庭(Internal courtyard / planted atrium)
+露台／戶外露台(Terraces / outdoor patios)（鄰接庭院並沿周邊配置(adjacent to courtyard and along perimeter)）
+綠色土丘／景觀緩衝區(Green berms / landscaped buffer)（沿西側邊緣的三角形綠色楔形區(triangular green wedges along western edge)）
+動線走廊(Circulation corridors)（彎曲與線性(curving and linear)）
+垂直動線核心(Vertical circulation cores)：樓梯與電梯(stairs and elevators)（中央核心(central cores)）
+服務房間／支援空間(Service rooms / support spaces)（浴室、機電空間、儲藏空間集中於核心周邊(bathrooms, mechanical, storage clustered around cores)）
+會議／計畫活動室(Meeting / program rooms)（靠近社交區域的小型封閉空間(smaller enclosed spaces near social zones)）
+景觀設計(Landscaping)（沿公園與街道的樹木、庭院中顯示的植栽花床(trees along park and street, planted beds shown in courtyard)）
+
+II. 空間關係描述(Spatial Relationship Descriptions)
+
+該建築物(the building)坐落於三角形基地(triangular lot)上，其長邊(long edge)面向鄰近公園(adjacent park)；一道綠色土丘／景觀楔形區(green berm/landscaped wedge)分隔並調節公園(park)與建築物(building)之間的關係。
+主要入口(primary entrance)與公共進入路徑(public approach)對齊René Blum街(Rue René Blum)；社交與公共機能(social and public functions)，如大廳(lobby)、開放休憩廳(open lounge)，被配置在靠近此臨街面(frontage)與入口區(entry zone)的位置。
+私人單元／房間(private units/rooms)沿北側與東南側周邊(north and southeastern perimeters)以線性序列(linear sequence)組織，形成雙側或單側服務走廊(double- or single-loaded corridors)，並向外取得光線(light)與視野(views)。
+一座內部植栽庭院／中庭(internal planted courtyard/atrium)被切入平面(plan)之中，並由公共空間(communal spaces)環繞，形成半私人戶外房間(semi-private outdoor room)，許多室內空間(interior spaces)都面向或開向此處。
+動線(circulation)結合了彎曲內部路徑(curving internal paths)與較直的走廊(straighter corridors)：前者連結社交空間(social spaces)與庭院(courtyard)，後者服務成排的私人房間(private rooms)；垂直核心(vertical cores)則位於中央，以服務兩側翼棟(wings)。
+機能配置(program)由公共至私人逐層安排：公共進入路徑(public approach)（街道(street)）→ 大廳／社交區域(lobby/social areas) → 半私人庭院／便利設施(semi-private courtyard/amenities) → 位於周邊(perimeter)的私人單元(private units)。
+景觀元素(landscape elements)，如土丘(berms)、露台(terraces)、植栽口袋空間(planted pockets)，被用來交織外部空間(exterior spaces)與室內空間(interior spaces)——露台(terraces)與植栽邊界(planted edges)在視覺與實體上連接室內社交區域(interior social areas)、公園(park)與街道(street)。
+
+III. 整體空間印象(Overall Spatial Impression)（1–2句）
+此平面(plan)強調一個向內聚焦的社交核心(social heart)，也就是庭院(courtyard)與休憩廳(lounges)，同時最大化重複性私人單元(private units)對周邊通達性(perimeter access)、光線(light)與視野(views)的取得。幾何(geometry)與景觀設計(landscaping)被用來調節三角形基地(triangular lot)，並將從公共街道(public street)與公園(park)進入逐漸更私密的公共與居住空間(communal and residential spaces)的移動(movement)加以排序。
+
+IV. 設計意圖解讀(Design Intent Reading)
+
+回應基地限制(Respond to site constraints)：折角摺疊幾何(angular, folded geometry)適應三角形基地(triangular site)與鄰近公園(adjacent park)，並使用綠色楔形區(green wedges)與露台(terraces)來調和建築量體(building mass)與開放空間(open space)。
+促進社交生活與採光(Promote social life and daylighting)：透過將公共計畫空間(communal programs)錨定在植栽庭院(planted courtyard)周圍，並將居住／工作單元(living/working units)沿周邊(perimeter)配置，此設計(design)優先考量自然光(daylight)、視野(views)，以及受保護的內部景觀(protected interior landscape)中的社交互動(social interaction)。
+提供漸進式公共至私人經驗(Provide a graduated public-to-private experience)：從街道／公園(street/park) → 入口大廳(entrance lobby) → 半公共庭院(semi-public courtyard) → 私人單元(private units)的序列，顯示其意圖在於建立隱私層次(privacy layering)並鼓勵社群(community)，同時維持清楚的通達性(access)與動線(circulation)。
+將景觀整合為基礎設施(Integrate landscape as infrastructure)：景觀化土丘(landscaped berms)與露台(terraces)同時作為緩衝區(buffers)與主動性計畫空間(active programmatic spaces)，顯示其策略是透過景觀與建築的模糊交融(blurring of landscape and architecture)，創造環境舒適性(environmental comfort)與設施(amenity)。

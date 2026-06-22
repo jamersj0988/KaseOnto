@@ -1,0 +1,60 @@
+HG - Gerontological Home / R+B Diseño Experimental
+
+Housing, Apartments
+•
+Bogotá, Colombia
+Architects: R+B Diseño Experimental
+Area: 
+1342 m²
+Year: 
+2016
+Photographs:Ernesto Monsalve Pino
+Manufacturers:  Parklex Prodema, Hunter Douglas, Sanicoc, Vertin
+
+Text description provided by the architects. In the middle of the boom of houses adapted for the use of retirement homes, is designed HG, a building designed exclusively for the comfort and safety of the elderly.
+Thus, the needs of the elderly are combined with a modern and efficient design, appealing to renewable energies and water treatment to make it environmentally friendly.
+As in the other constructions of R+B Diseño Experimental, HG was designed to minimize its environmental impact, so it has a treatment plant for the reuse of gray water from sinks, showers, siphons and gardens, which are treated and reused in common areas, and for the irrigation of gardens and living green walls.
+It also has solar energy for water heating, heat pumps for pool heating, LED lighting and an open design that takes full advantage of sunlight and allows a natural circulation of air in each space.
+Inside, spaces are woven with heights of 2.50mts and 2.70mts, giving a feeling of spaciousness that runs throughout the building, and eventually find the living green wall, which runs both outside and inside HG and reaches about 85 mts2 of the walls of the building, serving as a natural filter of the air and regulator of the interior temperature and humidity.
+At the aesthetic level, the facade is broken to give it movement and it is crossed by a living green wall that runs vertically. It has a double facade that regulates the temperature looking for greater comfort inside. To achieve this, the panels were selected provide thermal and acoustic insulation, becoming an ideal second construction skin and taking advantage of its flexibility to create an imposing facade in the neighborhood's surroundings, an architectural reference of the sector.
+The interiors of the building become points of reference for the location of its residents, having a distinctive color (both the walls and the vegetation of the interior living green wall) on each floor.
+The building program includes spaces for recreation and health such as wet areas (pool and hot tub), consulting and therapy room, nurses' quarters and spaces designed to develop hydrotherapy and physical exercises, in addition to the fitness room, reading room, massages room and theater.
+The kitchen, dining room, oratory, front garden and the terrace provide spaces for the development of group and outdoor activities, which facilitate the socialization of the residents, surrounded by gardens, mirrors of water and nature.
+All the rooms of the home are equipped with high end technology for communication and monitoring of the residents, and large bathrooms equipped with hydro-massage showers.
+HG is a demonstration that this type of equipment is still to be explored, and it can be an amalgam of design, sustainability and efficiency.
+
+========================================
+
+I. Vocabulary Extraction
+- Residential units / apartments (repeated modular units)
+- Central circulation corridor / access spine
+- Stairwells / vertical circulation cores (three main cores)
+- Elevator shafts or service shafts (adjacent to stair cores)
+- Bathrooms / wet rooms (clustered)
+- Bedrooms and living areas (private rooms)
+- Balconies / terraces / private outdoor spaces (street-facing and rear)
+- Lightwells / air shafts / internal courtyards (small voids marked with X)
+- Shared entrances / lobbies
+- Exterior planted strip / landscaped buffer (perimeter greenery)
+- Sidewalk / public pavement (corner street condition)
+- Structural walls / columns and partitions
+- Doors and windows (fenestration to exterior and lightwells)
+
+II. Spatial Relationship Descriptions
+- A linear central corridor runs along the building’s long axis; apartments are organized on both sides of this spine and accessed from it.
+- Three vertical circulation/service cores are regularly spaced along the corridor; each core clusters 2–4 adjacent units and organizes vertical access and services.
+- Wet rooms (bathrooms/kitchens) are grouped near lightwells and shafts, using those vertical voids for ventilation and daylight.
+- Units are paired or mirrored across the corridor/cores, creating a repeatable modular layout and symmetry in plan.
+- Private outdoor terraces and balconies face the exterior (street/landscaped edge), creating a layered transition from public pavement to semi‑private outdoor space and then to private interior.
+- Perimeter landscaping forms a buffer between the public sidewalk and the ground-floor units, while internal lightwells provide daylighting/ventilation to interior service spaces.
+- Circulation cores act as separators that break the building into distinct clusters while also serving as shared nodes for multiple units.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan shows a compact, repetitive apartment block organized along a central linear access spine with regularly spaced service/vertical circulation cores. The design balances efficient modular layout and shared circulation with perimeter terraces and internal lightwells to provide daylight, ventilation, and a softened street edge.
+
+IV. Design Intent Reading
+- Efficiency and repetition: The regular arrangement of identical or similar unit modules and repeated stair/service cores suggests an intent to achieve efficient vertical circulation, construction economy, and clear wayfinding.
+- Daylight and ventilation for interior rooms: Lightwells/air shafts and the clustering of wet spaces adjacent to them indicate an intention to ventilate and daylight bathrooms/kitchens that lack direct exterior exposure.
+- Privacy and activation of the street: Terraces and the planted perimeter buffer imply a strategy to activate the street edge while maintaining a semi‑private transition between public sidewalk and private living spaces.
+- Zonal separation of public and private: The plan clearly separates shared circulation (corridor and cores) from private living areas, creating predictable access and controlled privacy.
+- Modularity with nodal organization: The evenly spaced cores create a rhythmic spatial order and divide the building into manageable clusters, pointing to a modular, scalable approach to multi‑unit residential design.

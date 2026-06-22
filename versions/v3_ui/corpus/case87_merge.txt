@@ -1,0 +1,65 @@
+Social Housing Units 2104 / HARQUITECTES
+
+Apartments
+•
+Palma, Spain
+Architects: HARQUITECTES
+Area: 
+1610 m²
+Year: 
+2024
+Photographs:Adrià Goula
+Lead Architects: David Lorente, Josep Ricart, Xavier Ros, Roger Tudó
+Category: Apartments
+Collaborators: Anna Burgaya, Ángeles Torres, Montse Fornés, Cynthia Rabanal, Victor Jorgensen
+Quantity Surveyor: Xavier Suárez
+Structures: DSM-arquitectes
+Engineering: M7 enginyers
+Environmental Consulting: Societat Orgànica
+Acoustic Engineering: MC acústica
+Lime Construction Expert: Joan Ramon Rosell
+City: Palma
+Country: Spain
+
+Text description provided by the architects. On the plot where the Social Housing were built, primarily intended for the elderly, there was a building that we were obliged to demolish due to its non-compliance with urban planning regulations and its poor condition—there was no possibility of preserving it. It was a small, disused three-story school constructed with structural sandstone (marès) walls and concrete and ceramic ceilings. 
+The project's distinctive strategy was the utilization of demolition materials from the old school as resources to construct the new building, practicing what we might call urban mining: where material resources come from the urban plot itself, resulting from the demolition of the pre-existing building.
+Once the demolition was completed and materials were selected, nearly all the rubble was repurposed according to material type. First, pieces of ceramic and concrete elements (140 m³) were poured into the foundation pits and walls of the semi-basement. Second, all the sandstone (about 160 m³) was used to construct large blocks (approximately 3,000 units) of cyclopean concrete with cement and lime mixed with recycled marès stone (40% of the block volume), composed of large cobbles up to 30 cm in diameter, sandstone gravel, and picadís (sand, also from marès). Each block was cut with a large disc saw from a 4 x 4 m2 slab, so that the stones reappeared on the faces of the blocks.
+The blocks for the top floor, bearing less load, are made of 100% lime concrete, while the rest of the floors combine lime with cement. These blocks, approximately 135 cm long, 42 cm high, and with variable widths for each floor (64, 54, 44, and 34 cm), were prefabricated once the demolition was completed, before commencing the construction of the new building. This approach significantly reduced the construction duration.
+The blocks were stacked to build load-bearing walls perpendicular to the street, supporting cross-laminated timber ceilings. On each floor, the walls reduce in thickness by 10 cm, allowing direct support of the timber panels, facilitating the speed of execution of the entire structure.The blocks were stacked to build load-bearing walls perpendicular to the street, supporting cross-laminated timber ceilings. On each floor, the walls reduce in thickness by 10 cm, allowing direct support of the timber panels, facilitating the speed of execution of the entire structure.
+Perpendicular to the main walls, 13 cm thick partition walls, constructed with the same cyclopean concrete and resulting from cutting a 60 cm wide block into four 13 cm sections, tie the structure of the entire building, together with the stair and elevator core.
+The entire spatial and programmatic organization of the building responds to the described structural system; the floor plan is organized with a stair core in the corner, providing access to a walkway in the interior garden, from where each apartment is accessed—all are through apartments except those on the semi-basement floor, which, like those on the attic floor, have half the depth of the typical floors and utilize two structural spans for each apartment. The top-floor apartments have large terraces. Each floor also has a communal area (laundry room, lounges, etc.).
+The façade starkly displays the structural system: the end walls (vertical) of the prefabricated block walls, which decrease in height on each floor and support the timber (horizontal) ceilings, and, as the façade of each apartment, floor-to-ceiling wooden balconies with a lateral opaque strip and Venetian blinds to protect from the eastern and western sun.
+
+========================================
+
+I. Vocabulary Extraction
+- Central courtyard / planted garden with mature trees
+- Linear circulation corridor / arcade (running along courtyard)
+- Individual dwelling units (repeated modular apartments)
+- Living rooms / lounge areas (facing the courtyard)
+- Bedrooms (facing the exterior façade)
+- Kitchens (compact, in-unit)
+- Bathrooms / wet cores (compact, in-unit)
+- Stair core and elevator (vertical circulation core)
+- Balconies / terraces / external fenestration (some corner bays)
+- Structural walls / load-bearing bays (heavy black walls/columns)
+- Entry thresholds / transitional porches
+- Furniture layouts (indicating program: dining, seating, beds)
+
+II. Spatial Relationship Descriptions
+- The plan is organized around a central planted courtyard: living/lounge spaces of the units face this courtyard while bedrooms face outward, creating an inward-looking communal focus.
+- A continuous corridor/arcade runs between the courtyard and the line of apartments, acting as a semi-public transitional layer that connects all units and the vertical core.
+- Units are modular and repeated in a regular grid, separated by thick structural walls; each module stacks a bedroom, service core (kitchen/bath), and living space in a shallow sequence.
+- The stair/elevator core is located at one side of the courtyard corridor, providing vertical access and concentrating service/vertical circulation in one place.
+- Shared usage is concentrated in the courtyard (communal outdoor amenity) and the arcade/corridor (social/threshold space), while private activities are segregated within each unit by the intermediate service strip.
+- Corner/angled units provide slightly enlarged living or bay seating areas, indicating hierarchy/variation at the building perimeter.
+
+III. Overall Spatial Impression (1–2 sentences)
+The drawings show a repetitive, modular arrangement of small apartments organized as a layered sequence—private bedrooms to the exterior, a middle service band, and living spaces opening to a generous central courtyard—linked by a continuous arcade and a single vertical circulation core. The overall logic emphasizes inward-facing community and efficient, standardized planning within a clear structural grid.
+
+IV. Design Intent Reading
+- Promote social interaction and communal life by centering a landscaped courtyard as the primary shared space and orienting living areas toward it.
+- Achieve economical, repeatable housing units through a modular structural grid and consistent placement of service cores, enabling efficient construction and planning.
+- Balance privacy and sociability by buffering bedrooms from communal space with a service strip (kitchen/bath) and a semi-public arcade between units and the courtyard.
+- Enhance daylighting, views, and ventilation for living spaces facing the courtyard while using heavier exterior walls for thermal/structural separation.
+- Introduce modest variety and improved corner conditions through angled bays/terraces to enrich dwelling quality at select perimeter units.
