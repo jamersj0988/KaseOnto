@@ -691,16 +691,48 @@ function getBracketPrefixLabel(label) {
   return "";
 }
 
-function getFallbackEntityLabels(entity) {
-  // 中文註解：fallback 只加入括號前中文，避免過度 fuzzy matching 造成 corpus 文字被誤框。
-  const label = getEntityLabel(entity);
-  const prefixLabel = getBracketPrefixLabel(label);
-
-  if (!prefixLabel || normalizeSearchText(prefixLabel) === normalizeSearchText(label)) {
-    return [];
+function getBracketContentLabel(label) {
+  // 中文註解：若完整 bilingual label 沒命中，先用括號內英文找一次，處理中文翻譯不同但英文一致的情況。
+  const trimmed = String(label || "").trim();
+  if (!trimmed || !/[)）]$/.test(trimmed)) {
+    return "";
   }
 
-  return [prefixLabel];
+  let depth = 0;
+  for (let index = trimmed.length - 1; index >= 0; index -= 1) {
+    const character = trimmed[index];
+
+    if (character === ")" || character === "）") {
+      depth += 1;
+    } else if (character === "(" || character === "（") {
+      depth -= 1;
+
+      if (depth === 0) {
+        return trimmed.slice(index + 1, -1).trim();
+      }
+    }
+  }
+
+  return "";
+}
+
+function getFallbackEntityLabels(entity) {
+  // 中文註解：fallback 順序是括號內完整英文優先，再用括號前中文，避免過度 fuzzy matching 造成 corpus 文字被誤框。
+  const label = getEntityLabel(entity);
+  const contentLabel = getBracketContentLabel(label);
+  const prefixLabel = getBracketPrefixLabel(label);
+  const fallbackLabels = [];
+
+  if (contentLabel && normalizeSearchText(contentLabel) !== normalizeSearchText(label)) {
+    fallbackLabels.push(contentLabel);
+  }
+
+  if (!prefixLabel || normalizeSearchText(prefixLabel) === normalizeSearchText(label)) {
+    return fallbackLabels;
+  }
+
+  fallbackLabels.push(prefixLabel);
+  return fallbackLabels;
 }
 
 function addMatchIfOpen(matches, occupied, start, end, entity) {
