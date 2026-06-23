@@ -1,0 +1,46 @@
+Veronica House Elderly Care Facility | f m b architekten
+
+Architects: Norman Binder, Andrew Thomas Mayer
+Location: Stuttgart, Germany
+Project Year: 2010
+
+In the new residential community of the Veronica House, the site for the project is compact. The structure allows the urban transition from the relatively high house No. 47, the former Veronica clinic, to the lower elevation of the southern adjoining residential building.The ground floor is composed of a public café, a divisible meeting room, a quiet room, and all staff rooms. The administration of the national carrier has taken a room in the attic. In between these two floors lie the three residential floors with apartments and a community house on each floor, each with twelve beds.
+The internal structure corresponds to the model of elderly care in home communities. To implement this ideal many things were considered with the design of the building. None of the apartments are oriented to the north, and a large kitchen serves as a versatile place to meet and linger. The kitchen is oriented to the south, facing the garden and the shared terrace.
+To allow flexibility for future spatial changes, the building was reinforced with a concrete frame with nearly every wall of the expansion as non-supporting, lightweight partitions.
+
+========================================
+
+I. Vocabulary Extraction
+- Foyer / entrance hall
+- Platz (public plaza) and Hof (inner courtyard)
+- Saal (large multi-purpose hall) with adjacent Nebenräume (side/ancillary rooms)      
+- Café / seating area and bar/counter (Theke)
+- "Raum der Stille" (quiet/meditation room) — a small central/internal room
+- Linear corridor (main circulation spine)
+- Row of small private units/rooms with en-suite or adjacent sanitary cells
+- Service spaces: kitchen, storage, Müll (waste), Technik (technical room), staff rooms
+- WC / accessible WC / showers
+- Vertical circulation core: staircase and elevator
+- Parking area and vehicle access
+- Garden / trees / exterior terraces and outdoor seating
+- External stairs/ramps and pathways linking plaza, hof and garden
+
+II. Spatial Relationship Descriptions
+- Public functions (Platz → Foyer → Café/bar) form a sequence from the exterior plaza into the interior, creating a clear public arrival axis.
+- The foyer acts as a hub that connects the plaza, the inner Hof (semi-public outdoor space), and the main corridor leading to the hall and the residential wing.
+- The Saal (hall) is placed to the side of the foyer and opens directly to the Hof, allowing simultaneous indoor/outdoor use and separate access for events.
+- Private units are organized in a linear row along the southern façade, accessed from the main corridor; this clusters quieter, private functions away from the public arrival zone.
+- Service and back-of-house spaces (kitchen, storage, waste) are grouped adjacent to the café and foyer for short service paths and operational efficiency.
+- The "Raum der Stille" sits centrally, creating an inward-focused quiet locus that is visually and spatially buffered by surrounding circulation and service rooms.
+- Vertical circulation (stair/elevator) ties the new plan to the existing building mass at the north, maintaining continuity between old and new parts.
+- Outdoor garden and trees are positioned to the east, visually linked to interior spaces (hall and units) and providing views/green buffer.
+
+III. Overall Spatial Impression (1–2 sentences)
+The plan organizes activities around a central public hub (foyer) that mediates between a civic plaza, a semi-public courtyard and a multi-purpose hall, while a linear private wing and clustered service zones keep quieter and operational functions separated. The layout emphasizes clear, efficient circulation and strong indoor–outdoor relationships to landscape and event spaces.
+
+IV. Design Intent Reading
+- Create a civic/community focal point: the plaza → foyer → hall sequence and café emphasize social encounter and flexible public programming.
+- Separate publics from privates: by arranging private units along a linear wing and buffering them with corridor and service rooms, the design protects quietness and privacy while keeping communal amenities accessible.
+- Prioritize operational efficiency: clustering kitchen, storage and waste near the café and foyer shortens service routes and supports event logistics for the hall.
+- Provide contemplative and transitional spaces: the centrally placed "Raum der Stille" and the Hof offer inward-focused and semi-public moments for quietness amid active zones.
+- Integrate with context and existing building: the stair/elevator core links to the existing Marienbau, and site elements (plaza, garden, parking) structure access and views, reinforcing a cohesive campus-like composition.

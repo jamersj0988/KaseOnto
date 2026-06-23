@@ -1,0 +1,204 @@
+access
+accessibility
+adaptability
+Adaptive Reuse
+aesthetics
+affordability
+architect
+articulation
+atrium
+balcony
+basement
+beam
+brick
+budget
+building
+building age
+building area
+building code
+building footprint
+building height
+Building Lifecycle
+building orientation
+building performance
+Building Performance Metrics
+Building Scale
+building system
+building type
+ceiling
+circulation
+circulation core
+cladding
+client
+client type
+climate
+column
+commercial
+community
+competition
+completion date
+concrete
+constructability
+construction
+construction method
+consultant
+context
+contractor
+corridor
+cost
+courtyard
+cultural building
+cultural context
+Cultural Heritage
+cultural significance
+curtain wall
+daylighting
+demolition
+design case
+design concept
+design review
+developer
+door
+double height space
+educational building
+electrical system
+elevator
+Embodied Carbon
+embodied energy
+energy consumption
+energy efficiency
+engineer
+envelope
+event
+facade
+facade design
+facade system
+feasibility study
+fenestration
+finishes
+flexibility
+flexible space
+floor
+floor area ratio
+form
+foundation
+functional zone
+functionality
+furniture
+gallery
+geometry
+glass
+Green Infrastructure
+green roof
+Green Space
+groundbreaking
+hardscape
+heritage preservation
+historical context
+institutional
+interior
+interior design
+issue
+landscape
+lighting
+lobby
+local government
+Maintenance
+mass timber
+massing
+material
+Material Palette
+materiality
+mechanical system
+microclimate
+mixed-use
+modularity
+natural context
+natural hazard
+occupant
+opening
+operation
+participant
+partition
+plumbing system
+post occupancy evaluation
+post-construction
+precipitation
+prefabrication
+private space
+program
+program area
+project funding
+project manager
+project phase
+Project Timeline
+public access
+public engagement
+public health
+public realm
+public space
+public transport
+Public Transport Node
+ramp
+recycled content
+recycled material
+Regulatory Body
+renovation
+residential
+resilience
+roof
+room
+safety
+setback
+shading device
+site
+site analysis
+site area
+site history
+site infrastructure
+Site Orientation
+Site Utilities
+slab
+social equity
+softscape
+solar access
+space
+Spatial Organization
+spatial quality
+stair
+stakeholder
+steel
+stone
+structural integrity
+structural system
+structure
+sustainability
+thermal comfort
+topography
+Transition Space
+Transparency
+transportation
+truss
+urban context
+urban density
+Urban Fabric
+urban impact
+urban planner
+urban regeneration
+user
+user experience
+vegetation
+ventilation
+vertical circulation
+Vertical Transportation System
+view corridor
+views
+visitor
+void
+wall
+water conservation
+waterfront
+wind
+window
+wood
+zoning

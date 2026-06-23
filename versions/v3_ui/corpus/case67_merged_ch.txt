@@ -1,0 +1,52 @@
+維羅妮卡之家老人照護設施(Veronica House Elderly Care Facility)｜F M B 建築師事務所(f m b architekten)
+
+建築師：諾曼・賓德(Norman Binder)、安德魯・湯瑪斯・梅爾(Andrew Thomas Mayer)
+地點：斯圖加特(Stuttgart)，德國(Germany)
+專案年份：2010(2010)
+
+在維羅妮卡之家(Veronica House)的新住宅社群(Residential Community)中，此專案(Project)的基地(Site)相當緊湊(Compact)。此結構(Structure)使城市過渡(Urban Transition)得以從相對較高的47號住宅(House No. 47)、即前維羅妮卡診所(Veronica Clinic)，銜接至南側相鄰住宅建築(Southern Adjoining Residential Building)較低的高度。地面層(Ground Floor)由一間公共咖啡館(Public Café)、一間可分隔會議室(Divisible Meeting Room)、一間靜室(Quiet Room)，以及所有員工用房(Staff Rooms)組成。國家承運機構行政部門(Administration Of The National Carrier)在閣樓(Attic)佔用了一個房間(Room)。在這兩層之間，是三層住宅樓層(Three Residential Floors)，每層皆設有公寓單元(Apartments)與一個社區之家(Community House)，各有十二張床位(Twelve Beds)。
+
+內部結構(Internal Structure)對應於居家社群式老人照護模式(Model Of Elderly Care In Home Communities)。為了實現此理想，在建築(Building)的設計(Design)中考量了許多事項。沒有任何公寓單元(Apartments)朝向北側(North)，而一個大型廚房(Large Kitchen)作為適合會面與停留的多用途場所(Versatile Place To Meet And Linger)。廚房(Kitchen)朝向南側(South)，面對花園(Garden)與共享露台(Shared Terrace)。
+
+為了允許未來空間變更(Future Spatial Changes)的彈性，建築(Building)以混凝土框架(Concrete Frame)加固，使擴建部分(Expansion)中幾乎每一道牆體(Wall)都作為非承重(Non-Supporting)的輕質隔間(Lightweight Partitions)。
+
+========================================
+
+I. 詞彙萃取(Vocabulary Extraction)
+
+門廳／入口大廳(Foyer / entrance hall)
+廣場(Platz)／公共廣場(public plaza)與內院(Hof)／內部庭院(inner courtyard)
+大廳(Saal)／大型多功能大廳(large multi-purpose hall)，並設有相鄰的附屬空間(Nebenräume (side/ancillary rooms))
+咖啡館／座位區(Café / seating area)與吧台／櫃台(Bar/Counter (Theke))
+靜謐之室／冥想室("Raum der Stille" (quiet/meditation room))——一個小型中央／內部房間(Room)
+線性走廊（主要動線脊柱）(Linear corridor (main circulation spine))
+一排小型私人單元／房間(Row of small private units/rooms)，並配有套內或相鄰衛生單元(en-suite or adjacent sanitary cells)
+服務空間(Service Spaces)：廚房(Kitchen)、儲藏(Storage)、垃圾區(Müll (waste))、機電室(Technik (technical room))、員工用房(Staff Rooms)
+廁所(WC)／無障礙廁所(accessible WC)／淋浴間(showers)
+垂直動線核心(Vertical Circulation Core)：樓梯間(Staircase)與電梯(Elevator)
+停車區(Parking Area)與車輛通道(Vehicle Access)
+花園(Garden)／樹木(Trees)／戶外露台(Exterior Terraces)與戶外座位(Outdoor Seating)
+外部樓梯／坡道(External Stairs/Ramps)與路徑(Pathways)，連接廣場(Plaza)、內院(Hof)與花園(Garden)
+
+II. 空間關係描述(Spatial Relationship Descriptions)
+
+公共功能(Public Functions)——廣場(Platz) → 門廳(Foyer) → 咖啡館／酒吧(Café/Bar)——形成一條從外部廣場(Exterior Plaza)進入室內(Interior)的序列，建立清晰的公共抵達軸線(Public Arrival Axis)。
+門廳(Foyer)作為樞紐(Hub)，連接廣場(Plaza)、內部庭院(Inner Hof)／半公共戶外空間(Semi-Public Outdoor Space)，以及通往大廳(Hall)與住宅翼棟(Residential Wing)的主走廊(Main Corridor)。
+大廳(Saal)／大廳(Hall)被配置在門廳(Foyer)側邊，並直接向內院(Hof)開放，使室內／戶外使用(Indoor/Outdoor Use)可同步進行，並為活動(Events)提供獨立出入口(Separate Access)。
+私人單元(Private Units)沿南向立面(Southern Façade)以線性排列組織，並由主走廊(Main Corridor)進入；此配置將較安靜的功能(Quieter Functions)與私人功能(Private Functions)群聚在遠離公共抵達區(Public Arrival Zone)的位置。
+服務與後勤空間(Service And Back-Of-House Spaces)——廚房(Kitchen)、儲藏(Storage)、廢棄物／垃圾(Waste)——被群聚配置在鄰近咖啡館(Café)與門廳(Foyer)的位置，以形成短服務路徑(Short Service Paths)並提升營運效率(Operational Efficiency)。
+靜謐之室("Raum der Stille")位於中央，形成一個向內聚焦的安靜核心；它在視覺與空間上受到周邊動線與服務用房(Surrounding Circulation And Service Rooms)的緩衝。
+垂直動線(Vertical Circulation)——樓梯／電梯核心(Stair/Elevator Core)——在北側(North)將新平面配置(New Plan)連接至既有建築量體(Existing Building Mass)，維持舊有部分(Old Parts)與新建部分(New Parts)之間的連續性。
+戶外花園(Outdoor Garden)與樹木(Trees)設置於東側(East)，在視覺上與室內空間(Interior Spaces)——大廳(Hall)與單元(Units)——相連，並提供視野(Views)與綠化緩衝(Green Buffer)。
+
+III. 整體空間印象(Overall Spatial Impression)（1–2句）
+
+此平面配置(Plan)圍繞中央公共樞紐（門廳）(Central Public Hub (Foyer))組織活動，該樞紐在市民廣場(Civic Plaza)、半公共庭院(Semi-Public Courtyard)與多功能大廳(Multi-Purpose Hall)之間進行媒介；同時，線性私人翼棟(Linear Private Wing)與群聚式服務區(Clustered Service Zones)使較安靜的功能(Quieter Functions)與營運功能(Operational Functions)保持分離。整體配置強調清晰高效的動線(Clear, Efficient Circulation)，以及與景觀(Landscape)和活動空間(Event Spaces)之間強烈的室內–戶外關係(Strong Indoor–Outdoor Relationships)。
+
+IV. 設計意圖解讀(Design Intent Reading)
+
+創造市民／社區焦點(Civic/Community Focal Point)：廣場(Plaza) → 門廳(Foyer) → 大廳序列(Hall Sequence)與咖啡館(Café)，強化社交相遇(Social Encounter)與彈性公共活動規劃(Flexible Public Programming)。
+區分公共領域(Publics)與私人領域(Privates)：透過將私人單元(Private Units)沿線性翼棟(Linear Wing)配置，並以走廊(Corridor)與服務用房(Service Rooms)加以緩衝，設計(Design)保護安靜性(Quietness)與私密性(Privacy)，同時維持公共共享設施(Communal Amenities)的可及性。
+優先考量營運效率(Operational Efficiency)：將廚房(Kitchen)、儲藏(Storage)與廢棄物／垃圾(Waste)群聚配置(Clustering)於咖啡館(Café)與門廳(Foyer)附近，可縮短服務路線(Service Routes)，並支援大廳(Hall)的活動後勤(Event Logistics)。
+提供沉思與過渡空間(Contemplative And Transitional Spaces)：中央配置的靜謐之室("Raum der Stille")與內院(Hof)，在活躍區域(Active Zones)之中提供向內聚焦的時刻／空間經驗(Inward-Focused Moments)與半公共時刻／空間經驗(Semi-Public Moments)，以維持安靜性(Quietness)。
+與脈絡和既有建築整合：樓梯／電梯核心(Stair/Elevator Core)連接至既有瑪利亞建築(Marienbau)，而基地元素(Site Elements)——廣場(Plaza)、花園(Garden)、停車(Parking)——組織出入口／通達(Access)與視野(Views)，強化一種凝聚的類校園式構成(Campus-Like Composition)。

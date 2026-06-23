@@ -50,7 +50,7 @@ def main() -> None:
     parser.add_argument(
         "--output-txt",
         nargs="?",
-        const=Path(__file__).with_name("ontology_terms.txt"),
+        const=Path(__file__).with_name("ontology_terms_en.txt"),
         type=Path,
         help="Write the extracted terms to a txt file. Defaults to ontology_terms.txt in the same folder.",
     )
